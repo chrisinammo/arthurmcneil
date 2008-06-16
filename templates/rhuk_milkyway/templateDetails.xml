@@ -71,6 +71,8 @@
 		<position>footer</position>
 		<position>debug</position>
 		<position>syndicate</position>
+		<position>mainmenu</position>
+		
 	</positions>
 	<params>
 		<param name="colorVariation" type="list" default="white" label="Color Variation" description="Color variation to use">
