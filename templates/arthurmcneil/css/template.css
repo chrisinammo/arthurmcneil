@@ -1,3 +1,5 @@
+
+
 /*****************************/
 /*** Core html setup stuff ***/
 /*****************************/
@@ -99,67 +101,12 @@ div#newsflash {
 }
 
 /*****************************************/
-/*** Navigation layout                 ***/
+/***Main Navigation layout             ***/
 /*****************************************/
 
 
 
-div#majnav{
-height:64px;
-width:928px;
-background-image:url(../images/nav_bg.gif);
-margin-left:11px;
-}
 
-ul#mainmenu{
-padding:0;
-margin:0;}
-
-.menumainmenu li{
-float:left;
-display:inline-block;
-height:38px;
-width:184px;
-background-image:url(../images/nav/normal.gif);
-background-position:top;
-background-repeat:repeat-x;
-}
-.menumainmenu li a{
-font-size:16px;
-text-transform:uppercase;
-color:#FFFFFF;
-
-}
-.menumainmenu ul li{
-padding-top:15px;
-margin-left:-450px;
-display: inline-block;
-float:left;
-width:180px;
-background-image:none;
-}
-.menumainmenu ul li a{
-}
-
-li#current{
-background-image:url(../images/nav/active.gif);
-background-repeat:repeat-x;
-}
-
-.menumainmenu li.item1, li.item2,li.item3, li.item4, li.item5{
-padding-top:10px;
-}
-.menumainmenu li.item7{
-margin-left:-300px;
-width:100px;
-
-}
-
-li.item2 a{
-font-size:16px;
-padding:4px;
-text-align:center;
-}
 
 div#footer_r {
 	padding-top: 10px;

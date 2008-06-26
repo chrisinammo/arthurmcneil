@@ -1,0 +1,99 @@
+div#majnav{
+height:64px;
+width:928px;
+background-image:url(../images/nav_bg.gif);
+margin-left:11px;
+}
+
+ul#mainmenu{
+padding:0;
+margin:0;}
+
+.menumainmenu li{
+float:left;
+display:inline-block;
+height:38px;
+width:184px;
+background-image:url(../images/nav/normal.gif);
+background-position:top;
+background-repeat:repeat-x;
+}
+.menumainmenu li a{
+font-size:16px;
+text-transform:uppercase;
+color:#FFFFFF;
+
+}
+
+
+li#current{
+
+}
+
+.menumainmenu li.item1, li.item2,li.item3, li.item4, li.item5{
+padding-top:10px;
+}
+.menumainmenu li.active item1, li.active item2,li.active item3, li.active item4, li.active item5{
+background-image:url(../images/nav/active.gif);
+background-repeat:repeat-x;
+}
+
+li.item2 a{
+font-size:16px;
+padding:4px;
+text-align:center;
+}
+/*----------------------------------*/
+/*-subnav margins forced locations--*/
+/*----------------------------------*/
+/**/
+.menumainmenu ul li{
+padding-top:20px;
+display: inline-block;
+float:left;
+width:180px;
+background-image:none;
+}
+.menumainmenu ul li a{
+font-size:12px;
+color: #FFF;
+
+}
+.menumainmenu ul li a:hover{
+font-size:12px;
+color: #77c143;
+
+}
+/*Courses*/
+.menumainmenu li.item7{
+margin-left:-300px;
+width:100px;
+}
+/*contant us*/
+.menumainmenu li.item8{
+margin-left:-220px;
+width:125px;
+}
+
+/*Calendar*/
+.menumainmenu li.item9{
+margin-left:-30px;
+width:100px;
+}
+/*Students Login*/
+.menumainmenu li.item10{
+margin-left:50px;
+margin-top:-58px;
+width:150px;
+}
+/*directions*/
+.menumainmenu li.item11{
+margin-left:-110px;
+width:100px;
+}
+/*Testimonials*/
+.menumainmenu li.item12{
+margin-left:0px;
+
+width:100px;
+}
