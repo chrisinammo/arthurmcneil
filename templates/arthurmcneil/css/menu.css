@@ -25,15 +25,16 @@ color:#FFFFFF;
 
 }
 
-
-li#current{
-
+#current.item1, #current.item2, #current.item3, #current.item4, #current.item5{
+background-image:url(../images/nav/active.gif);
+background-repeat:repeat-x;
 }
 
 .menumainmenu li.item1, li.item2,li.item3, li.item4, li.item5{
 padding-top:10px;
 }
-.menumainmenu li.active item1, li.active item2,li.active item3, li.active item4, li.active item5{
+
+li#current .parentactive item1, #current .parent active item2,li.active item3, li.active item4, li.active item5{
 background-image:url(../images/nav/active.gif);
 background-repeat:repeat-x;
 }
@@ -53,28 +54,22 @@ display: inline-block;
 float:left;
 width:180px;
 background-image:none;
+text-transform:capitalize;
 }
 .menumainmenu ul li a{
 font-size:12px;
 color: #FFF;
+text-transform:capitalize;
 
 }
 .menumainmenu ul li a:hover{
 font-size:12px;
 color: #77c143;
+text-transform:capitalize;
 
 }
-/*Courses*/
-.menumainmenu li.item7{
-margin-left:-300px;
-width:100px;
-}
-/*contant us*/
-.menumainmenu li.item8{
-margin-left:-220px;
-width:125px;
-}
 
+/*----Home-------------------------------------------------------*/
 /*Calendar*/
 .menumainmenu li.item9{
 margin-left:-30px;
@@ -86,6 +81,14 @@ margin-left:50px;
 margin-top:-58px;
 width:150px;
 }
+/*----About US-------------------------------------------------------*/
+/*contant us*/
+.menumainmenu li.item8{
+margin-left:-220px;
+width:125px;
+}
+
+
 /*directions*/
 .menumainmenu li.item11{
 margin-left:-110px;
@@ -94,6 +97,92 @@ width:100px;
 /*Testimonials*/
 .menumainmenu li.item12{
 margin-left:0px;
+width:100px;
+}
+
+/*Join Our Team */
+.menumainmenu li.item20{
+margin:0;
+margin-left:100px;
+width:125px;
+margin-top:-58px;
+
+}
+
+
+
+/*----Training-------------------------------------------------------*/
+/*programs*/
+.menumainmenu li.item6{
+margin-left:-400px;
+width:100px;
+}
+/*Courses*/
+.menumainmenu li.item7{
+margin-left:-300px;
+width:100px;
+}
+/*Pre-Register */
+.menumainmenu li.item13{
+margin-left:-200px;
 
 width:100px;
+}
+
+/*Financing */
+.menumainmenu li.item14{
+margin-left:-100px;
+
+width:100px;
+}
+/* Testing*/
+.menumainmenu li.item15{
+margin-left:-10px;
+
+width:100px;
+}
+
+/*FAQs */
+.menumainmenu li.item16{
+margin-left:75px;
+margin-top:-58px;
+width:100px;
+}
+
+
+
+/*----Corporate-------------------------------------------------------*/
+
+/*Corporate Training */
+.menumainmenu li.item17{
+margin-left:-600px;
+
+width:200px;
+}
+
+/* Classroom Rental */
+.menumainmenu li.item18{
+margin-left:0px;
+margin-left:-450px;
+width:200px;
+}
+
+/*Consulting */
+.menumainmenu li.item19{
+margin-left:0px;
+margin-left:-275px;
+width:100px;
+}
+
+/* Our Clients */
+.menumainmenu li.item21{
+margin-left:0px;
+margin-left:-175px;
+width:100px;
+}
+/* Staffing Requirements */
+.menumainmenu li.item22{
+margin-left:-100px;
+
+width:230px;
 }
