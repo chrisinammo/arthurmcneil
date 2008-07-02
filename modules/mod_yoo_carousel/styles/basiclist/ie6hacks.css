@@ -1,0 +1,9 @@
+/* (C) 2007 YOOtheme.com */
+
+div.basiclist div.yoo-carousel div.left div.tabs-container {
+	margin-right: -3px; /* 3-Pixel-Jog Bug IE6 */
+}
+
+div.basiclist div.yoo-carousel div.left div.frame {
+	margin-right: -3px; /* 3-Pixel-Jog Bug IE6 */
+}

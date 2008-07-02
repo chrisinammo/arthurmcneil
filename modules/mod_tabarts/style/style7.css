@@ -1,0 +1,108 @@
+/* ||| set of clearing floats |||*/	
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+	clear: none;
+}
+/* End hide from IE-mac */
+/* ||| the end |||*/
+div.gk_tabarts {
+	position: relative;
+	background: #cee7fa url('../images/style7/bg_ul.png') repeat-y 0 0;
+	
+	padding: 0;
+	border: 1px solid #e3e3e3;
+}
+
+div.gk_tabartsmenu {
+	overflow:hidden;
+}
+ul.gk_tabartsmenu_ul {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	float: left;
+	width: 213px;
+	height: 100%;
+}
+ul.gk_tabartsmenu_ul li {
+	cursor: pointer;
+	margin: 0;
+	position: relative;background: url('../images/style7/bg_tab.png') no-repeat 100% 100%;
+	padding: 0;
+	padding-bottom: 2px;
+}
+ul.gk_tabartsmenu_ul li span {
+	
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	text-transform:uppercase;
+	font-weight: bold;
+	
+	
+}
+ul.gk_tabartsmenu_ul li.active span {
+	background: url('../images/style7/bg_tab-active.png') no-repeat 100% 0;
+	color: #3f6b95;
+	
+	padding: 0;
+	
+	
+}
+div.gk_tabarts_container0 {
+	float: left;
+	background: #f1f1f1 url('../images/style7/bg_mod.png') repeat-x 0 0;
+	padding: 0 20px;
+}
+div.gk_tabarts_container1 {
+	overflow: hidden;margin: 10px 0;
+}
+div.gk_tabarts_item {
+	float: left;
+	overflow: hidden;
+	
+	
+}
+div.gk_tabarts_button_next,
+div.gk_tabarts_button_prev {
+	width: 24px;
+	height: 24px;
+	background: url('../images/style7/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	top: 86%;
+	position: absolute;
+	right: 10px;
+}
+div.gk_tabarts_button_prev {
+	background: url('../images/style7/b_prev.png') no-repeat 0 0;
+	position: absolute;
+	right: 38px;
+}
+div.gk_tabarts_button_next:hover {
+	
+	background: url('../images/style7/b_next.png') no-repeat 100% 0;
+	
+}
+div.gk_tabarts_button_prev:hover {
+	background: url('../images/style7/b_prev.png') no-repeat 100% 0;
+	
+}

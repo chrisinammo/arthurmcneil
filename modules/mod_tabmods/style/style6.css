@@ -1,0 +1,109 @@
+/* ||| set of clearing floats |||*/	
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block!Important;
+	clear: none!Important;
+}
+/* End hide from IE-mac */
+/* ||| the end |||*/
+div.gk_tabmods {
+	position: relative;
+	background: #45494d url('../images/style6/bg_ul.png') repeat-x 0 0;
+	
+	padding: 0;
+	border: 1px solid #e3e3e3;
+}
+
+div.gk_tabmodsmenu {
+	overflow:hidden;
+}
+ul.gk_tabmodsmenu_ul {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0 20px 20px;
+	float: left;
+	width: 180px;
+	height: 100%;
+}
+ul.gk_tabmodsmenu_ul li {
+background: none;
+padding: 0;
+	cursor: pointer;
+	margin: 0 0 9px;
+	position: relative;
+	
+}
+ul.gk_tabmodsmenu_ul li span {
+	
+	display: block;
+	height: 32px;
+	line-height: 31px;
+	padding: 1px 10px;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	text-transform:uppercase;
+	font-weight: bold;
+	
+}
+ul.gk_tabmodsmenu_ul li.active span {
+	background: url('../images/style6/bg_tab-active.png') repeat-x 0 0;
+	color: #fff;
+	border: 1px solid #35383b;
+	padding: 0;
+	
+	
+}
+div.gk_tabmods_container0 {
+	float: right;
+	background: #f1f1f1 url('../images/style6/bg_mod.png') repeat-x 0 0;
+	padding: 0 20px;
+	
+}
+div.gk_tabmods_container1 {
+	overflow: hidden;margin: 10px 0;
+}
+div.gk_tabmods_item {
+	float: left;
+	overflow: hidden;
+	
+	
+}
+div.gk_tabmods_button_next,
+div.gk_tabmods_button_prev {
+	width: 24px;
+	height: 24px;
+	background: url('../images/style6/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	top: 86%;
+	position: absolute;
+	right: 10px;
+}
+div.gk_tabmods_button_prev {
+	background: url('../images/style6/b_prev.png') no-repeat 0 0;
+	position: absolute;
+	right: 38px;
+}
+div.gk_tabmods_button_next:hover {
+	
+	background: url('../images/style6/b_next.png') no-repeat 100% 0;
+	
+}
+div.gk_tabmods_button_prev:hover {
+	background: url('../images/style6/b_prev.png') no-repeat 100% 0;
+	
+}

@@ -1,0 +1,41 @@
+/* (C) 2007 YOOtheme.com */
+
+div.yoo-tooltip div.default .tooltip-tl {
+	background: url(styles/default/images/bubble_tl_ie.png) 0 0 no-repeat;
+}
+
+div.yoo-tooltip div.default .tooltip-tr {
+	background: url(styles/default/images/bubble_tr_ie.png) 100% 0 no-repeat;
+}
+
+div.yoo-tooltip div.default .tooltip-t {
+	background: url(styles/default/images/bubble_t_ie.png) 0 0 repeat-x;
+}
+
+div.yoo-tooltip div.default .tooltip-l {
+	background: url(styles/default/images/bubble_l_ie.png) 0 0 repeat-y;
+}
+
+div.yoo-tooltip div.default .tooltip-r {
+	background: url(styles/default/images/bubble_r_ie.png) 100% 0 repeat-y;
+}
+
+div.yoo-tooltip div.default .tooltip-m {
+	width: 100%;
+}
+
+div.yoo-tooltip div.default .tooltip-bl {
+	background: url(styles/default/images/bubble_bl_ie.png) 0 0 no-repeat;
+}
+
+div.yoo-tooltip div.default .tooltip-br {
+	background: url(styles/default/images/bubble_br_ie.png) 100% 0 no-repeat;
+}
+
+div.yoo-tooltip div.default .tooltip-b {
+	background: url(styles/default/images/bubble_b_ie.png) 0 0 repeat-x;
+}
+
+div.yoo-tooltip div.default .tooltip-arrow {
+	background: url(styles/default/images/bubble_arrow_ie.png) 50% 0 no-repeat;
+}

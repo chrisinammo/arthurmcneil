@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>SignalLogin</name>
+	<author>Christoph Schafflinger</author>
+	<creationDate>2008-02-20</creationDate>
+	<copyright>Copyright (C) 2008 Christoph Schafflinger. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cs@freezeframez.org</authorEmail>
+	<authorUrl>www.signalschwarz.at</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[Flexible Login-Module for Joomla 1.5 - can be used as horizontal or vertical Module and supports "skinning". 
+Comes with 4 pre-defined styles: "default", "default-light", "hivemind-dark" and "hivemind-light" . 
+
+To create your own Style, have a look at these styles in /modules/mod_signallogin/templates. 
+
+To translate the Frontend, just copy /language/<yourlanguage>/<yourlanguage>.mod_login.ini to /language/<yourlanguage>/<yourlanguage>.mod_signallogin.ini. 
+For Backend-Translation, translate the File /administrator/language/<yourlanguage>/<yourlanguage>.mod_signallogin.ini to your Language. ]]></description>
+	<files>
+		<filename module="mod_signallogin">mod_signallogin.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>      
+		<filename>templates/index.html</filename>      
+		<filename>templates/default/index.html</filename>
+		<filename>templates/default/signal.css</filename>
+		<filename>templates/default/pass_bg.png</filename>
+		<filename>templates/default/user_bg.png</filename>
+		<filename>templates/default-light/index.html</filename>
+		<filename>templates/default-light/signal.css</filename>
+		<filename>templates/default-light/pass_bg.png</filename>
+		<filename>templates/default-light/user_bg.png</filename>
+		<filename>templates/hivemind-dark/index.html</filename>
+		<filename>templates/hivemind-dark/signal.css</filename>
+		<filename>templates/hivemind-dark/pass_bg.png</filename>
+		<filename>templates/hivemind-dark/user_bg.png</filename>
+		<filename>templates/hivemind-light/index.html</filename>
+		<filename>templates/hivemind-light/signal.css</filename>
+		<filename>templates/hivemind-light/pass_bg.png</filename>
+		<filename>templates/hivemind-light/user_bg.png</filename>
+	</files>
+	<languages>
+		<!-- English //-->
+		<language tag="en-GB">languages/en-GB.mod_signallogin.ini</language>
+	</languages>
+	<params>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="Style" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="module_theme" type="text" default="default" label="Theme" description="The Theme for the Module. Themes are located in /modules/mod_signallogin/ - use 'default' as reference..." />
+		<param name="horizontal" type="list" default="0" label="Module orientation" description="Default orientation is vertical for left or right module positions. The horizontal orientation is for a compact horizontal module position.">
+			<option value="0">Vertical</option>
+			<option value="1">Horizontal</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="Options" description="" />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Pre-text" description="PARAMPRETEXT" />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Post-text" description="PARAMPOSTTEXT" />
+		<param name="login" type="menuitem" default="" disable="separator" label="Login Redirection URL" description="PARAMLOGINREDIRECTURL" />
+		<param name="logout" type="menuitem" default="" disable="separator" label="Logout Redirection URL" description="PARAMLOGOUTREDIRECTURL" />
+		<param name="show_lostpass" type="radio" default="1" label="Lost password" description="Show/Hide the lost password? link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_lostname" type="radio" default="1" label="Lost username" description="Show/Hide the lost username? link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_newaccount" type="radio" default="1" label="Create account" description="Show/Hide the create account text and link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="name_lenght" type="text" default="10" label="Username length" description="The length in characters the textbox should have not max. characters the box may contain." />
+		<param name="pass_lenght" type="text" default="10" label="Password length" description="The length in characters the textbox should have not max. characters the box may contain." />
+		<param name="remember_enabled" type="list" default="1" label="Remember-me checkox" description="Show/Hide the standard Remember-me checkbox. It is possible to have it checked or unchecked by default or always">
+			<option value="1">Show unchecked</option>
+			<option value="3">Show checked</option>
+			<option value="0">Hide unchecked</option>
+			<option value="2">Hide checked</option>
+		</param>
+		<param name="greeting" type="radio" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="name" type="list" default="0" label="Name/Username" description="Choose what to display with the greeting text">
+			<option value="0">Username</option>
+			<option value="1">Name</option>
+		</param>
+		<param name="usesecure" type="radio" default="0" label="Encrypt Login Form" description="SUBMIT ENCRYPTED LOGIN DATA (REQUIRES SSL)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

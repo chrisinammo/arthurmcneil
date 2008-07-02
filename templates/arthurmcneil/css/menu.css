@@ -30,7 +30,7 @@ background-image:url(../images/nav/active.gif);
 background-repeat:repeat-x;
 }
 
-.menumainmenu li.item1, li.item2,li.item3, li.item4, li.item5{
+.menumainmenu li.item1,.menumainmenu li.item2,.menumainmenu li.item3,.menumainmenu  li.item4,.menumainmenu li.item5{
 padding-top:10px;
 }
 
@@ -39,7 +39,7 @@ background-image:url(../images/nav/active.gif);
 background-repeat:repeat-x;
 }
 
-li.item2 a{
+/*li.item2 a{
 font-size:16px;
 padding:4px;
 text-align:center;
@@ -185,4 +185,13 @@ width:100px;
 margin-left:-100px;
 
 width:230px;
+}
+
+
+
+.menumainmenu li.item5 {
+color:#FFFF00;
+}
+.menumainmenu li.item5 a{
+color:#FFFF00;
 }

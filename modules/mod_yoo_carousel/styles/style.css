@@ -1,0 +1,68 @@
+/* (C) 2007 YOOtheme.com */
+
+a:focus { outline: none; }
+
+div.yoo-carousel {
+	overflow: hidden;
+}
+
+div.yoo-carousel div.frame {
+	position: relative;
+	overflow: hidden;
+}
+
+div.yoo-carousel div.panel {
+	overflow: hidden;
+}
+
+div.yoo-carousel div.panel div.slide {
+	float: left;
+	overflow: hidden;
+}
+
+div.yoo-carousel ul.tabs {
+	padding: 0px;
+	margin: auto;
+	list-style: none;
+}
+
+div.yoo-carousel ul.tabs li {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: block;
+}
+
+div.yoo-carousel ul.tabs li a {
+	float: left;
+	display: block;
+}
+
+div.yoo-carousel ul.tabs li a span {
+	float: left;
+	display: block;
+}
+
+/* list styling */
+div.yoo-carousel div.left ul.tabs {
+	float: left;
+}
+
+/* list styling */
+div.yoo-carousel div.left ul.tabs li, div.yoo-carousel div.left ul.tabs li a, div.yoo-carousel div.left ul.tabs li a span {
+	float: none;
+}
+
+div.yoo-carousel .prev, div.yoo-carousel .next {
+	position: absolute;
+	top: 35%;
+	z-index: 1;
+}
+
+div.yoo-carousel .prev {
+	left: 0px;
+}
+
+div.yoo-carousel .next {
+	right: 0px;
+}

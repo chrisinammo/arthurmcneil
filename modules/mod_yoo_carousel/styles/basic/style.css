@@ -1,0 +1,143 @@
+/* (C) 2007 YOOtheme.com */
+
+div.basic div.yoo-carousel {
+	background: #ffffff;
+}
+
+/* tabs */
+/* top */
+div.basic div.yoo-carousel div.top ul.tabs {
+	height: 30px;
+	background: url(styles/basic/images/top_tab_bg.png) 0 100% repeat-x;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li {
+	margin: 0px 3px 0px 0px;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li a {
+	background: url(styles/basic/images/top_tab_l.png) 0 0 no-repeat;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li.selected a {
+	background: url(styles/basic/images/top_tab_l.png) 0 -30px no-repeat;
+	cursor: pointer;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li a span {
+	padding: 0px 10px 0px 10px;
+	background: url(styles/basic/images/top_tab_r.png) 100% 0 no-repeat;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li.selected a span {
+	background: url(styles/basic/images/top_tab_r.png) 100% -30px no-repeat;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li a span span {
+	height: 30px;
+	padding: 0px 10px 0px 10px;
+	background: url(styles/basic/images/top_tab_m.png) 0 0 repeat-x;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 110%;
+	overflow: hidden;
+}
+
+div.basic div.yoo-carousel div.top ul.tabs li.selected a span span {
+	background: url(styles/basic/images/top_tab_m.png) 0 -30px repeat-x;
+}
+
+/* bottom */
+div.basic div.yoo-carousel div.bottom ul.tabs {
+	height: 30px;
+	background: url(styles/basic/images/bottom_tab_bg.png) 0 100% repeat-x;
+	position: relative;
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li {
+	margin: -1px 3px 0px 0px;
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li a {
+	background: url(styles/basic/images/bottom_tab_l.png) 0 0 no-repeat; 
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li.selected a {
+	background: url(styles/basic/images/bottom_tab_l.png) 0 -30px no-repeat;
+	cursor: pointer;
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li a span {
+	padding: 0px 10px 0px 10px;
+	background: url(styles/basic/images/bottom_tab_r.png) 100% 0 no-repeat;
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li.selected a span {
+	background: url(styles/basic/images/bottom_tab_r.png) 100% -30px no-repeat; 
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li a span span {
+	height: 30px;
+	padding: 0px 10px 0px 10px;
+	background: url(styles/basic/images/bottom_tab_m.png) 0 0 repeat-x;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 110%;
+	overflow: hidden;
+}
+
+div.basic div.yoo-carousel div.bottom ul.tabs li.selected a span span {
+	background: url(styles/basic/images/bottom_tab_m.png) 0 -30px repeat-x;
+}
+
+/* links */
+div.basic div.yoo-carousel li a:link, div.basic div.yoo-carousel li a:visited {
+	color: #969696;
+	text-decoration: none;
+}
+
+div.basic div.yoo-carousel li a:hover, div.basic div.yoo-carousel li.selected a:link, div.basic div.yoo-carousel li.selected a:visited {
+	color: #646464;
+	text-decoration: none;
+}
+
+/* scroller */
+div.basic div.yoo-carousel .panel-container {
+	margin: auto;
+}
+
+div.basic div.yoo-carousel .top .panel-container-outer {
+	padding: 0px 1px 1px 1px;
+	border-left: 1px solid #C8C8C8;
+	border-right: 1px solid #C8C8C8;
+	border-bottom: 1px solid #C8C8C8;
+	background: #ffffff;
+}
+
+div.basic div.yoo-carousel .bottom .panel-container-outer {
+	padding: 0px 1px 1px 1px;
+	border-left: 1px solid #C8C8C8;
+	border-right: 1px solid #C8C8C8;
+	border-top: 1px solid #C8C8C8;
+	background: #ffffff;
+}
+
+div.basic div.yoo-carousel .panel-container-inner {
+	background: url(styles/basic/images/panel_b.png) 0 100% repeat-x;
+}
+
+/* article */
+div.basic div.yoo-carousel .article {
+	padding: 10px 10px 10px 10px;
+	font-size: 95%;
+	line-height: 125%;
+}
+
+div.basic div.yoo-carousel .article h3 {
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	line-height: 100%;
+	font-size: 150%;
+	font-weight: bold;
+	color: #323232;
+}

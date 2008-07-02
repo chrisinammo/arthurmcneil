@@ -1,0 +1,78 @@
+div.gk_tabmods {
+	position: relative;
+	
+	
+}
+div.gk_tabmods_wrap {
+	margin: 0 auto;background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+}
+div.gk_tabmodsmenu {
+	overflow:hidden;
+}
+ul.gk_tabmodsmenu_ul {
+	list-style-type: none;
+	margin: -1px 0 0;
+	padding: 0;
+}
+ul.gk_tabmodsmenu_ul li {
+ background: none;
+ padding: 0;
+	float: left;
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+	
+}
+ul.gk_tabmodsmenu_ul li span {
+	background: url('../images/style3/bg_tab.png') repeat-x 0 0;
+	display: block;
+	height: 28px;
+	line-height: 27px;
+	padding: 0 10px;
+	font-size: 10px;
+	color: #666;
+	text-transform:uppercase;
+	border: 1px solid #e1e1e1;
+	border-left: none;
+}
+ul.gk_tabmodsmenu_ul li.active span {
+	background: url('../images/style3/bg_tab-active.png') repeat-x 0 0;
+	color: #fff;
+	border: 1px solid #97c731;
+}
+div.gk_tabmods_container0 {
+	clear: both;
+	
+	
+}
+div.gk_tabmods_container1 {
+	overflow: hidden;
+	
+}
+div.gk_tabmods_item {
+	float: left;
+	overflow: hidden;
+	padding: 10px;
+}
+div.gk_tabmods_button_next,
+div.gk_tabmods_button_prev {
+	width: 24px;
+	height: 24px;
+	background: url('../images/style3/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	position: absolute;
+	top: 43%;
+	right: 0;
+}
+div.gk_tabmods_button_prev {
+	background: url('../images/style3/b_prev.png') no-repeat 0 0;
+	left: 0;
+	right:inherit;
+}
+div.gk_tabmods_button_next:hover {
+	background: url('../images/style3/b_next.png') no-repeat 100% 0;
+}
+div.gk_tabmods_button_prev:hover {
+	background: url('../images/style3/b_prev.png') no-repeat 100% 0;
+}

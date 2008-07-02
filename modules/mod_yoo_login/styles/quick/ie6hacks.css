@@ -1,0 +1,33 @@
+/* (C) 2007 YOOtheme.com */
+
+span.quick span.yoo-login span.login, span.quick span.yoo-login span.logout {
+	float: right;
+}
+
+span.quick span.yoo-login span.login .login-button-icon button {
+	background: url(styles/quick/images/login_button_bg_ie6.png) 0 0 no-repeat;
+}
+
+span.quick span.yoo-login span.login .login-button-icon button:hover, span.quick span.yoo-login span.login .login-button-icon button.sfhover  {
+	background: url(styles/quick/images/login_button_bg_ie6.png) 0 -20px no-repeat;
+}
+
+span.quick span.yoo-login span.login .lostpassword a  {
+	background: url(styles/quick/images/lost_password_bg_ie6.png) 0 0px no-repeat;
+}
+
+span.quick span.yoo-login span.login .lostusername a  {
+	background: url(styles/quick/images/lost_username_bg_ie6.png) 0 0px no-repeat;
+}
+
+span.quick span.yoo-login span.login .registration a  {
+	background: url(styles/quick/images/registration_bg_ie6.png) 0 0px no-repeat;
+}
+
+span.quick span.yoo-login span.logout .logout-button-icon button {
+	background: url(styles/quick/images/logout_button_bg_ie6.png) 0 0 no-repeat;
+}
+
+span.quick span.yoo-login span.logout .logout-button-icon button:hover, span.quick span.yoo-login span.logout .logout-button-icon button.sfhover  {
+	background: url(styles/quick/images/logout_button_bg_ie6.png) 0 -20px no-repeat;
+}

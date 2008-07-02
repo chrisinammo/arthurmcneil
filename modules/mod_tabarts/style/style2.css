@@ -1,0 +1,72 @@
+div.gk_tabarts {
+	position: relative;
+}
+div.gk_tabarts_wrap {
+	margin: 0 auto;
+}
+div.gk_tabartsmenu {
+	overflow:hidden;
+}
+ul.gk_tabartsmenu_ul {
+	 list-style: none;
+	
+	margin: 0 0 0 18px;
+	padding: 0;
+}
+ul.gk_tabartsmenu_ul li {
+       background: none;
+	float: left;
+	cursor: pointer;
+	margin: 0 0 -1px 0;
+	position: relative;
+	padding: 0 9px;
+}
+ul.gk_tabartsmenu_ul li span {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 18px 0 9px;
+	font-size: 10px;
+	color: #666;
+	text-transform:uppercase;
+}
+ul.gk_tabartsmenu_ul li.active {
+	background: url('../images/style2/bg_tab-l.png') no-repeat 0 0;
+}
+ul.gk_tabartsmenu_ul li.active span {
+	background: url('../images/style2/bg_tab-r.png') no-repeat 100% 0;
+	color: #aa2207;
+}
+div.gk_tabarts_container0 {
+	clear: both;
+	border-top: 1px solid #d5d5d5;
+}
+div.gk_tabarts_container1 {
+	overflow: hidden;
+}
+div.gk_tabarts_item {
+	float: left;
+	overflow: hidden;
+	padding: 10px;
+}
+div.gk_tabarts_button_next,
+div.gk_tabarts_button_prev {
+	width: 24px;
+	height: 24px;
+	background: url('../images/style2/b_next.png') no-repeat 0 0;
+	cursor: pointer;
+	position: absolute;
+	top: 43%;
+	right: 0;
+}
+div.gk_tabarts_button_prev {
+	background: url('../images/style2/b_prev.png') no-repeat 0 0;
+	left: 0;
+	right:inherit;
+}
+div.gk_tabarts_button_next:hover {
+	background: url('../images/style2/b_next.png') no-repeat 100% 0;
+}
+div.gk_tabarts_button_prev:hover {
+	background: url('../images/style2/b_prev.png') no-repeat 100% 0;
+}

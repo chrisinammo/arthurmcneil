@@ -1,0 +1,181 @@
+/* 
+* Horizontal Login-Form Style 
+*/
+
+#sl_horiz {
+	height: 22px;
+	width: 600px;
+	margin-top: 17px;
+	margin-left: 11px;
+	float: left;
+}
+
+#sl_horiz #greeting {
+	float: left;
+	height: 22px;
+	margin-right: 10px;
+}
+
+#sl_horiz .button {
+	background-color: #131313;
+	border: thin solid #212121;
+	font-size: 100%;
+	font-weight: normal;
+	color: #777;
+	height: 24px;
+	line-height: 10px;
+}
+
+#sl_horiz #sl_username {
+	float: left;
+}
+
+#sl_horiz #sl_username input {
+	padding-left: 20px;
+	overflow: hidden;
+	width: 150px;
+	font-size: 100%;
+	font-weight: normal;
+	border: thin solid #212121;
+	color: #777;
+	background-color: #131313;
+	background-image: url(user_bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#sl_horiz #sl_pass {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_pass input {
+	padding-left: 20px;
+	overflow: hidden;
+	width: 150px;
+	font-size: 100%;
+	font-weight: normal;
+	border: thin solid #212121;
+	color: #777;
+	background-color: #131313;
+	background-image: url(pass_bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#sl_horiz #sl_rememberme {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_submitbutton {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_lostpass {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_lostname {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_register {
+	margin-left: 10px;
+	float: left;
+}
+
+#sl_horiz #sl_posttext {
+	margin-left: 10px;
+	float: left;
+}
+
+/* 
+* Vertical Login-Form Style 
+*/
+
+#sl_vert {
+	/*font-weight: bold;
+	font-size: 110%;*/
+}
+
+#sl_vert #greeting {
+	text-align: center;
+	float: none;
+	height: 22px;
+	margin-bottom: 10px;
+}
+
+#sl_vert .button {
+	background-color: #131313;
+	border: thin solid #212121;
+	font-size: 100%;
+	font-weight: normal;
+	color: #777;
+	height: 22px;
+	line-height: 10px;
+}
+
+#sl_vert #sl_username {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_username input {
+	padding-left: 20px;
+	overflow: hidden;
+	width: 150px;
+	font-size: 100%;
+	font-weight: normal;
+	border: thin solid #212121;
+	color: #777;
+	background-color: #131313;
+	background-image: url(user_bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#sl_vert #sl_pass {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_pass input {
+	padding-left: 20px;
+	overflow: hidden;
+	width: 150px;
+	font-size: 100%;
+	font-weight: normal;
+	border: thin solid #212121;
+	color: #777;
+	background-color: #131313;
+	background-image: url(pass_bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#sl_vert #sl_rememberme {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_submitbutton {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#sl_vert #sl_lostpass {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_lostname {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_register {
+	margin-bottom: 5px;
+}
+
+#sl_vert #sl_posttext {
+	margin-bottom: 5px;
+}

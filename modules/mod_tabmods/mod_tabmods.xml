@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+        <name>Gavick TabMods</name>
+        <creationDate>5 April 2008</creationDate>
+        <author>Gavick.com</author>
+        <copyright>(C) 2008 Gavick.com</copyright>
+        <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+        <authorEmail>info@gavick.com</authorEmail>
+        <authorUrl>www.gavick.com</authorUrl>
+        <version>2.0</version>
+        <description>TabMods - the special module for the Tabs Manager GK1 component.</description>
+        <files>
+                <filename module="mod_tabmods">mod_tabmods.php</filename>
+                <filename module="mod_tabmods">helper.php</filename>
+                <filename module="mod_tabmods">index.html</filename>
+                <filename module="mod_tabmods">style/style1.css</filename>
+                <filename module="mod_tabmods">style/style2.css</filename>
+                <filename module="mod_tabmods">style/style3.css</filename>
+                <filename module="mod_tabmods">style/style4.css</filename>
+                <filename module="mod_tabmods">style/style5.css</filename>
+                <filename module="mod_tabmods">style/style6.css</filename>
+                <filename module="mod_tabmods">style/style7.css</filename>
+                <filename module="mod_tabmods">style/index.html</filename>
+                <filename module="mod_tabmods">scripts/mootools.js</filename>
+                <filename module="mod_tabmods">scripts/mod_tabmods.js</filename>
+                <filename module="mod_tabmods">scripts/index.html</filename>
+                <filename module="mod_tabmods">tmpl/default.php</filename>
+                <filename module="mod_tabmods">tmpl/module.php</filename>
+                <filename module="mod_tabmods">tmpl/index.html</filename>
+                <filename module="mod_tabmods">style/logo.png</filename>
+                <filename module="mod_tabmods">images/style1/b_next.png</filename>
+                <filename module="mod_tabmods">images/style1/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style1/bg_content.png</filename>
+                <filename module="mod_tabmods">images/style1/bg_content-bottom.png</filename>
+                <filename module="mod_tabmods">images/style1/bg_tab.png</filename>
+                <filename module="mod_tabmods">images/style1/bg_tab-active.png</filename>
+                <filename module="mod_tabmods">images/style2/b_next.png</filename>
+                <filename module="mod_tabmods">images/style2/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style2/bg_bullet.png</filename>
+                <filename module="mod_tabmods">images/style2/bg_tab-l.png</filename>
+                <filename module="mod_tabmods">images/style2/bg_tab-r.png</filename>
+                <filename module="mod_tabmods">images/style3/b_next.png</filename>
+                <filename module="mod_tabmods">images/style3/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style3/bg_tab.png</filename>
+                <filename module="mod_tabmods">images/style3/bg_tab-active.png</filename>
+                <filename module="mod_tabmods">images/style4/b_next.png</filename>
+                <filename module="mod_tabmods">images/style4/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style4/bg_ul-l.png</filename>
+                <filename module="mod_tabmods">images/style4/bg_ul-r.png</filename>
+                <filename module="mod_tabmods">images/style5/b_next.png</filename>
+                <filename module="mod_tabmods">images/style5/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style5/bg_bullet.png</filename>
+                <filename module="mod_tabmods">images/style5/bg_mod.png</filename>
+                <filename module="mod_tabmods">images/style5/bg_tab.png</filename>
+                <filename module="mod_tabmods">images/style5/bg_tab-active.png</filename>
+                <filename module="mod_tabmods">images/style6/b_next.png</filename>
+                <filename module="mod_tabmods">images/style6/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style6/bg_mod.png</filename>
+                <filename module="mod_tabmods">images/style6/bg_tab-active.png</filename>
+                <filename module="mod_tabmods">images/style6/bg_ul.png</filename>
+                <filename module="mod_tabmods">images/style7/b_next.png</filename>
+                <filename module="mod_tabmods">images/style7/b_prev.png</filename>
+                <filename module="mod_tabmods">images/style7/bg_mod.png</filename>
+                <filename module="mod_tabmods">images/style7/bg_tab.png</filename>
+                <filename module="mod_tabmods">images/style7/bg_tab-active.png</filename>
+                <filename module="mod_tabmods">images/style7/bg_ul.png</filename>
+        </files>
+        <params>
+                <param name="@spacer" type="spacer" default="If you already use mootools switch off options Use MooTools, if you copy the module switch off in him options Use script. " label="Warning" description="Warning!" />
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+                <param name="module_id" type="text" default="-mod" label="Module unique ID" description="Unique ID for module (must be unique if you have two or more modules on one page)" />
+                <param name="moduleHeight" type="text" default="100px" size="5" label="Height" description="The height of the display block. Add px suffix !"/>
+                <param name="moduleWidth" type="text" default="0" size="5" label="Width" description="The width of the display block. Value 0 means that height of module is setting automatically. Add px or % suffix !"/>
+                <param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                <param name="tabsGroupID" type="text" default="" size="20" label="Tabs group ID" description="Write tabs group ID from Tabs Manager component"/>
+                <param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                <param name="activator" type="radio" default="click" label="Type of activation" description="Select event for changing the modules...">
+                        <option value="click">onClick</option>
+                        <option value="mouseover">onMouseOver</option>
+                </param>
+                <param name="animation" type="radio" default="0" label="autoAnimation" description="If you want to run animation until user to call event">
+                        <option value="1">enabled</option>
+                        <option value="0">disabled</option>
+                </param>
+                <param name="animationType" type="radio" default="1" label="Animation type" description="Select type of module animation">
+                        <option value="1">Slides (horizontaly)</option>
+                        <option value="2">Slides (verticaly)</option>
+                </param>
+                <param name="animationSpeed" type="text" default="1000" size="20" label="Animation speed" description="Set how long will be animation transition. In ms."/>
+                <param name="animationInterval" type="text" default="5000" size="20" label="Animation interval" description="Set how long will be stay animation. In ms."/>
+                <param name="animationFun" type="list" default="33" label="Animation transition" description="Select type of module animation transition">
+                        <option value="11">linear</option>
+                        <option value="12">Quad.easeIn</option>
+                        <option value="13">Quad.easeOut</option>
+                        <option value="14">Quad.easeInOut</option>
+                        <option value="15">Cubic.easeIn</option>
+                        <option value="16">Cubic.easeOut</option>
+                        <option value="17">Cubic.easeInOut</option>
+                        <option value="18">Quart.easeIn</option>
+                        <option value="19">Quart.easeOut</option>
+                        <option value="20">Quart.easeInOut</option>
+                        <option value="21">Quint.easeIn</option>
+                        <option value="22">Quint.easeOut</option>
+                        <option value="23">Quint.easeInOut</option>
+                        <option value="24">Pow.easeIn</option>
+                        <option value="25">Pow.easeOut</option>
+                        <option value="26">Pow.easeInOut</option>
+                        <option value="27">Expo.easeIn</option>
+                        <option value="28">Expo.easeOut</option>
+                        <option value="29">Expo.easeInOut</option>
+                        <option value="30">Circ.easeIn</option>
+                        <option value="31">Circ.easeOut</option>
+                        <option value="32">Circ.easeInOut</option>
+                        <option value="33">Sine.easeIn</option>
+                        <option value="34">Sine.easeOut</option>
+                        <option value="35">Sine.easeInOut</option>
+                        <option value="36">Back.easeIn</option>
+                        <option value="37">Back.easeOut</option>
+                        <option value="38">Back.easeInOut</option>
+                        <option value="39">Bounce.easeIn</option>
+                        <option value="40">Bounce.easeOut</option>
+                        <option value="41">Bounce.easeInOut</option>
+                        <option value="42">Elastic.easeIn</option>
+                        <option value="43">Elastic.easeOut</option>
+                        <option value="44">Elastic.easeInOut</option>
+                </param>
+                <param name="@spacer" type="spacer" default=" " label=" " description=" " />
+                <param name="buttons" type="radio" default="1" label="Buttons prev and next" description="If you want to enable prev and next buttons">
+                        <option value="0">Disabled</option>
+                        <option value="1">Enabled</option>
+                </param>
+                <param name="styleCSS" type="list" default="style1" label="Style CSS" description="Select style of module">
+                        <option value="style1">style1 (Horizontal)</option>
+                        <option value="style2">style2 (Horizontal)</option>
+                        <option value="style3">style3 (Horizontal)</option>
+                        <option value="style4">style4 (Horizontal)</option>
+                        <option value="style5">style5 (Vertical)</option>
+                        <option value="style6">style6 (Vertical)</option>
+                        <option value="style7">style7 (Vertical)</option>
+                        <option value="own">Your own value</option>
+                </param>
+                <param name="styleType" type="radio" default="0" label="Style type" description="Select this same value as value for your selected style">
+                        <option value="0">Horizontal</option>
+                        <option value="1">Vertical</option>
+                </param>
+                <param name="styleFile" type="text" default="" size="20" label="Style CSS file" description="Set your own CSS filename without extension with module style directory." />
+        </params>
+        <params group="advanced">
+                <param name="@spacer" type="spacer" default="If you already use mootools switch off options Use MooTools, if you copy the module switch off in him options Use script. " label="Warning" description="Warning!" />
+                <param name="useMoo" type="radio" default="1" label="Use MooTools" description="If you want to run more than one copy of this module on one page then set this value for disabled. Also if you have an mootools framework in version 1.11 included on your site then disable this option.">
+                        <option value="1">enabled</option>
+                        <option value="0">disabled</option>
+                </param>
+                <param name="useScript" type="radio" default="1" label="Use script" description="If you want to run more than one copy of this module on one page then set this value for disabled.">
+                        <option value="1">enabled</option>
+                        <option value="0">disabled</option>
+                </param>
+        </params>
+</install>

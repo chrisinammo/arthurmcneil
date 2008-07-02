@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>YOOtooltip</name>
+	<author>YOOtheme</author>
+	<creationDate>March 2008</creationDate>
+	<copyright>Copyright (C) 2007 - 2008 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.3</version>
+	<description>YOOtooltip plugin of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5. Requires mootools 1.1, Syntax: {yootooltip title=[Tooltip Link] width=[250] mode=[cursor]}Tooltip Content{/yootooltip}
+	</description>
+	<files>
+		<filename plugin="yoo_tooltip">yoo_tooltip.php</filename>
+		<filename>yoo_tooltip.xml</filename>
+		<filename>yoo_tooltip/yoo_tooltip.js</filename>		
+		<filename>yoo_tooltip/yoo_tooltip.css.php</filename>
+		<filename>yoo_tooltip/index.html</filename>
+		<filename>yoo_tooltip/changelog.php</filename>
+		<filename>yoo_tooltip/styles/default/black/iehacks.css</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_arrow.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_arrow_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_b.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_bl.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_bl_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_br.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_br_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_b_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_l.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_l_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_r.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_r_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_t.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_tl.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_tl_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_tr.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_tr_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/bubble_t_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/black/images/index.html</filename>
+		<filename>yoo_tooltip/styles/default/black/index.html</filename>
+		<filename>yoo_tooltip/styles/default/black/style.css</filename>
+		<filename>yoo_tooltip/styles/default/iehacks.css</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_arrow.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_arrow_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_b.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_bl.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_bl_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_br.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_br_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_b_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_l.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_l_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_r.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_r_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_t.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_tl.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_tl_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_tr.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_tr_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/bubble_t_ie.png</filename>
+		<filename>yoo_tooltip/styles/default/images/index.html</filename>
+		<filename>yoo_tooltip/styles/default/index.html</filename>
+		<filename>yoo_tooltip/styles/default/style.css</filename>
+		<filename>yoo_tooltip/styles/index.html</filename>
+	</files>
+	<params>
+		<param name="style" type="list" default="default" label="Style" description="The YOOtooltip styling">
+			<option value="default">Default</option>
+		</param>
+		<param name="mode" type="list" default="cursor" label="Default mode" description="The Tooltip default mode, defines where the Tooltip is displayed">
+			<option value="cursor">Display at cursor position</option>
+			<option value="trigger">Display above related trigger element</option>
+		</param>
+		<param name="width" type="text" default="250" label="Default Width (px)" description="Default Tooltip width in pixel, used when it is not set as Tooltip parameter" />
+		<param name="sticky" type="radio" default="0" label="Sticky" description="Tooltip will stay open until close button is hovered">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+	</params>
+</install>

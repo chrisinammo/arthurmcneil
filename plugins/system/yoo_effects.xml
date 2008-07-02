@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>YOOeffects</name>
+	<author>YOOtheme</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>Copyright (C) 2007 - 2008 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.0</version>
+	<description>YOOeffects plugin of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5. Requires mootools 1.1</description>
+	<files>
+		<filename plugin="yoo_effects">yoo_effects.php</filename>
+		<filename>yoo_effects.xml</filename>
+		<filename>yoo_effects/changelog.php</filename>
+		<filename>yoo_effects/index.html</filename>
+		<filename>yoo_effects/lightbox/images/index.html</filename>
+		<filename>yoo_effects/lightbox/images/loading.gif</filename>
+		<filename>yoo_effects/lightbox/images/overlay-85.png</filename>
+		<filename>yoo_effects/lightbox/index.html</filename>
+		<filename>yoo_effects/lightbox/shadowbox-mootools.js</filename>
+		<filename>yoo_effects/lightbox/shadowbox.css</filename>
+		<filename>yoo_effects/lightbox/shadowbox.js</filename>
+		<filename>yoo_effects/lightbox/shadowbox_packed.js</filename>
+		<filename>yoo_effects/reflection/index.html</filename>
+		<filename>yoo_effects/reflection/reflection.js</filename>
+		<filename>yoo_effects/reflection/reflection_packed.js</filename>
+		<filename>yoo_effects/spotlight/index.html</filename>
+		<filename>yoo_effects/spotlight/spotlight.js</filename>
+		<filename>yoo_effects/spotlight/spotlight_packed.js</filename>
+		<filename>yoo_effects/yoo_effects.js.php</filename>		
+	</files>
+	<params>
+		<param name="lightbox" type="radio" default="1" label="Lightbox" description="Enable/Disable lightbox feature">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="reflection" type="radio" default="1" label="Reflection" description="Enable/Disable reflection feature">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="spotlight" type="radio" default="1" label="Spotlight" description="Enable/Disable spotlight feature">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="gzip" type="radio" default="1" label="Gzip compression" description="Enable/Disable gzip  compression for CSS/Javascript files">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

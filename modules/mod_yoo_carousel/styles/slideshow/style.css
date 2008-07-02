@@ -1,0 +1,27 @@
+/* (C) 2007 YOOtheme.com */
+
+/* buttons */
+div.slideshow div.yoo-carousel .prev, div.slideshow div.yoo-carousel .next {
+	top: 0px;
+}
+
+div.slideshow div.yoo-carousel .prev a, div.slideshow div.yoo-carousel .next a {
+	width: 65px;
+	display: block;
+}
+
+div.slideshow div.yoo-carousel .prev a {
+	background: url(styles/slideshow/images/button_prev.png) 0 -32px no-repeat; 
+}
+
+div.slideshow div.yoo-carousel .next a {
+	background: url(styles/slideshow/images/button_next.png) 0 -32px no-repeat; 
+}
+
+div.slideshow div.yoo-carousel .prev a:hover {
+	background: url(styles/slideshow/images/button_prev.png) 0 45% no-repeat; 
+}
+
+div.slideshow div.yoo-carousel .next a:hover {
+	background: url(styles/slideshow/images/button_next.png) 0 45% no-repeat; 
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOlogin</name>
+	<author>YOOtheme</author>
+	<creationDate>November 2007</creationDate>
+	<copyright>Copyright (C) 2007 - 2008 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.3</version>
+	<description>YOOlogin module of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5.</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yoo_login.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yoo_login">mod_yoo_login.php</filename>
+		<filename>mod_yoo_login.css.php</filename>
+		<filename>mod_yoo_login.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/quick.php</filename>
+		<filename>styles/style.css</filename>
+		<filename>styles/default/ie6hacks.css</filename>
+		<filename>styles/default/images/index.html</filename>
+		<filename>styles/default/images/login_button_bg.png</filename>
+		<filename>styles/default/images/login_button_bg_ie6.png</filename>
+		<filename>styles/default/images/logout_button_bg.png</filename>
+		<filename>styles/default/images/logout_button_bg_ie6.png</filename>
+		<filename>styles/default/images/password_bg.png</filename>
+		<filename>styles/default/images/username_bg.png</filename>
+		<filename>styles/default/index.html</filename>
+		<filename>styles/default/style.css</filename>
+		<filename>styles/index.html</filename>
+		<filename>styles/quick/ie6hacks.css</filename>
+		<filename>styles/quick/images/index.html</filename>
+		<filename>styles/quick/images/login_button_bg.png</filename>
+		<filename>styles/quick/images/login_button_bg_ie6.png</filename>
+		<filename>styles/quick/images/logout_button_bg.png</filename>
+		<filename>styles/quick/images/logout_button_bg_ie6.png</filename>
+		<filename>styles/quick/images/lost_password_bg.png</filename>
+		<filename>styles/quick/images/lost_password_bg_ie6.png</filename>
+		<filename>styles/quick/images/lost_username_bg.png</filename>
+		<filename>styles/quick/images/lost_username_bg_ie6.png</filename>
+		<filename>styles/quick/images/password_bg.png</filename>
+		<filename>styles/quick/images/registration_bg.png</filename>
+		<filename>styles/quick/images/registration_bg_ie6.png</filename>
+		<filename>styles/quick/images/username_bg.png</filename>
+		<filename>styles/quick/index.html</filename>
+		<filename>styles/quick/style.css</filename>
+	</files>
+	<params>
+		<param name="style" type="list" default="default" label="Style" description="The YOOlogin styling">
+			<option value="default">Default</option>
+			<option value="quick">Quick</option>
+		</param>
+		<param name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="PARAMPRETEXT" />
+		<param name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="PARAMPOSTTEXT" />
+		<param name="login" type="menuitem" default="" disable="separator" label="Login Redirection URL" description="PARAMLOGINREDIRECTURL" />
+		<param name="logout" type="menuitem" default="" disable="separator" label="Logout Redirection URL" description="PARAMLOGOUTREDIRECTURL" />
+		<param name="greeting" type="radio" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="text_mode" type="list" default="input" label="Username/Password in..." description="Username/Password text in label or input field">
+			<option value="label">Label</option>
+			<option value="input">Input</option>
+		</param>
+		<param name="login_button" type="list" default="icon" label="Login Button as..." description="Login Button as Text or Icon">
+			<option value="text">Text</option>
+			<option value="icon">Icon</option>
+		</param>
+		<param name="logout_button" type="list" default="text" label="Logout Button as..." description="Logout Button as Text or Icon">
+			<option value="text">Text</option>
+			<option value="icon">Icon</option>
+		</param>
+		<param name="auto_remember" type="list" default="1" label="Remember Automatically" description="Disable/Enable to remember automatically">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="lost_password" type="list" default="1" label="Lost Password Link" description="Show/Hide lost password link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="lost_username" type="list" default="1" label="Lost Username Link" description="Show/Hide lost username link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="registration" type="list" default="1" label="Registration Link" description="Show/Hide registration link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

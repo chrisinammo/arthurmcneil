@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+        <name>gk_tabsman</name>
+        <author>GavickPro</author>
+        <creationDate>7 April 2008</creationDate>
+        <copyright>Copyright (C) 2008 GavickPro. All rights reserved.</copyright>
+        <license></license>
+        <authorEmail>info@gavick.com</authorEmail>
+        <authorUrl>GavickPro</authorUrl>
+        <version>1.0.0</version>
+        <description>
+                <![CDATA[<style type="text/css" media="all">
+                        <!--
+                        #wrap1 {padding:0px 0px 4px 0px;}
+                        h1 {clear:both;font-family: Arial Narrow,sans-serif;font-size:18px;margin:0px 0px 12px 0px;padding:0px 0px 1px 10px;color:#C64934;}
+                        .wrap2 {background:#fff;border:1px solid #8F8F8F;padding: 10px;}
+                        -->
+                        </style><div id="wrap1">
+                        <h1>Tabs Manager GK1</h1>
+                        <div class="wrap2">
+                        <strong>Tabs Manager</strong> is a fantastic new component from the team at GavickPro! <br />With this module you can not only add user interaction to your website, <br />but make it easy to manage and create multiple instances of tabs, <br />each with their own unique modules or an article present on the Joomla! website.<br /><br /><strong>An overview of Tab Manager key features:</strong>
+                        <ul>
+                        <li>List of tab groups.</li>
+                        <li>Choose custom names for your tabs.</li>
+                        
+                        <li>Insert articles into tabs.</li>
+                        <li>Insert modules into tabs.</li>
+                        <li>TabMods loads positions with modules.</li>
+                        <li>Uses mootools to provide flowing tab transitions.</li>
+                        <li>Multiple styles or create your own.</li>
+                        <li>Changable animation.</li>
+                        
+                        
+                        </ul>  
+                        <br />
+                        
+                        
+                        Visit the official website! <a target="_blank" href="http://tools.gavick.com/">Tabs Manager GK1</a>.<br /><br />
+                        </div>		
+                        </div>]]>
+        </description>
+        <install>
+                <sql>
+                        <file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+                </sql>
+        </install>
+        <uninstall>
+                <sql>
+                        <file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+                </sql>
+        </uninstall>
+        <installfile>install.php</installfile>
+        <uninstallfile>uninstall.php</uninstallfile>
+        <administration>
+                <menu img="com_gk_tabsman/com_icon.png">Gavick Tabs Manager</menu>
+                <files>
+                        <filename>install.mysql.utf8.sql</filename>
+                        <filename>uninstall.mysql.utf8.sql</filename>
+                        <filename>install.php</filename>
+                        <filename>uninstall.php</filename>
+                        <filename>com_icon.png</filename>
+                        <filename>controller.php</filename>
+                        <filename>toolbar.gk_tabsman.php</filename>
+                        <filename>toolbar.gk_tabsman.html.php</filename>
+                        <filename>admin.gk_tabsman.php</filename>
+                        <filename>admin.gk_tabsman.html.php</filename>
+                        <filename>index.html</filename>
+                </files>
+        </administration>
+</install>

@@ -1,0 +1,24 @@
+/* (C) 2007 YOOtheme.com */
+
+span.default span.yoo-login span.login .username, 
+span.default span.yoo-login span.login .password,
+span.default span.yoo-login span.login .login-button-icon,
+span.default span.yoo-login span.login .login-button-text {
+	width: 135px;
+}
+
+span.default span.yoo-login span.login .login-button-icon button {
+	background: url(styles/default/images/login_button_bg_ie6.png) 0 0 no-repeat;
+}
+
+span.default span.yoo-login span.login .login-button-icon button:hover, span.default span.yoo-login span.login .login-button-icon button.sfhover  {
+	background: url(styles/default/images/login_button_bg_ie6.png) 0 -20px no-repeat;
+}
+
+span.default span.yoo-login span.logout .logout-button-icon button {
+	background: url(styles/default/images/logout_button_bg_ie6.png) 0 0 no-repeat;
+}
+
+span.default span.yoo-login span.logout .logout-button-icon button:hover, span.default span.yoo-login span.logout .logout-button-icon button.sfhover  {
+	background: url(styles/default/images/logout_button_bg_ie6.png) 0 -20px no-repeat;
+}

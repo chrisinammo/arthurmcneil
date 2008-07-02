@@ -1,0 +1,128 @@
+/* (C) 2007 YOOtheme.com */
+
+/* login */
+span.quick span.yoo-login span.login {
+	height: 20px;
+}
+
+span.quick span.yoo-login span.login .username, 
+span.quick span.yoo-login span.login .password,
+span.quick span.yoo-login span.login .login-button-text,
+span.quick span.yoo-login span.login .login-button-icon,
+span.quick span.yoo-login span.login .lostpassword, 
+span.quick span.yoo-login span.login .lostusername,
+span.quick span.yoo-login span.login .registration,
+span.quick span.yoo-login span.logout .greeting,
+span.quick span.yoo-login span.logout .logout-button-text,
+span.quick span.yoo-login span.logout .logout-button-icon {
+	padding-right: 5px;
+	float: left;
+}
+
+span.quick span.yoo-login span.login .username input, span.quick span.yoo-login span.login .password input {
+	width: 70px;
+	height: 16px;
+	padding: 4px 0px 0px 30px;
+	border: none;
+	outline: none;
+	float: left;
+	color: #646464;
+	font-size: 75%;
+}
+
+span.quick span.yoo-login span.login .username input {
+	background: url(styles/quick/images/username_bg.png) 0 0 no-repeat;
+}
+
+span.quick span.yoo-login span.login .password input {
+	background: url(styles/quick/images/password_bg.png) 0 0 no-repeat;
+}
+
+span.quick span.yoo-login span.login .username input:hover, span.quick span.yoo-login span.login .username input.sfhover {
+	background: url(styles/quick/images/username_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.quick span.yoo-login span.login .password input:hover, span.quick span.yoo-login span.login .password input.sfhover {
+	background: url(styles/quick/images/password_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.quick span.yoo-login span.login .username input:focus, span.quick span.yoo-login span.login .username input.sffocus {
+	background: url(styles/quick/images/username_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.quick span.yoo-login span.login .password input:focus, span.quick span.yoo-login span.login .password input.sffocus {
+	background: url(styles/quick/images/password_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.quick span.yoo-login span.login .login-button-text button {
+	margin-top: -1px;
+	cursor: pointer;
+}
+
+span.quick span.yoo-login span.login .login-button-icon button {
+	display: block;
+	height: 20px;
+	width: 21px;
+	padding: 0px;
+	border: none;
+	background: url(styles/quick/images/login_button_bg.png) 0 0 no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+span.quick span.yoo-login span.login .login-button-icon button:hover, span.quick span.yoo-login span.login .login-button-icon button.sfhover  {
+	background: url(styles/quick/images/login_button_bg.png) 0 -20px no-repeat;
+}
+
+span.quick span.yoo-login span.login .lostpassword a, span.quick span.yoo-login span.login .lostusername a, span.quick span.yoo-login span.login .registration a {
+	display: block;
+	height: 20px;
+	width: 25px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+span.quick span.yoo-login span.login .lostpassword a  {
+	background: url(styles/quick/images/lost_password_bg.png) 0 0px no-repeat;
+}
+
+span.quick span.yoo-login span.login .lostusername a  {
+	background: url(styles/quick/images/lost_username_bg.png) 0 0px no-repeat;
+}
+
+span.quick span.yoo-login span.login .registration a  {
+	background: url(styles/quick/images/registration_bg.png) 0 0px no-repeat;
+}
+
+/* logout */
+span.quick span.yoo-login span.logout {
+	height: 20px;
+}
+
+span.quick span.yoo-login span.logout .greeting {
+	line-height: 20px;
+}
+
+span.quick span.yoo-login span.logout .logout-button-text button {
+	margin-top: -1px;
+	cursor: pointer;	
+}
+
+span.quick span.yoo-login span.logout .logout-button-icon button {
+	display: block;
+	height: 20px;
+	width: 21px;
+	padding: 0px;
+	border: none;
+	background: url(styles/quick/images/logout_button_bg.png) 0 0 no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+span.quick span.yoo-login span.logout .logout-button-icon button:hover, span.quick span.yoo-login span.logout .logout-button-icon button.sfhover  {
+	background: url(styles/quick/images/logout_button_bg.png) 0 -20px no-repeat;
+}

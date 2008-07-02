@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOcarousel</name>
+	<author>YOOtheme</author>
+	<creationDate>February 2008</creationDate>
+	<copyright>Copyright (C) 2007 - 2008 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.11</version>
+	<description>YOOcarousel module of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5. Requires mootools 1.1</description>
+	<files>
+		<filename module="mod_yoo_carousel">mod_yoo_carousel.php</filename>
+		<filename>mod_yoo_carousel.css.php</filename>
+		<filename>mod_yoo_carousel.js</filename>
+		<filename>mod_yoo_carousel.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/basic.php</filename>
+		<filename>tmpl/basiclist.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/list.php</filename>
+		<filename>tmpl/slideshow.php</filename>
+		<filename>tmpl/_item.php</filename>
+		<filename>styles/basic/ie6hacks.css</filename>
+		<filename>styles/basic/images/bottom_tab_bg.png</filename>
+		<filename>styles/basic/images/bottom_tab_l.png</filename>
+		<filename>styles/basic/images/bottom_tab_m.png</filename>
+		<filename>styles/basic/images/bottom_tab_r.png</filename>
+		<filename>styles/basic/images/index.html</filename>
+		<filename>styles/basic/images/panel_b.png</filename>
+		<filename>styles/basic/images/top_tab_bg.png</filename>
+		<filename>styles/basic/images/top_tab_l.png</filename>
+		<filename>styles/basic/images/top_tab_m.png</filename>
+		<filename>styles/basic/images/top_tab_r.png</filename>
+		<filename>styles/basic/index.html</filename>
+		<filename>styles/basic/style.css</filename>
+		<filename>styles/basiclist/ie6hacks.css</filename>
+		<filename>styles/basiclist/images/index.html</filename>
+		<filename>styles/basiclist/images/panel_b.png</filename>
+		<filename>styles/basiclist/images/tabs_l.png</filename>
+		<filename>styles/basiclist/images/tabs_r.png</filename>
+		<filename>styles/basiclist/images/tab_l.png</filename>
+		<filename>styles/basiclist/images/tab_m.png</filename>
+		<filename>styles/basiclist/images/tab_r.png</filename>
+		<filename>styles/basiclist/index.html</filename>
+		<filename>styles/basiclist/style.css</filename>
+		<filename>styles/default/images/button_next.png</filename>
+		<filename>styles/default/images/button_prev.png</filename>
+		<filename>styles/default/images/index.html</filename>
+		<filename>styles/default/images/panel_b.png</filename>
+		<filename>styles/default/images/panel_bl.png</filename>
+		<filename>styles/default/images/panel_br.png</filename>
+		<filename>styles/default/images/tab_bg.png</filename>
+		<filename>styles/default/images/tab_l.png</filename>
+		<filename>styles/default/images/tab_m.png</filename>
+		<filename>styles/default/images/tab_r.png</filename>
+		<filename>styles/default/index.html</filename>
+		<filename>styles/default/style.css</filename>
+		<filename>styles/index.html</filename>
+		<filename>styles/list/ie6hacks.css</filename>
+		<filename>styles/list/images/index.html</filename>
+		<filename>styles/list/images/panel_b.png</filename>
+		<filename>styles/list/images/panel_bl.png</filename>
+		<filename>styles/list/images/panel_br.png</filename>
+		<filename>styles/list/images/panel_l.png</filename>
+		<filename>styles/list/images/panel_r.png</filename>
+		<filename>styles/list/images/panel_t.png</filename>
+		<filename>styles/list/images/panel_tl.png</filename>
+		<filename>styles/list/images/panel_tr.png</filename>
+		<filename>styles/list/images/tabs_bg.png</filename>
+		<filename>styles/list/images/tab_bg.png</filename>
+		<filename>styles/list/index.html</filename>
+		<filename>styles/list/style.css</filename>
+		<filename>styles/slideshow/images/button_next.png</filename>
+		<filename>styles/slideshow/images/button_prev.png</filename>
+		<filename>styles/slideshow/images/index.html</filename>
+		<filename>styles/slideshow/index.html</filename>
+		<filename>styles/slideshow/style.css</filename>
+		<filename>styles/style.css</filename>
+	</files>
+	<params>
+		<param name="catid" type="category" default="0" label="Category" description="A content category which items are used for the YOOcarousel" />
+		<param name="style" type="list" default="default" label="Style" description="The YOOcarousel styling">
+			<option value="default">Default</option>
+			<option value="basic">Basic</option>
+			<option value="slideshow">Slideshow</option>
+			<option value="list">List</option>
+			<option value="basiclist">Basic List</option>
+		</param>
+		<param name="module_width" type="text" default="400" label="Module width (px)" description="Width of the whole module" />
+		<param name="module_height" type="text" default="200" label="Module height (px)" description="Height of the whole module" />
+		<param name="autoplay" type="list" default="on" label="Autoplay" description="Changing between items automatically">
+			<option value="on">On</option>
+			<option value="once">Only once</option>
+			<option value="off">Off</option>
+		</param>
+		<param name="slide_interval" type="text" default="10000" label="Slide interval (ms)" description="Time interval of changing between items when autoplay on in milliseconds" />
+		<param name="transition_duration" type="text" default="700" label="Transition duration (ms)" description="Time interval of the transition effect when autoplay is on in milliseconds" />
+		<param name="transition_effect" type="list" default="scroll" label="Transition effect" description="Define the transition effect for the autoplay">
+			<option value="scroll">Scroll</option>
+			<option value="fade">Fade</option>
+		</param>
+		<param name="control_panel" type="list" default="top" label="Control panel" description="Hide/Position the control panel">
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+			<option value="none">None</option>
+		</param>
+		<param name="rotate_action" type="list" default="click" label="Rotate action" description="Action behavior of the control panel">
+			<option value="click">Click</option>
+			<option value="mouseover">Mouse over</option>
+			<option value="none">None</option>
+		</param>
+		<param name="rotate_duration" type="text" default="200" label="Rotate duration (ms)" description="Time interval of the transition effect when a action of the control panel is triggered in milliseconds" />
+		<param name="rotate_effect" type="list" default="scroll" label="Rotate effect" description="Define the transition effect when a action of the control panel is triggered">
+			<option value="scroll">Scroll</option>
+			<option value="fade">Fade</option>
+		</param>
+		<param name="buttons" type="list" default="1" label="Buttons" description="Hide/Show the next and previous buttons">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="order" type="list" default="o_asc" label="Ordering" description="Ordering options">
+			<option value="o_asc">Article Order</option>
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="h_dsc">Most Popular</option>			
+			<option value="rnd">Randomize</option>
+	  	</param>
+		<param name="readmore" type="list" default="0" label="Read More" description="Show/Hide the Read More button">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="items" type="text" default="4" label="No. of Items" description="Maximum no of items to display" />
+		<param name="moduleclass_sfx" type="text" default="-blank" label="Module Class Suffix" description="Module Class Suffix" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

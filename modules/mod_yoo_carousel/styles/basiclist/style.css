@@ -1,0 +1,88 @@
+/* (C) 2007 YOOtheme.com */
+
+div.basiclist div.yoo-carousel {
+	background: #ffffff;
+}
+
+/* panel */
+div.basiclist div.yoo-carousel .panel-container {
+	padding: 1px 1px 1px 1px;
+	border: 1px solid #C8C8C8;
+}
+
+/* tabs */
+div.basiclist div.yoo-carousel div.left div.tabs-container {
+	background: #E6E9EB url(styles/basiclist/images/tabs_l.png) 0 0 repeat-y;
+	float: left;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs {
+	background: url(styles/basiclist/images/tabs_r.png) 100% 0 repeat-y;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li {
+	margin: -1px 0px 0px 0px;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li.item1 {
+	margin-top: 10px;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li a {
+	cursor: pointer;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li.selected a {
+	background: url(styles/basiclist/images/tab_m.png) 0 0 repeat-x;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li a span {
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li.selected a span {
+	background: url(styles/basiclist/images/tab_l.png) 0 0 no-repeat;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li a span span {
+	padding-left: 30px;
+	height: 30px;
+	line-height: 32px;
+	font-weight: bold;
+	font-size: 110%;
+	overflow: hidden;
+}
+
+div.basiclist div.yoo-carousel div.left ul.tabs li.selected a span span {
+	background: url(styles/basiclist/images/tab_r.png) 100% 0 no-repeat;
+}
+
+div.basiclist div.yoo-carousel li a:link, div.basiclist div.yoo-carousel li a:visited {
+	color: #969696;
+	text-decoration: none;
+}
+
+div.basiclist div.yoo-carousel li a:hover, div.basiclist div.yoo-carousel li.selected a:link, div.basiclist div.yoo-carousel li.selected a:visited {
+	color: #646464;
+	text-decoration: none;
+}
+
+/* scroller */
+div.basiclist div.yoo-carousel .panel-container-b {
+	background: url(styles/basiclist/images/panel_b.png) 0 100% repeat-x;
+}
+
+/* article */
+div.basiclist div.yoo-carousel .article {
+	padding: 15px 15px 0px 15px;
+	font-size: 95%;
+	line-height: 125%;
+}
+
+div.basiclist div.yoo-carousel .article h3 {
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	line-height: 100%;
+	font-size: 150%;
+	font-weight: bold;
+	color: #323232;
+}

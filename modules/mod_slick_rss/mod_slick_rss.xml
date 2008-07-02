@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Slick RSS</name>
+	<author>David Thomas</author>
+	<creationDate>March 2008</creationDate>
+	<copyright>(C) 2008 David Thomas. All Rights Reserved</copyright>
+	<license>GNU GPL</license>
+	<authorEmail>davidwhthomas@gmail.com</authorEmail>
+	<authorUrl>joomla.daveslist.co.nz</authorUrl>
+	<version>1.5.0</version>
+	<description>
+	<![CDATA[
+	Parse and Display RSS Feed News with DHTML Teaser Tooltip. 
+	Support and feature request enquiries to the support forum at http://joomla.daveslist.co.nz/forum
+	. If this module helps you out, please give feedback at the Slick RSS extension page: http://tinyurl.com/yu76t6
+	]]>
+	</description>
+	<files>
+		<filename module="mod_slick_rss">mod_slick_rss.php</filename>
+		<filename module="mod_slick_rss">helper.php</filename>
+		<filename module="mod_slick_rss">tmpl/default.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (div.module), this allows individual module styling" />
+		<param name="rsscache" type="text" size="6" default="3600" label="RSS Cache time" description="Set the cache time for the RSS feed (seconds)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rssurl" type="text" size="50" default="" label="RSS URL" description="Enter the URL of a RSS feed. e.g: http://digg.com/rss/indexnews.xml" />
+	  	<param name="rsstitle" type="radio" default="0" label="Feed Title" description="Display news feed title">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssdesc" type="radio" default="0" label="Feed Description" description="Show the description text for each news feed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssimage" type="radio" default="0" label="Feed Image" description="Show the image associated with each news feed">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssitems" type="text"  size="6" default="5" label="Number of Items" description="Enter number of RSS items to display for each RSS feed" />
+		<param name="rssitemtitle_words" type="text" size="6" default="15" label="Item Title Word Count " description="Allows you to limit the amount of visible item title text. 0 will show all the text" />
+		<param name="rssitemdesc" type="radio" default="0" label="Item Description Text" description="Show description text for each RSS item in the main list.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssitemdesc_words" type="text" size="6" default="25" label="Item Description Word Count" description="Maximum number of words to display for each RSS item description. 0 will show all the text" />
+		<param name="rssitemdesc_images" type="radio" default="0" label="Item Description Text Images" description="Allow images in the item description text in the main list.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="link_target" type="radio" default="1" label="RSS Feed Link Target" description="Open RSS feed links in this window or a new window?">
+			<option value="1">New Window</option>
+			<option value="0">Same Window</option>
+		</param>
+		<param name="no_follow" type="radio" default="0" label="Add rel='nofollow' to links" description="Add rel='nofollow' to links">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="Tooltip Settings" description="The settings below are related to the mouseover tooltip" />
+		<param name="enable_tooltip" type="radio" default="yes" label="Enable Tooltip" description="Show item description in mouseover tooltip? e.g this one!">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="t_word_count_title" type="text" size="6" default="25" label="Tooltip Title Word Count" description="Allows you to limit the amount of visible item title text in the tooltip. 0 will show all the text" />
+		<param name="t_word_count_desc" type="text" size="6" default="25" label="Tooltip Description Word Count" description="Allows you to limit the amount of visible item description text in the tooltip. 0 will show all the text" />
+		<param name="tooltip_desc_images" type="radio" default="0" label="Tooltip Description Text Images" description="Allow images in the tooltip description text">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

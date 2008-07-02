@@ -1,0 +1,114 @@
+/* (C) 2007 YOOtheme.com */
+
+/* login */
+span.default span.yoo-login span.login {
+	width: 135px;
+	margin: auto;
+}
+
+span.default span.yoo-login span.login .username, 
+span.default span.yoo-login span.login .password {
+	padding-bottom: 10px;
+}
+
+span.default span.yoo-login span.login .username input, span.default span.yoo-login span.login .password input {
+	width: 105px;
+	height: 16px;
+	padding: 4px 0px 0px 30px;
+	border: none;
+	outline: none;
+	color: #646464;
+	font-size: 75%;
+}
+
+span.default span.yoo-login span.login .username input {
+	background: url(styles/default/images/username_bg.png) 0 0 no-repeat;
+}
+
+span.default span.yoo-login span.login .password input {
+	background: url(styles/default/images/password_bg.png) 0 0 no-repeat;
+}
+
+span.default span.yoo-login span.login .username input:hover, span.default span.yoo-login span.login .username input.sfhover {
+	background: url(styles/default/images/username_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.default span.yoo-login span.login .password input:hover, span.default span.yoo-login span.login .password input.sfhover {
+	background: url(styles/default/images/password_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.default span.yoo-login span.login .username input:focus, span.default span.yoo-login span.login .username input.sffocus {
+	background: url(styles/default/images/username_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.default span.yoo-login span.login .password input:focus, span.default span.yoo-login span.login .password input.sffocus {
+	background: url(styles/default/images/password_bg.png) 0 -20px no-repeat;
+	color: #000000;
+}
+
+span.default span.yoo-login span.login .remember {
+}
+
+span.default span.yoo-login span.login .login-button-icon, span.default span.yoo-login span.login .login-button-text {
+	overflow: hidden;
+}
+
+span.default span.yoo-login span.login .login-button-text button {
+	float: right;
+	cursor: pointer;
+}
+
+span.default span.yoo-login span.login .login-button-icon button {
+	display: block;
+	height: 20px;
+	width: 21px;
+	padding: 0px;
+	border: none;
+	background: url(styles/default/images/login_button_bg.png) 0 0 no-repeat;
+	float: right;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+span.default span.yoo-login span.login .login-button-icon button:hover, span.default span.yoo-login span.login .login-button-icon button.sfhover  {
+	background: url(styles/default/images/login_button_bg.png) 0 -20px no-repeat;
+}
+
+span.default span.yoo-login span.login .lostpassword, span.default span.yoo-login span.login .lostusername, span.default span.yoo-login span.login .registration {
+	height: 20px;
+	line-height: 20px;
+}
+
+/* logout */
+span.default span.yoo-login span.logout {
+	width: auto;
+	margin: auto;
+}
+
+span.default span.yoo-login span.logout .greeting {
+}
+
+span.default span.yoo-login span.logout .logout-button-text button {
+	margin: auto;
+	display: block;
+	cursor: pointer;	
+}
+
+span.default span.yoo-login span.logout .logout-button-icon button {
+	display: block;
+	height: 20px;
+	width: 21px;
+	margin: auto;
+	padding: 0px;
+	border: none;
+	background: url(styles/default/images/logout_button_bg.png) 0 0 no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+span.default span.yoo-login span.logout .logout-button-icon button:hover, span.default span.yoo-login span.logout .logout-button-icon button.sfhover  {
+	background: url(styles/default/images/logout_button_bg.png) 0 -20px no-repeat;
+}
