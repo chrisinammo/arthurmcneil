@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Image</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders An Image</description>
+	<files>
+		<filename fabrikplugin="fabrikimage">fabrikimage.php</filename>
+		<filename>javascript.js</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikimage.ini</language>
+	</languages>
+	<params group="perhaps_notused">
+		<param name="image_path" type="text" default="" label="" description="" />
+	</params>
+	<params>
+		<param name="image_front_end_select" type="list" default="0" label="USERSELIAMGE" description="USERSELIAMGEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="selectImage_root_folder" type="folderlist" directory="images" hide_default="i" default="" label="ROOTFOLDER" description="ROOTFOLDERDESC" />
+		<param name="show_image_in_table" type="radio" default="0" label="IMGSHOWIMAGEINTABLE" description="IMGSHOWIMAGEINTABLEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+		</param>
+		<param name="image_float" type="list" default="none" label="IMAGEFLOAT" description="">
+			<option value="none">None</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="link_url" type="text" default="" label="IMAGELINK" description="IMAGELINKDESC" />
+	</params>
+</install>

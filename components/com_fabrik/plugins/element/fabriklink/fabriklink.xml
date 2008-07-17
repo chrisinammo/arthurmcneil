@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Link</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders a link</description>
+	<files>
+		<filename fabrikplugin="fabriklink">fabriklink.php</filename>
+		<filename>javascript.js</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriklink.ini</language>
+	</languages>
+	
+	<params>
+		<param name="width" type="width" label="Width"/>
+		<param name="default" type="default" default="" label="Default" />
+	</params>
+	
+	<params group="extra" addpath="/administrator/components/com_fabrik/elements">
+		<param name="link_target" type="list" default="0" label="LINKTARGET" description="LINKTARGETDESC">
+			<option value="_self">_self</option>
+			<option value="_blank">_blank</option>
+			<option value="_parent">_parent</option>
+			<option value="_top">_top</option>
+		</param>
+		<param name="maxlength" type="text" size="3" default="255" label="MAXLENGTH" description=""/>
+	</params>
+</install>

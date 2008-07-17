@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>AlphaContent</name>
+	<author>Bernard Gilly</author>
+	<creationDate>2008 May 26</creationDate>
+	<copyright>(C) 2008. All rights reserved.</copyright>
+	<license>Donationware</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>www.alphaplug.com</authorUrl>
+	<version>4.0.0</version>
+	<description>Provides directory above article and the ajax rating bar after Title Article- You can enabled this plugin on all content, not just with AlphaContent. This plugin can works without  menu created and linked to AlphaContent, but the component must be installed first.</description>
+	<files>
+		<filename plugin="alphacontent">alphacontent.php</filename>
+	</files>
+	<params>
+		<param name="enabled" type="radio" default="0" label="Enable Plugin" description="PARAMENABLED">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>VM Image</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Mirrors Virtuemart image upload functionality - encodes image name and stores thumb image location in second db field</description>
+	<files>
+		<filename fabrikplugin="fabrikVMImage">fabrikVMImage.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+	
+		<param name="vm_ul_max_file_size" type="text" size="30" default="" label="_ADDELEMENT_MAX_FILESIZE" description="_ADDELEMENT_FILETYPES_LONG"/>
+		<param name="vm_ul_file_types" type="text" size="30" default="" label="_ADDELEMENT_FILETYPES" description="_ADDELEMENT_FILETYPES_LONG"/>
+		<param name="vm_ul_directory" type="text" size="30" default="" label="_ADDELEMENT_UPLOAD_DIR" description="_ADDELEMENT_UPLOAD_DIR_LONG"/>	
+		<param name="vm_ul_email_file" type="radio" default="0" label="_ADDELEMENT_EMAIL_UPLOADED_FILE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+		<param name="vm_ul_file_increment" type="radio" default="0" label="_ADDELEMENT_INCREMENTAL_UPLOAD" description="_ADDELEMENT_INCREMENTAL_UPLOAD_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="vm_show_image_in_table" type="radio" default="0" label="SHOWIMAGEINTABLE" description="SHOWIMAGEINTABLEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+		</param>
+		<param name="vm_make_link" type="radio" default="0" label="MAKELINKINTABLE" description="MAKELINKINTABLEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+		</param>
+	</params>
+	
+	<params group="thumbs">
+		<param name="vm_thumb_max_height" type="text" size="3" default="" label="THUMBHEIGHT" description="THUMBHEIGHTDESC"/>
+		<param name="vm_upload_allow_folderselect" type="radio" default="1" label="UPLOADSELECTFOLDER" description="UPLOADSELECTFOLDERDESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="vm_make_thumbnail" type="radio" default="0" label="MAKETHUMBNAIL" description="MAKETHUMBNAILDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="vm_thumb_dir" type="text" size="35" default="" label="THUMBDIR" description="THUMBDIRDESC" />
+		<param name="vm_thumb_prefix" type="text" size="10" default="" label="THUMBPREFIX" description="THUMBPREFIXDESC" />
+		<param name="vm_thumb_max_width" type="text" size="3" default="" label="THUMBWIDTH" description="THUMBWIDTHDESC" />
+		<param name="vm_default_image" type="text" default="" label="DEFAULTIMAGE" description="DEFAULTIMAGEDESC" />
+	</params>
+</install>

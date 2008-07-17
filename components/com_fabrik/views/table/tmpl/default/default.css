@@ -1,0 +1,43 @@
+table.fabrikTable{
+	border-collapse:collapse;
+	margin-top:10px;
+}
+
+table.fabrikTable td,
+table.fabrikTable th{
+	padding:5px;
+	border:1px solid #cccccc;
+}
+
+table.fabrikTable tr.fabrik_calculations td{
+	border:0 !important;
+}
+
+table.fabrikTable th{
+	background-color:#e0e0e0;
+}
+
+.oddRow0{
+	background-color:#FAFAFA;
+}
+
+.oddRow1{
+	background-color:#Efefef;
+}
+
+.firstPage, .previousPage, .aPage, .nextPage, .lastPage{
+	display:inline;
+	padding:3px;
+}
+
+table.filtertable{
+	width:50%;
+	float:right;
+}
+
+#fabrikImportCSV{
+border:1px solid red;
+	background: #595959 url(icons/csv-import-32.png) top left no-repeat;
+width:32px !important;
+height:32px !important;
+}

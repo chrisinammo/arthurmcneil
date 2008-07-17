@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>MetaMod</name>
+  <author>Stephen Brandon</author>
+  <creationDate>2007-2008</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>stephen@brandonitconsulting.co.uk</authorEmail>
+  <authorUrl>www.brandonitconsulting.co.uk/mod_metamod/</authorUrl>
+  <version>1.5d</version>
+  <description>A module that allows selective inclusion of other modules, depending on time, date, GeoIP-based Country lookup, and any other factors.</description>
+  <files>
+    <filename module="mod_metamod">mod_metamod.php</filename>
+    <filename>helper.php</filename>
+    <filename>elements/geoipcheck.php</filename>
+    <filename>elements/index.html</filename>
+    <filename>elements/metamodhelp.php</filename>
+    <filename>elements/modulelist.php</filename>
+    <filename>mod_metamod/geoip-php4/geoip.inc</filename>
+    <filename>mod_metamod/geoip-php4/geoipcity.inc</filename>
+    <filename>mod_metamod/geoip-php4/geoipregionvars.php</filename>
+  </files>
+	<params addpath="/modules/mod_metamod/elements">
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" /> 
+    <param name="start_datetime" type="calendar" size="30" default="" label="Start date/time (freeform)" description="Start date, time or both for the module to display anything at all. If you specify only a date (not time) then the module will be active from the start of that day. If you enter only a time then that applies every day. Examples: 1 October 2008 09:30 e.g. October 2 2008 e.g. 11:15 e.g. 10:00PM" />
+    <param name="end_datetime" type="calendar" size="30" default="" label="End date/time (freeform)" description="End date, time or both for the module to display anything at all. If you specify only a date (not time) then the module will be active up until the START of the specified day. So you might want to specify 1 day later so that it runs until midnight. If you enter only a time then that applies every day. Examples: 1 October 2008 09:30 e.g. October 2 2008 e.g. 11:15 e.g. 10:00PM" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+
+    <param name="debug" type="radio" default="0" label="Debug"
+           description="Print debug information before included modules">
+      <option value="0">Off</option>
+      <option value="1">On</option>
+    </param>
+
+    <param name="check" type="geoipcheck" label="GeoIP Check" default="" />
+    <param name="use_geoip" type="radio" default="0" label="Enable GeoIP/GeoCity"
+           description="Whether or not to try to load the GeoIP country database, look up the client IP address and convert to a 2-letter country code in the $fromCountryId variable.">
+      <option value="0">Disabled</option>
+      <option value="1">GeoIP Country (free or commercial)</option>
+      <option value="2">GeoLite City (free)</option>
+      <option value="3">GeoCity (commercial)</option>
+    </param>
+    <param name="include_countries" type="text" size="30" default="" label="Only these countries" description="Comma-separated list of 2-letter country abbreviations which will see this module. All other countries will be excluded." />
+    <param name="exclude_countries" type="text" size="30" default="" label="Exclude these countries" description="Comma-separated list of 2-letter country abbreviations which will not see this module at all." />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="style" type="list" default="table" label="Style for included modules"
+           description="How to display any modules included by metamod.">
+      <option value="table">In a table (default) - uses &amp;lt;th&amp;gt; for title</option>
+      <option value="rounded">Multiple divs (for rounded corners) - uses &amp;lt;h3&amp;gt; for title</option>
+      <option value="horz">Horizontal</option>
+      <option value="xhtml">XHTML - in div, uses &amp;lt;h3&amp;gt; for title</option>
+      <option value="none">Naked - no div, no title</option>
+    </param>
+
+    <param name="Available modules" type="modulelist" default="" label="" description="" />
+    <param name="module_ids" type="text" size="30" default="" label="Quick module id include" description="Comma-separated list of modules ids that will always be included, subject to date and GeoIP conditions above. These modules will be included BEFORE any returned from the PHP code below." />
+    <param name="php" type="textarea" rows="20" cols="50" default="// example: return 23;"
+          label="PHP" description="PHP code to determine the module number to display. To tell MetaMod to use a particular module or set of modules, return a single module id, comma-separated string of ids, or an array of module ids. More help below." />
+	<param name="help" type="metamodhelp" label="Help" default="" />
+	</params>
+</install>

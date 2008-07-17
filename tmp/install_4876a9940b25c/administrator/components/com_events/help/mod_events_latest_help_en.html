@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!--
+   HTML 4.01 Transitional
+   Document type as defined on http://www.w3.org/TR/html401/
+-->
+<head>
+    <title>Mod Events Latest Documentation</title>
+<LINK href="../../css/admin.css" type=text/css rel=stylesheet>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body style="font-size:10pt;font-family : Arial, Helvetica, sans-serif;">
+
+<P class="sectionname" style="text-align:center">Latest Events Module Help</p>
+<SCRIPT LANGUAGE="JavaScript"><!--
+    if (window.print)
+        document.write('<FORM><INPUT TYPE="BUTTON" VALUE="Print" onClick="window.print()"><INPUT TYPE="BUTTON" VALUE="Close" onClick="window.close()"><\/FORM>');
+	else
+        document.write('<FORM><INPUT TYPE="BUTTON" VALUE="Close" onClick="window.close()"><\/FORM>');
+
+//--></SCRIPT>
+<P>This module is designed to display upcoming events and possibly recent past events
+from the events component provided by Eric Lamette.  A set of optional parameters can be specified
+to alter the behavior of this module via the administration module management parameters window.
+Although this module is not packaged with the events component, it is available for download at <a href="http://mosforge.net">mosforge.net</a>:
+ <a href="http://mosforge.net/frs/?group_id=89">mod_events_latest</a>.
+  It will need to be installed separately and made visible (ie. published) thru the mambo admin interface
+ similarly to any other module.</P>
+<P>Note also that the following documentation refers to the module parameters being used in
+the module parameter list thru the mambo module backend I/F.  This is the default usage and takes
+ priority over any parameters which may be specified within the events component configuration
+  interface here.</P>
+  
+<P class="contentheading">Output Format:</P>
+
+<P>The module outputs the events within an html table structure of n rows by 1 column, where n is
+the number of events displayed.  The absolute max. number of events that can be displayed is 10 (for
+those that are php literate, this is easily changed in the code if desired.).  The default
+max. number of events displayed is 5.  This can be changed by specifying the parameter 'maxEvents'
+to the module thru the admin interface.</P>
+
+<P class="contentheading">CSS Styling:</P>
+
+<P>Each event will display a start date and time in the first line of the table cell, followed by the
+event's title in a second line.  Both the date/time and event title are assigned separate css classes
+if style customization is desired.</P>
+
+<P>The first event displayed has its own css style assigned to it (mod_evets_latest_first).  Any events
+beyond the first will use a separate style (mod_events_latest).  This is done simply to control the
+appearance of a horizontal line which separates each event.</P>
+
+<P>Note that the latest events style classes are now integrated with the event components stylesheet and is accessible
+ in this component interface.</P>
+
+<P class="contentheading">Module Parameters:</P>
+
+<P>This module will support the use of the following optional customization parameters thru the
+Mambo admin module management interface.  These parameters mostly alter the behavior of the
+module by specifying a date range relative to the current day to look for events to display.
+There is also another parameter called 'displayLinks' which if set to 1, will display the event's
+title as a link to the event detail form within the events component module.</P>
+
+<P class="contentheading">Parameters Definitions:</P>
+
+<table width=80% align=center border=1 cellpadding=5 cellspacing=0>
+<tr><td style="text-align:center;color:blue;font-weight:bold">Parameter</td><td style="text-align:center;color:blue;font-weight:bold">Description</td></tr>
+<tr><td style="vertical-align:text-top;"><b>maxEvents</b></td><td>max. no. of events to display in the module (1 to 150, default is 5)</td></tr>
+
+<tr><td style="vertical-align:text-top;"><b>mode</b></td><td>
+= 0  (default) display closest events for current week and following week only up to <b>maxEvents</b>.<br /><br />
+
+= 1  same as 'mode'=0 except some past events for the current week will also be
+       displayed if num of future events is less than <b>maxEvents</b>.<br /><br />
+
+= 2  display closest events for +'days' range relative to current day up to $maxEvents.<br /><br />
+
+= 3  same as mode 2 except if there are <b>maxEvents</b> in the range,
+       then display past events within -'days' range relative to current day.<br /><br />
+
+= 4  display closest events for current month up to <b>maxEvents</b> relative to current day.
+</td></tr>
+<tr><td style="vertical-align:text-top;"><b>days</b></td><td>
+(default=7) range of days relative to current day to display events for mode 1 or 3.</td>
+</tr>
+<tr><td style="vertical-align:text-top;"><b>displayLinks</b></td>
+<td>= 1 (default is 0) display event titles as links to the 'view_detail' com_events
+ task which will display details of the event.</td>
+</tr>
+<tr><td style="vertical-align:text-top;"><b>displayYear</b></td>
+<td>= 1 (default is 0) display the year (ie. YYYY) in the event's date field.</td></tr>
+<tr><td style="vertical-align:text-top;"><b>disableDateStyle</b></td>
+<td>= 1 (default is 0) do not apply the default <span style="font-style:italic;font-weight:bold;color:#FF6600">mod_events_latest_date</span> css class
+ to the date field</td></tr>
+ <tr><td style="vertical-align:text-top;"><b>disableTitleStyle</b></td>
+<td>= 1 (default is 0) do not apply the default <span style="font-style:italic;font-weight:bold;color:#FF6600">mod_events_latest_content</span>
+ css class to the title field</td></tr>
+<tr><td style="vertical-align:text-top;"><b>norepeat</b></td>
+<td>= 1 (default is 0) display any event which has a repeat type only once in the latest events output.
+</td></tr>
+<tr><td style="vertical-align:text-top;"><b>customFormatStr</b></td>
+<td>
+= string (default is null).  allows a customized specification of the desired event fields and
+	format to be used to display the event in the module.  The string can specify html directly.
+	As well, certain event fields can be specified as ${event_field} in the string.  If desired,
+	the user can even specify overriding inline styles in the event format using &lt;div&gt; or &lt;span&gt;
+	to delineate.  Or the &lt;div&gt;'s or &lt;span&gt;'s can actually reference new css style classes which you
+	can create in the template's css file.<br /><br />
+
+= [cond: string ] allows a customized string as described above but only is displayed if the condition "cond" is true.<br /><br />
+	Available conditions:<br /><br />
+	<b>a</b>&nbsp;event is a all-day-event<br />
+	<b>!a</b>&nbsp;event is not a all-day-event<br /><br />
+	Event fields available:  ${startDate}, ${eventDate}, ${endDate}, ${title}, ${category}, ${contact}, ${content},
+	${addressInfo}, ${extraInfo}, ${createdByAlias}, ${createdByUserName}, ${createdByUserEmail},
+	${createdByUserEmailLink}, ${eventDetailLink}, ${color}<br /><br />
+
+	The ${startDate}, ${eventDate} and ${endDate} are special event fields which can support further customization
+	of the date and time display by allowing a user to specify exactly how to display the date with
+	identical format control codes to the PHP 'date()' or 'strftime() functions. If a '%' sign is
+	detected in the format string, strftime() is assumed to be used (supports locale international dates).<br /><br />
+
+	An example of a specified date and time format used: ${startDate('D, M jS, Y, @g:ia')}
+	This will display the date and time as: 'Fri, Oct 23rd, 2003, @7:30pm'<br /><br />
+	
+	Note that the default customFormatStr is '${eventDate}[!a: - ${endDate(%I:%M%p)}]&lt;br /&gt;${title}' which will display the date of an
+	event, or the particular date of an event instance in the case of a repeating event type.
+	The time is not displayed in case of an all-day-event. Not specifying any date format
+	specifiers within parenthesis of the startDate, eventDate or endDate fields will result in a default format as shown above.
+
+</td></tr>
+</table>
+
+<P class="contentheading">Date Formatting Parameter Reference:</P>
+
+<P>For those not familiar with these date/time format specifiers, you can view the php manual online. A quick
+reference for these codes is shown below.  Note that you can only use the date() or the strftime() specifiers
+separately.  You  cannot mix them from each table below.</P>
+
+
+<P><B><u>php date() function format specifiers:</u></b></P>
+<table width=80% align=center>
+<tr><td width=10% style="vertical-align:text-top;">a</td><td>Lowercase Ante meridiem and Post meridiem am or pm</td></tr>
+<tr><td style="vertical-align:text-top;">A</td><td style="vertical-align:text-top;">Uppercase Ante meridiem and Post meridiem AM or PM</td></tr>
+<tr><td style="vertical-align:text-top;">B</td><td style="vertical-align:text-top;">Swatch Internet time 000 through 999</td></tr>
+<tr><td style="vertical-align:text-top;">d</td><td style="vertical-align:text-top;">Day of the month, 2 digits with leading zeros 01 to 31</td></tr>
+<tr><td style="vertical-align:text-top;">D</td><td style="vertical-align:text-top;">A textual representation of a day, three letters Mon through Sun</td></tr>
+<tr><td style="vertical-align:text-top;">F</td><td style="vertical-align:text-top;">A full textual representation of a month, such as January or March January through December</td></tr>
+<tr><td style="vertical-align:text-top;">g</td><td style="vertical-align:text-top;">12-hour format of an hour without leading zeros 1 through 12</td></tr>
+<tr><td style="vertical-align:text-top;">G</td><td style="vertical-align:text-top;">24-hour format of an hour without leading zeros 0 through 23</td></tr>
+<tr><td style="vertical-align:text-top;">h</td><td style="vertical-align:text-top;">12-hour format of an hour with leading zeros 01 through 12</td></tr>
+<tr><td style="vertical-align:text-top;">H</td><td style="vertical-align:text-top;">24-hour format of an hour with leading zeros 00 through 23</td></tr>
+<tr><td style="vertical-align:text-top;">i</td><td style="vertical-align:text-top;">Minutes with leading zeros 00 to 59</td></tr>
+<tr><td style="vertical-align:text-top;">I</td><td style="vertical-align:text-top;">(capital i) Whether or not the date is in daylights savings time 1 if Daylight Savings Time, 0 otherwise.</td></tr>
+<tr><td style="vertical-align:text-top;">j</td><td style="vertical-align:text-top;">Day of the month without leading zeros 1 to 31</td></tr>
+<tr><td style="vertical-align:text-top;">l</td><td style="vertical-align:text-top;">(lowercase 'L') A full textual representation of the day of the week Sunday through Saturday</td></tr>
+<tr><td style="vertical-align:text-top;">L</td><td style="vertical-align:text-top;">Whether it's a leap year 1 if it is a leap year, 0 otherwise.</td></tr>
+<tr><td style="vertical-align:text-top;">m</td><td style="vertical-align:text-top;">Numeric representation of a month, with leading zeros 01 through 12</td></tr>
+<tr><td style="vertical-align:text-top;">M</td><td style="vertical-align:text-top;">A short textual representation of a month, three letters Jan through Dec</td></tr>
+<tr><td style="vertical-align:text-top;">n</td><td style="vertical-align:text-top;">Numeric representation of a month, without leading zeros 1 through 12</td></tr>
+<tr><td style="vertical-align:text-top;">O</td><td style="vertical-align:text-top;">Difference to Greenwich time (GMT) in hours Example: +0200</td></tr>
+<tr><td style="vertical-align:text-top;">r</td><td style="vertical-align:text-top;">RFC 822 formatted date Example: Thu, 21 Dec 2000 16:01:07 +0200</td></tr>
+<tr><td style="vertical-align:text-top;">s</td><td style="vertical-align:text-top;">Seconds, with leading zeros 00 through 59</td></tr>
+<tr><td style="vertical-align:text-top;">S</td><td style="vertical-align:text-top;">English ordinal suffix for the day of the month, 2 characters st, nd, rd or th. Works well with j</td></tr>
+<tr><td style="vertical-align:text-top;">t</td><td style="vertical-align:text-top;">Number of days in the given month 28 through 31</td></tr>
+<tr><td style="vertical-align:text-top;">T</td><td style="vertical-align:text-top;">Timezone setting of this machine Examples: EST, MDT ...</td></tr>
+<tr><td style="vertical-align:text-top;">U</td><td style="vertical-align:text-top;">Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</td></tr>
+<tr><td style="vertical-align:text-top;">w</td><td style="vertical-align:text-top;">Numeric representation of the day of the week 0 (for Sunday) through 6 (for Saturday)</td></tr>
+<tr><td style="vertical-align:text-top;">W</td><td style="vertical-align:text-top;">ISO-8601 week number of year, weeks starting on Monday (added in PHP 4.1.0) Example: 42 (the 42nd week in the year)</td></tr>
+<tr><td style="vertical-align:text-top;">Y</td><td style="vertical-align:text-top;">A full numeric representation of a year, 4 digits Examples: 1999 or 2003</td></tr>
+<tr><td style="vertical-align:text-top;">y</td><td style="vertical-align:text-top;">A two digit representation of a year Examples: 99 or 03</td></tr>
+<tr><td style="vertical-align:text-top;">z</td><td style="vertical-align:text-top;">The day of the year 0 through 366</td></tr>
+<tr><td style="vertical-align:text-top;">Z</td><td style="vertical-align:text-top;">Timezone offset in seconds. The offset for timezones west of UTC is always negative, and for those east of UTC is always positive. -43200 through 43200</td></tr>
+</table><br /><br />
+
+<P><B><u>php strftime() function format specifiers:</u></b></P>
+<table width=80% align=center>
+<tr><td width=10% style="vertical-align:text-top;">%a</td>
+<td style="vertical-align:text-top;">abbreviated weekday name according to the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%A</td><td style="vertical-align:text-top;">full weekday name according to the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%b</td><td style="vertical-align:text-top;">abbreviated month name according to the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%B</td><td style="vertical-align:text-top;">full month name according to the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%c</td><td style="vertical-align:text-top;">preferred date and time representation for the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%C</td><td style="vertical-align:text-top;">century number (the year divided by 100 and truncated to an integer, range 00 to 99)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%d</td><td style="vertical-align:text-top;">day of the month as a decimal number (range 01 to 31)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%D</td><td style="vertical-align:text-top;">same as %m/%d/%y</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%e</td><td style="vertical-align:text-top;">day of the month as a decimal number, a single digit is preceded by a space (range ' 1' to '31')</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%g</td><td style="vertical-align:text-top;">like %G, but without the century.</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%G</td><td style="vertical-align:text-top;">The 4-digit year corresponding to the ISO week number (see %V).
+This has the same format and value as %Y, except that if the ISO week number belongs to the previous
+ or next year, that year is used instead.</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%h</td><td style="vertical-align:text-top;">same as %b</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%H</td><td style="vertical-align:text-top;">hour as a decimal number using a 24-hour clock (range 00 to 23)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%I</td><td style="vertical-align:text-top;">hour as a decimal number using a 12-hour clock (range 01 to 12)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%j</td><td style="vertical-align:text-top;">day of the year as a decimal number (range 001 to 366)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%m</td><td style="vertical-align:text-top;">month as a decimal number (range 01 to 12)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%M</td><td style="vertical-align:text-top;">minute as a decimal number</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%n</td><td style="vertical-align:text-top;">newline character</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%p</td><td style="vertical-align:text-top;">either `am' or `pm' according to the given time value, or the corresponding strings for the current locale</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%r</td><td style="vertical-align:text-top;">time in a.m. and p.m. notation</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%R</td><td style="vertical-align:text-top;">time in 24 hour notation</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%S</td><td style="vertical-align:text-top;">second as a decimal number</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%t</td><td style="vertical-align:text-top;">tab character</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%T</td><td style="vertical-align:text-top;">current time, equal to %H:%M:%S</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%u</td><td style="vertical-align:text-top;">weekday as a decimal number [1,7], with 1 representing Monday</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%U</td><td style="vertical-align:text-top;">week number of the current year as a decimal number, starting with the first Sunday as the first day of the first week</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%V</td><td style="vertical-align:text-top;">The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week
+ that has at least 4 days in the current year, and with Monday as the first day of the week. (Use %G or %g for the year
+  component that corresponds to the week number for the specified timestamp.)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%W</td><td style="vertical-align:text-top;">week number of the current year as a decimal number, starting with the first Monday as the first day of the first week</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%w</td><td style="vertical-align:text-top;">day of the week as a decimal, Sunday being 0</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%x</td><td style="vertical-align:text-top;">preferred date representation for the current locale without the time</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%X</td><td style="vertical-align:text-top;">preferred time representation for the current locale without the date</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%y</td><td style="vertical-align:text-top;">year as a decimal number without a century (range 00 to 99)</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%Y</td><td style="vertical-align:text-top;">year as a decimal number including the century</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%Z</td><td style="vertical-align:text-top;">time zone or name or abbreviation</td></tr>
+<tr><td width=10% style="vertical-align:text-top;">%%</td><td style="vertical-align:text-top;">a literal `%' character</td></tr>
+</table><br /><br />
+
+<P class="contentheading">Using the Module Parameters:</P>
+
+<P>To specify these parameters in the module's admin management interface, insert them into the
+'parameters' text window at the very bottom on separate lines like so:<br /><br />
+
+<span style="color:blue">mode=1<br />
+days=3<br />
+displayLinks=0<br />
+customFormatStr='${startDate('M jS, g:ia -')}${endDate(' g:ia')}&lt;br /&gt;${category}: ${title}'</span><br /><br />
+
+The customFormatStr example shown above will display the date/time as: 'Oct 23rd, 7:30pm - 8:30pm', and the category
+and title on the following line.</P>
+
+<P class="contentheading">Other Not-so-Obvious event Variables:</P>
+
+<P>${createdByUserEmail}		- creator's email address<br /><br />
+
+${createdByUserEmailLink}	- this provides a link address to invoke an email form to send mail to the event creator.
+				To create a hyperlink with this, it would be used like:  &lt;a href=${createdByUserEmailLink}inquire&lt;/a&gt;<br /><br />
+
+${eventDetailLink}		- a link to the event details page within the events component.  Note that this is a little
+				different to the use of the event link on the event title field as enabled by the 'displayLinks'
+				parameter.  An example of the use of this variable is shown in the section below.<br /><br />
+
+${color}			- the assigned 'color' for the event as was done when the event was created in the event
+				component.  This can be used in an inline css style within the ${customFormatStr} to control
+				background color, font color.<br /><br /></P>
+
+
+<P class="contentheading">Further Examples for Using the '${customFormatStr}' Parameter:</P>
+
+<P><b>Ex. 1.</b></P>
+
+<P><span style="color:blue">displayLinks=1<br />
+mode=0<br />
+customFormatStr='&lt;div style='background-color:${color};'&gt;${startDate('m/d/y')}, ${title}&lt;/div&gt;'</span><br /><br />
+
+This will display a simple date in MM/DD/YY format followed by the hyperlinked event title, with the same background
+color assigned as when the event was created in the events component.  You need to be careful using this since there
+currently is no foreground color selection in events.  So depending on colors, you can get poor contrast or sometimes
+the text can disappear into the background if the same color.</P>
+
+<P><b>Ex. 2.</b></P>
+
+<P><span style="color:blue">displayLinks=1<br />
+disableDateStyle=1<br />
+disableContentStyle=1<br />
+mode=2<br />
+days=14<br />
+customFormatStr='&lt;span class='mod_events_latest_date'&gt;${startDate('%x, %X - ')}${endDate('%X')}&lt;/span&gt;&lt;br /&gt;&lt;span class='mod_events_latest_content'&gt;${category}: ${title}&lt;/span&gt;'</span><br /><br />
+
+This example will print the date and time in a default 'preferred' format according to the locale, whatever that may be
+with respect the the php function 'strftime()'.  The appropriate language will be used, whether that be english, german, french,
+or anything else.  Notice that the 'disableDateStyle' and 'disableContentStyle' parameters are used to suppress the module's
+autoformatting of these around the ${startDate}, ${endDate}, or ${title} fields since we are using several custom fields with
+embedded text.  So it is more appropriate to explicitly specify the css class names using a HTML &lt;span&gt; element to delineate
+the text to be formatted.<br /><br />
+
+Also note that text will wrap around end of the module's right edge if there is not enough room on the line.  You will either
+need to downsize display fonts thru style control, widen the left display area for modules in your mambo template, or
+some other method.</P>
+
+<P><b>Ex. 3.</b></P>
+
+<P><span style="color:blue">displayLinks=0<br />
+customFormatStr='&lt;div style='cursor: default;' onMouseOver="this.style.border='thin dotted red';" onMouseOut="this.style.border='none';" onclick="parent.location = ${eventDetailLink};"&gt;${startDate}&lt;br /&gt;${title}&lt;/div&gt;'</span><br /><br />
+
+This is a fairly sophisticated example using inline css styles and mouse events, but it demonstrates the power of the new
+customFormatStr fairly well.  These parameter settings above will display the standard date and title fields of the event.
+However, now when the cursor is over ANY part of an event's info, a red dotted border surrounds the event.  Clicking the
+mouse will now display the event's detail from the events component in the main area of the page.  Basically, what is
+being done is a hyperlink.</P>
+</body>
+</html>

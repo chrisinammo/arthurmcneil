@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Captcha</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders Captcha security image check</description>
+	<files>
+		<filename fabrikplugin="fabrikcaptcha">fabrikcaptcha.php</filename>
+		<filename>index.html</filename>
+		<filename>javascript.js</filename>
+		<filename>monofont.ttf</filename>
+	</files>
+
+  <languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcaptcha.ini</language>
+	</languages>
+
+	<params>
+		<param name="captcha-width" type="text" size="3" default="120" label="CAPTCHA_WIDTH" description=""/>
+		<param name="captcha-height" type="text" size="3" default="40" label="CAPTCHA_HEIGHT" description=""/>
+		<param name="captcha-chars" type="text" size="3" default="6" label="CAPTCHA__NUMBEROFCHARS" description=""/>
+	</params>
+</install>

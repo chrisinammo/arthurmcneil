@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="visualization">
+	<name>googlemap</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Sept 2007</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Show a google map</description>
+	<files>
+		<filename fabrikplugin="googlemap">googlemap.php</filename>
+		<filename>index.html</filename>
+		<filename>googlemap.js</filename>
+		<filename>tmpl/default/default.php</filename>
+	</files>
+	
+	<administration>
+	  <languages folder="administrator/language" >
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.vizualization.fabrikgooglemap.ini</language>
+		</languages>
+	</administration>
+	
+	<params group="connection" addpath="/administrator/components/com_fabrik/elements">
+		<param name="googlemap_connection" type="connections" label="Connection" />
+	</params>
+	
+	<params repeatcontrols="1" repeat="1" addpath="/administrator/components/com_fabrik/elements">
+		<param name="googlemap_table" observe="googlemap_connection" type="fabriktables" label="table"/>
+		<param name="fb_gm_detailtemplate" type="textarea" default="" rows="8" cols="40" label="FBGMDETAILTEMPLATE" description="FBGMDETAILTEMPLATEDDESC" />
+	</params>
+	
+	<params group="rest">
+		<param name="fb_gm_key" type="text" size="30" default="" label="FBGMGOOGLEMAPKEY" description="FBGMGOOGLEMAPKEYDESC"/>
+		<param name="fb_gm_zoomlevel" type="text" size="3" default="4" label="FBGMZOOMLEVEL" description="FBGMZOOMLEVELDESC"/>
+		<param name="fb_gm_mapwidth" type="text" size="3" default="600" label="FBGMMAPWIDTH" description=""/>
+		<param name="fb_gm_mapheight" type="text" size="3" default="300" label="FBGMMAPHEIGHT" description=""/>
+		<param name="fb_gm_mapcontrol" type="list" default="" label="FBGMMAPCONTROL" description="FBGMMAPCONTROLDESC">
+			<option value="">None</option>
+			<option value="GLargeMapControl">Large map control</option>
+			<option value="GSmallMapControl">Small map control</option>
+			<option value="GSmallZoomControl">Small zoom control</option>
+		</param>
+		<param name="fb_gm_scalecontrol" type="radio" default="0" label="FBGMSCALECONTROL" description="FBGMSCALECONTROLDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fb_gm_maptypecontrol" type="radio" default="0" label="FBGMMAPTYPECONTROL" description="FBGMMAPTYPECONTROLDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fb_gm_overviewcontrol" type="radio" default="0" label="FBGMOVERVIEWCONTROL" description="FBGMOVERVIEWCONTROLDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+	</params>
+</install>

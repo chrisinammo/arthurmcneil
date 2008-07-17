@@ -1,0 +1,124 @@
+com_jcalpro v1.5.2 changelog.
+
+1. Fixed a recurring event display bug.
+2. Fix a number of non-critical debug mode warnings. 
+3. Fixed a permission bug in the array index "public frontend".
+4. Updated the german/germani language files.
+5. Fixed a lingering short open tag "<?".
+6. Fixed an import bug related to "database->query".
+7. Added indonesian language files.
+8. Fix a bug where a "Repeat every 0" days/weeks/months would cause an infinite loop. 
+9. Fixed a bug with display and sorting of events in Category View. 
+10. Eliminated all hard-coded style and formatting from the main JCalPro component, by moving this information into the
+themes and stylesheets. 
+11. Moved the push of the CSS header links from "jcalpro.php" to "config.inc.php" to allow us to push the main CSS
+link first, then push other sub stylesheets (colors, backgrounds) afterwards to allow overriding.
+
+com_jcalpro v1.5.2 changelog.
+
+1. Fixed bug noted in topic 490, updated danish language file
+2. Fixed bug noted in topic 383, added catalan language 
+3. Fixed bug noted in topic 474, fixed a setlocale issue experienced by some english-language users 
+4. Fixed bug noted in topic 448, improved setlocale support and updated russian language file 
+5. Fixed bug noted in topic 434, added the polish translation
+6. Fixed bug noted in topic 439, fixed JCal version in the category manager 
+7. Fixed bug noted in topic 395 , fixed the incompatibility with mod_jb_last_subjects, the mysql_real_escape_string() error and the botquickdown() incompatibility
+8. Fixed bug noted in topic 365, fixed the deprecated image error 
+9. Fixed bug noted in topic 432, fixed an event duration bug that affected the latest events module output 
+10. Fixed bug noted in topic 449 , improved support for unclosed HTML tags following content truncation in Flat view 
+11. Fixed bug noted in topic 435 , included backend display of approval status for events in the events manager 
+12. Fixed bug noted in topic 504, Fixed a typo in the german and german informal translation 
+13. Fixed bug noted in topic 508, fixed some sytax errors in the colorpicker script
+14. removed cal_popup.php and switched instead to using the native Joomla index2.php for popups
+15. numeros changes to the default theme.php to improve output and compatibility with other 3rd party apps
+
+
+com_jcalpro v1.5.1.2 changelog.
+
+1. Fixed bug noted in topic 392 regarding editing the event duration
+2. Fixed bug noted in topic 400 regarding an E7 status bar error and window.Event
+3. Fixed bug noted in topic 401 , updated the Danish language file
+4. Fixed bug noted in topic 405 , updated the germanand german informal language files
+5. Fixed bug noted in topic 417 , added the Lithuanian language file
+6. Fixed bug noted in topic 200 , added the updated Greek language file 
+7. Fixed bug noted in topic 77 regarding error messages which appear when there are no existing or published categories
+8. Fixed bug noted in topic 409 and 419 regarding extra lines inserted when the Joomal! editor mambot is used for creating event descriptions
+9. Fixed bug noted in topic 359 regarding unpublished events still being displayed in category view
+10. Fixed bug noted in topic 424 regardind blank event start times
+11. Fixed bug where items could be viewed directly by url regardless of the publish status of the event
+12. Fixed bug noted in topic 425 dded sorting of category names in all forms and places where cateories are displayed (main calendar legend, category view, etc...)
+13. Removed "Use defuals from settings" from the permissions list in the category create/edit screen.
+14. Added category permissions to the category list in the category manager
+
+
+
+com_jcalpro v1.5.1 changelog.
+
+1. fixed the PHPMyAdmin error caused by PRIMARY and UNIQUE keys in the category and events database tables
+2. fixed two long standing bugs affecting events not showing in week mode, and inconsistent dispplay of the week number
+3. updated the italian translation file
+4. modifed include /events.php (line 385) to properly display the event duration in the events manager
+5. started the 1.5.1.x series due to the number of fixed bugs
+
+
+
+com_jcalpro v1.5.0.4 changelog.
+
+1. Fixed the 'param' bug affecting confilcts with 3rd party mambots
+2. Fixed a strftime error again, hopefully for the last time :)
+3. Fixed an error with displaying event descriptions when "Allow HTML in event descriptions" was disabled. 
+
+
+
+com_jcalpro v1.5.0.3 changelog.
+
+1. Fixed another back_link error
+2. Repaired backend AM/PM issue
+3. Added proper headers for events.php and events.html.php
+
+
+
+com_jcalpro v1.5.0.2 changelog.
+
+1. Fixed the a typo in the backend 'add event' screen
+2. Removed a number php short tags, replacing them with long tags, in events.php and events.html.php
+3. Fixed a bug in functions.inc.php which gave an error when searching for recurring events.
+4. When upgrading from JCal Pro 1.0.x. existing events are now published by default.
+5. Backend HTML-render error has been repaired.
+6. AM/PM display now toggles with the 12h/24h setting in the backend. All language files updated.
+
+
+
+com_jcalpro v1.5.0.1 changelog.
+
+1. Fixed the back_link error in the default theme.
+
+
+
+com_jcalpro v1.5.0 changelog.
+
+1. Repaired some languages and added additional languages (Greek, Czech, Norwegian, Slovak).
+2. General low-level security patches.
+3. Updated xml file.
+4. Fixed bug with the color picker in the category manager.
+5. Repaired the bug which appeared when 'HTML in the descrription' was disabled.
+6. Repaired HTML-render bug.
+7. Repaired bug in the import script to allow apostrophes. 
+8. Added support for the mos_ table prefix during import.
+9. Fixed the recurring event bug.
+10. Repaired the php5 short-tag/line 247 bug. 
+11. Reapired the line 668 bug.
+12. Fixed numerous debug-mode errors (though not all)
+13. Fixed IE-specific CSs bug.
+14. Fixed the bug which caused errors when event descriptions contained apostrophes.
+15. Fixed event approval bug.
+16. Fixed bug which required re-approval of events following an event edit.
+17. Fixed the bug causing double forward-slashes in toolbar image urls.
+18. Deprecated the 'Calendar Public Ststus' option.
+19. Added category-based permissions/publishing to replace the deprecated 'Calendar Public Ststus' option.
+20. Added support for the cloakemail mambot.
+21. Fixed bug which linked the width of the 'JCal Pro Settings' page to the width of the calendar specified in the settings.
+22. Improved the sort function for static and recurring events on the front-end.
+23. Added backend event management including event publish/unpublish actions.
+24. Valid W3C XHTML (Transitional) and CSS markup
+25. Ability to make "Category View" the front-end default.

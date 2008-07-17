@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<mosinstall version="1.0.0" type="jcalpro_theme" theme="default">
+	<name>spartan</name>
+	<version>1.5.3 Stable</version>
+	<creationDate>03/18/2007</creationDate>
+	<author>V-man</author>
+	<authorEmail>admin@anything-digital.com</authorEmail>
+	<authorUrl>www.anything-digital.com</authorUrl>
+	<copyright>(c) 2007 Anything Digital</copyright>
+	<license>GPL</license>
+	<description><![CDATA[
+    The theme is installed succesfully<br />
+    ]]></description>
+	<icon>default</icon>
+	<layout_icon>default</layout_icon>
+	<elements></elements>
+	<files>
+				<filename plugin="default">theme.php</filename> 
+        <filename>template.html</filename>
+        <filename>style.css</filename>     
+        <filename>images/addsign.gif</filename>
+        <filename>images/addsign_a.gif</filename>
+        <filename>images/arrowleft.gif</filename>
+        <filename>images/arrowright.gif</filename>        
+        <filename>images/banner.png</filename>
+        <filename>images/bannerbg.gif</filename>
+        <filename>images/bg1.gif</filename>
+        <filename>images/box_left_icon.gif</filename>
+        <filename>images/btn_bg.gif</filename>
+    		<filename>images/days1.gif</filename>    		
+        <filename>images/days2.gif</filename>
+        <filename>images/def_pic.gif</filename>
+        <filename>images/errormessage.gif</filename>
+        <filename>images/icon-add.gif</filename>
+        <filename>images/icon-addevent.gif</filename>
+        <filename>images/icon-apprevent.gif</filename>
+        <filename>images/icon-archive.gif</filename>
+        <filename>images/icon-calendarview.gif</filename>
+        <filename>images/icon-cat-active.gif</filename>
+        <filename>images/icon-cat-inactive.gif</filename>
+        <filename>images/icon-cats.gif</filename>
+        <filename>images/icon-colorpicker.gif</filename>
+        <filename>images/icon-daily.gif</filename>
+        <filename>images/icon-del.gif</filename>
+        <filename>images/icon-delevent.gif</filename>
+        <filename>images/icon-edit.gif</filename>
+        <filename>images/icon-editevent.gif</filename>
+        <filename>images/icon-event-active.gif</filename>
+        <filename>images/icon-event-enddate.gif</filename>
+        <filename>images/icon-event-inactive.gif</filename>
+        <filename>images/icon-event-middate.gif</filename>
+        <filename>images/icon-event-onedate.gif</filename>
+        <filename>images/icon-event-startdate.gif</filename>        
+        <filename>images/icon-flyer.gif</filename>
+        <filename>images/icon-group.gif</filename>
+        <filename>images/icon-info.gif</filename>
+        <filename>images/icon-loginpic.gif</filename>
+        <filename>images/icon-mini-week.gif</filename>        
+        <filename>images/icon-minus.gif</filename>
+        <filename>images/icon-photo.gif</filename>
+        <filename>images/icon-plus.gif</filename>
+        <filename>images/icon-print.gif</filename>
+        <filename>images/icon-recur-event-active.gif</filename>        
+        <filename>images/icon-recur-event-inactive.gif</filename>
+        <filename>images/icon-release.gif</filename>
+        <filename>images/icon-release-dev.gif</filename>
+        <filename>images/icon-search.gif</filename>
+        <filename>images/icon-tag-menu.gif</filename>        
+        <filename>images/icon-update.gif</filename>
+        <filename>images/icon-user.gif</filename>
+        <filename>images/icon-user-active.gif</filename>        
+        <filename>images/icon-user-inactive.gif</filename>
+        <filename>images/icon-user-profile.jpg</filename>
+        <filename>images/icon-visibility.gif</filename>
+        <filename>images/icon-weekly.gif</filename>
+        <filename>images/logo.gif</filename>        
+        <filename>images/mini_arrowleft.gif</filename>
+        <filename>images/mini_arrowleft_inactive.gif</filename>
+        <filename>images/mini_arrowright.gif</filename>
+        <filename>images/minical.png</filename>
+        <filename>images/preview.gif</filename>        
+        <filename>images/rect.gif</filename>
+        <filename>images/tile_back1.gif</filename>
+        <filename>images/tile_sub.gif</filename>
+        <filename>images/txtboxbg.gif</filename>
+    </files>
+</mosinstall>

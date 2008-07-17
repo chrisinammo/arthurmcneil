@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Events</name>
+	<creationDate>June 2008</creationDate>
+	<author>JEvents Project Group</author>
+	<copyright>Copyright (C) 2006-2008 JEvents Project Group</copyright>
+	<licence>http://www.gnu.org/copyleft/gpl.html</licence>
+	<authorEmail></authorEmail>
+	<authorUrl>joomlacode.org/gf/project/jevents</authorUrl>
+	<version>1.4.3 RC2</version>
+	<description>Events, meetings and more</description>
+	<files>
+		<filename>events.class.php</filename>
+		<filename>events.class.old.php</filename>
+		<filename>events.html.php</filename>
+		<filename>events.php</filename>
+		<filename>events.old.php</filename>
+		<filename>events_calendar_cell.php</filename>
+		<filename>events_css.css</filename>
+		<filename>index.html</filename>
+		
+		<filename>includes/adminutils.php</filename>
+		<filename>includes/comutils.php</filename>
+		<filename>includes/index.html</filename>
+		<filename>includes/modutils.php</filename>
+		
+		<filename>js/colorpicker.js</filename>
+		<filename>js/index.html</filename>
+		<filename>js/overlib_shadow.js</filename>
+		
+		<filename>language/brazilian_portuguese.php</filename>
+		<filename>language/brazilian_portuguese-utf8.php</filename>
+		<filename>language/bulgarian.php</filename>
+		<filename>language/bulgarian-utf8.php</filename>
+		<filename>language/catalan.php</filename>
+		<filename>language/compat15.php</filename>
+		<filename>language/cymraeg.php</filename>
+		<filename>language/czech.php</filename>
+		<filename>language/czech-utf8.php</filename>
+		<filename>language/danish.php</filename>
+		<filename>language/danish-utf8.php</filename>
+		<filename>language/dutch.php</filename>
+		<filename>language/english.php</filename>
+		<filename>language/estonian.php</filename>
+		<filename>language/estonian-utf8.php</filename>
+		<filename>language/finnish.php</filename>
+		<filename>language/finnish-utf8.php</filename>
+		<filename>language/french.php</filename>
+		<filename>language/french-utf8.php</filename>
+		<filename>language/germanf.php</filename>
+		<filename>language/germanf-utf8.php</filename>
+		<filename>language/germani.php</filename>
+		<filename>language/germani-utf8.php</filename>
+		<filename>language/greek.php</filename>
+		<filename>language/hungarian.php</filename>
+		<filename>language/hungarian-utf8.php</filename>
+		<filename>language/hungariani.php</filename>
+		<filename>language/hungariani-utf8.php</filename>
+		<filename>language/irish.php</filename>
+		<filename>language/irish-utf8.php</filename>
+		<filename>language/index.html</filename>
+		<filename>language/italian.php</filename>
+		<filename>language/lithuanian.php</filename>
+		<filename>language/lithuanian-utf8.php</filename>
+		<filename>language/latvian.php</filename>
+		<filename>language/norwegian.php</filename>
+		<filename>language/norwegian-utf8.php</filename>
+		<filename>language/polish.php</filename>
+		<filename>language/polish-utf8.php</filename>
+		<filename>language/portuguese.php</filename>
+		<filename>language/portuguese-utf8.php</filename>
+		<filename>language/russian.php</filename>
+		<filename>language/russian-utf8.php</filename>
+		<filename>language/slovak.php</filename>
+		<filename>language/slovak-utf8.php</filename>
+		<filename>language/spanish.php</filename>
+		<filename>language/spanish-utf8.php</filename>
+		<filename>language/swedish.php</filename>
+		<filename>language/swedish-utf8.php</filename>
+		<filename>language/simplified_chinese.php</filename>
+		<filename>language/traditional_chinese.php</filename>
+		<filename>language/turkish.php</filename>
+		<filename>language/turkish-utf8.php</filename>
+		<filename>libraries/commonfunctions.php</filename>
+		<filename>libraries/helper.php</filename>
+		<filename>libraries/index.html</filename>
+		<filename>libraries/modfunctions.php</filename>
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/cal1x.jpg</filename>
+		<filename>images/cal2x.jpg</filename>
+		<filename>images/cal3x.jpg</filename>
+		<filename>images/cal5x.jpg</filename>
+		<filename>images/cal8x.jpg</filename>
+		<filename>images/cal9x.jpg</filename>
+		<filename>images/d_blue.gif</filename>
+		<filename>images/d_gray.gif</filename>
+		<filename>images/d_green.gif</filename>
+		<filename>images/d_orange.gif</filename>
+		<filename>images/d_red.gif</filename>
+		<filename>images/d_yellow.gif</filename>
+		<filename>images/dd_blue.gif</filename>
+		<filename>images/dd_gray.gif</filename>
+		<filename>images/dd_green.gif</filename>
+		<filename>images/dd_orange.gif</filename>
+		<filename>images/dd_red.gif</filename>
+		<filename>images/dd_yellow.gif</filename>
+		<filename>images/evback.jpg</filename>
+		<filename>images/event.png</filename>	
+		<filename>images/g_blue.gif</filename>
+		<filename>images/g_gray.gif</filename>
+		<filename>images/g_green.gif</filename>
+		<filename>images/g_orange.gif</filename>
+		<filename>images/g_red.gif</filename>
+		<filename>images/g_yellow.gif</filename>
+		<filename>images/gg_blue.gif</filename>
+		<filename>images/gg_gray.gif</filename>
+		<filename>images/gg_green.gif</filename>
+		<filename>images/gg_orange.gif</filename>
+		<filename>images/gg_red.gif</filename>
+		<filename>images/gg_yellow.gif</filename>
+		<filename>images/index.html</filename>
+		<filename>images/logo.gif</filename>
+		<filename>images/transp.gif</filename>
+	</images>
+	<install>
+		<queries>
+			<query>CREATE TABLE IF NOT EXISTS `#__events` (
+				`id` int(12) NOT NULL auto_increment,
+				`sid` int(11) NOT NULL default '0',
+				`catid` int(11) NOT NULL default '1',
+				`title` varchar(100) NOT NULL default '',
+				`content` longtext NOT NULL default '',
+				`adresse_info` VARCHAR(120) NOT NULL default '',
+				`contact_info` VARCHAR(120) NOT NULL default '',
+				`extra_info` VARCHAR(240) NOT NULL default '',
+				`color_bar` VARCHAR(8) NOT NULL default '',
+				`useCatColor` TINYINT(1) NOT NULL default '0',
+				`state` tinyint(3) NOT NULL default '0',
+				`mask` int(11) unsigned NOT NULL default '0',
+				`created` datetime NOT NULL default '0000-00-00 00:00:00',
+				`created_by` int(11) unsigned NOT NULL default '0',
+				`created_by_alias` varchar(100) NOT NULL default '',
+				`modified` datetime NOT NULL default '0000-00-00 00:00:00',
+				`modified_by` int(11) unsigned NOT NULL default '0',
+				`checked_out` int(11) unsigned NOT NULL default '0',
+				`checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+				`publish_up` datetime NOT NULL default '0000-00-00 00:00:00',
+				`publish_down` datetime NOT NULL default '0000-00-00 00:00:00',
+				`images` text NOT NULL default '',
+				`reccurtype` tinyint(1) NOT NULL default '0',
+				`reccurday` varchar(4) NOT NULL default '',
+				`reccurweekdays` varchar(20) NOT NULL default '',
+				`reccurweeks` varchar(10) NOT NULL default '',
+				`approved` tinyint(1) NOT NULL default '1',
+				`ordering` int(11) NOT NULL default '0',
+				`archived` tinyint(1) NOT NULL default '0',
+				`access` int(11) unsigned NOT NULL default '0',
+				`hits` int(11) NOT NULL default '0',
+				PRIMARY KEY  (`id`)
+				) TYPE=MyISAM;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_categories` (
+				`id` INT(12) NOT NULL default '0' PRIMARY KEY,
+				`color` VARCHAR(8) NOT NULL default''
+				) TYPE=MyISAM;
+			</query>
+		</queries>
+	</install>
+	<uninstall>
+		<queries>
+			<query>DELETE FROM `#__events`</query>
+			<query>DROP TABLE `#__events`</query>
+			<query>DELETE FROM `#__events_categories`</query>
+			<query>DROP TABLE `#__events_categories`</query>
+			<query>DELETE FROM `#__categories` WHERE `section` LIKE 'com_events'</query>
+		</queries>
+	</uninstall>
+	<installfile>install.events.php</installfile>
+	<uninstallfile>uninstall.events.php</uninstallfile>
+	<administration>
+		<menu>Events</menu>
+			<submenu>
+				<menu>Events</menu>
+				<menu link="option=com_events&amp;act=categories">Categories</menu>
+				<menu act="conf">Configuration</menu>
+				<menu task="viewarchiv">Archive</menu>
+			</submenu>
+		<files>
+			<filename>admin.events.categories.php</filename>
+			<filename>admin.events.html.php</filename>
+			<filename>admin.events.main.php</filename>
+			<filename>admin.events.php</filename>
+			<filename>colorMap.php</filename>
+			<filename>colours.html.php</filename>
+			<filename>default.css</filename>
+			<filename>events_config.ini.php</filename>
+			<filename>index.html</filename>			
+			<filename>toolbar.events.php</filename>
+			<filename>toolbar.events.html.php</filename>
+			
+			<filename>help/help.css</filename>
+			<filename>help/index.html</filename>
+			<filename>help/mod_events_calendar_help_de.html</filename>
+			<filename>help/mod_events_calendar_help_en.html</filename>
+			<filename>help/mod_events_latest_help_de.html</filename>
+			<filename>help/mod_events_latest_help_en.html</filename>
+			<filename>help/README_de.php</filename>
+			<filename>help/README_en.php</filename>
+			<filename>help/screen.jevent.edit_new_de.html</filename>
+
+			<filename>language/admin_dutch.php</filename>
+			<filename>language/admin_dutch-utf8.php</filename>
+			<filename>language/admin_english.php</filename>
+			<filename>language/admin_german.php</filename>
+			<filename>language/admin_finnish.php</filename>
+			<filename>language/admin_finnish-utf8.php</filename>
+			<filename>language/admin_french.php</filename>
+			<filename>language/admin_french-utf8.php</filename>
+			<filename>language/admin_hungarian.php</filename>
+			<filename>language/admin_hungarian-utf8.php</filename>
+			<filename>language/admin_hungariani.php</filename>
+			<filename>language/admin_hungariani-utf8.php</filename>
+			<filename>language/admin_irish.php</filename>
+			<filename>language/admin_irish-utf8.php</filename>
+			<filename>language/admin_polish.php</filename>
+			<filename>language/admin_polish-utf8.php</filename>
+			<filename>language/admin_spanish.php</filename>
+			<filename>language/admin_spanish-utf8.php</filename>
+			<filename>language/admin_simplified_chinese.php</filename>
+			<filename>language/admin_traditional_chinese.php</filename>
+			<filename>language/index.html</filename>
+			
+			<filename>lib/index.html</filename>
+			<filename>lib/version.php</filename>
+			<filename>lib/config.php</filename>
+			<filename>lib/checklocale.php</filename>
+		</files>
+		<images>
+			<filename>images/events.png</filename>
+			<filename>images/events_ico.png</filename>
+			<filename>images/index.html</filename>
+			<filename>images/help_ques.gif</filename>
+			<filename>images/help_ques_inact.gif</filename>
+		</images>
+	</administration>
+	<params>
+		<param name="catid0" type="mos_category" default="0" scope="com_events" label="Specified category" description="Shows events only from the selected category" />
+		<param name="catid1" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid2" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid3" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid4" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+	</params>
+</mosinstall>

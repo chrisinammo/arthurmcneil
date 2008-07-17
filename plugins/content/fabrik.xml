@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Fabrik</name>
+	<author>Pollen 8 Design Ltd</author>
+	<creationDate>Feb 2008</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Pollen 8 Design Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0b</version>
+	<description><![CDATA[
+	Insert either fabrik tables ro views into your content. E.g. {fabrik view=form id=1 row=1} to insert a form to edit row 1 of a record or {fabrik view=table id=1} to insert a table
+	]]>
+	</description>
+	<files>
+		<filename plugin="fabrik">fabrik.php</filename>
+	</files>
+	<params>
+		<param name="botRegex" type="text" default="fabrik" size="20" label="Plugin function name" description="Enter a custom, ie. localized, bot function name here to invoke the Bot in content elements." />
+	</params>
+</install>

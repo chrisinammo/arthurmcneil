@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Radio Button</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders Radio Buttons</description>
+	<files>
+		<filename fabrikplugin="fabrikradiobutton">fabrikradiobutton.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="radio_element_before_label" type="radio" default="0" label="RADIOELEMENTBEFORELABEL" description="RADIOELEMENTBEFORELABELDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="options_per_row" type="width" default="4" label="Options per row" description="" />
+		<param name="allow_frontend_addtoradio" type="radio" default="0" label="EDITDROPDOWN" description="EDITDROPDOWNDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="rad-allowadd-onlylabel" type="radio" default="0" label="ONLYADDLABEL" description="ONLYADDLABELDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+				<param name="rad-savenewadditions" type="radio" default="0" label="SAVENEWADDITIONS" description="SAVENEWADDITIONSDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

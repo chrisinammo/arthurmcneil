@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="list_homeresult" type="list" default="0" label="AC_HOMELISTING" description="AC_HOMELISTINGDESC">
+			<option value="0">AC_NONE</option>
+			<option value="1">AC_CONTENTSECTION</option>
+			<option value="2">AC_STATICSCONTENT</option>
+			<option value="3">AC_WEBLINKSSECTION</option>
+			<option value="4">AC_CONTACTSSECTION</option>
+			<option value="5">AC_FEATUREDBELOW</option>			
+		</param>	
+		<param name="list_featuredID" type="text" default="" label="AC_ITEMS_ID" description="AC_ITEMS_ID_DESC" />
+		<param name="list_numcols" type="list" default="0" label="AC_NUMCOLS" description="AC_NUMCOLSDESC">
+			<option value="0">1</option>
+			<option value="1">2</option>
+		</param>
+		<param name="list_introstyle" type="list" default="1" label="AC_INTROSTYLE" description="AC_INTROSTYLE">
+			<option value="1">AC_TEXTONLY</option>
+			<option value="2">AC_ORIGINALINTRO</option>
+			<option value="0">AC_NONE</option>
+		</param>
+		<param name="list_numcharsintro" type="text" default="250" label="AC_LIMITNUMCHARSINTRO" description="AC_LIMITNUMCHARSINTRODESC" />		
+		<param name="list_titlelinkable" type="list" default="1" label="AC_TITLELINKABLE" description="AC_TITLELINKABLE">
+			<option value="0">AC_NO</option>
+			<option value="1">AC_YES</option>
+		</param>
+		<param name="list_numindex" type="list" default="1" label="AC_NUMINDEX" description="AC_NUMINDEXDESC">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_iconnew" type="list" default="1" label="AC_ICONNEW" description="AC_ICONNEW">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_numdaynew" type="text" default="7" label="AC_NUMDAYS" description="AC_NUMDAYSDESC" />
+		<param name="list_iconhot" type="list" default="1" label="AC_ICONHOT" description="AC_ICONHOT">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_numhitshot" type="text" default="50" label="AC_NUMHITS" description="AC_NUMHITSDESC" />
+		<param name="list_showdate" type="list" default="created" label="AC_DATEARTICLE" description="AC_DATEARTICLE">
+			<option value="created">AC_DATECREATED</option>
+			<option value="modified">AC_DATEMODIFIED</option>
+			<option value="0">AC_DONOTSHOW</option>			
+		</param>
+		<param name="list_formatdate" type="list" default="DATE_FORMAT_LC2" label="AC_FORMATDATE" description="AC_FORMATDATE">
+			<option value="DATE_FORMAT_LC">DATE_FORMAT_LC</option>
+			<option value="DATE_FORMAT_LC2">DATE_FORMAT_LC2</option>
+		</param>
+		<param name="list_showauthor" type="list" default="1" label="AC_AUTHOR" description="AC_AUTHOR">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showsectioncategory" type="list" default="1" label="AC_SECTIONCATEGORY" description="AC_SECTIONCATEGORY">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showhits" type="list" default="1" label="AC_HITS" description="AC_HITS">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_shownumcomments" type="list" default="0" label="AC_NUMCOMMENT" description="AC_NUMCOMMENT">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_commentsystem" type="list" default="0" label="AC_COMMENTSYSTEM" description="AC_COMMENTSYSTEMDESC">
+			<option value="0">AC_NONE</option>
+			<option value="yvcomment">Yvcomment</option>
+		</param>
+		<param name="list_showprint" type="list" default="1" label="AC_PRINT" description="AC_PRINT">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showpdf" type="list" default="1" label="AC_PDF" description="AC_PDF">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showemail" type="list" default="1" label="AC_EMAIL" description="AC_EMAIL">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showreadmore" type="list" default="1" label="AC_READMORE" description="AC_READMORE">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showlinkmap" type="list" default="1" label="AC_LINKMAP" description="AC_LINKMAPDESC">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_shownumberpagetotal" type="list" default="1" label="AC_NUMBERPAGETOTAL" description="AC_NUMBERPAGETOTAL">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_resultperpage" type="list" default="10" label="AC_RESULTPERPAGE" description="AC_RESULTPERPAGE">
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="8">8</option>
+			<option value="10">10</option>
+			<option value="12">12</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="18">18</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="40">40</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+			<option value="200">200</option>
+			<option value="500">500</option>
+			<option value="1000">1000</option>
+		</param>
+		<param name="list_showsearchbox" type="list" default="1" label="AC_SEARCHBOX" description="AC_SEARCHBOX">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showsearchboxbutton" type="list" default="0" label="AC_SEARCHBOXBUTTON" description="AC_SEARCHBOXBUTTON">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_showorderinglist" type="list" default="1" label="AC_ORDERINGLIST" description="AC_ORDERINGLIST">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="list_defaultordering" type="list" default="0" label="AC_DEFAULTORDERING" description="AC_DEFAULTORDERING">
+			<option value="1">AC_TITLEAZ</option>
+			<option value="2">AC_TITLEZA</option>
+			<option value="3">AC_DATECREATEDASC</option>
+			<option value="4">AC_DATECREATEDDESC</option>
+			<option value="5">AC_DATEMODIFIEDASC</option>
+			<option value="6">AC_DATEMODIFIEDDESC</option>
+			<option value="7">AC_HITSASC</option>
+			<option value="8">AC_HITSDESC</option>
+			<option value="9">AC_RATINGASC</option>
+			<option value="10">AC_RATINGDESC</option>
+			<option value="11">AC_AUTHORASC</option>
+			<option value="12">AC_AUTHORDESC</option>
+			<option value="13">AC_DEFAULTORDERING</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="list_showimage" type="list" default="1" label="AC_SHOWIMAGE" description="AC_SHOWIMAGE">
+			<option value="0">AC_NO</option>
+			<option value="1">AC_FIRST</option>
+			<option value="2">AC_LAST</option>
+		</param>
+		<param name="list_imageposition" type="list" default="1" label="AC_IMAGEPOSITION" description="AC_IMAGEPOSITION">
+			<option value="0">AC_LEFT</option>
+			<option value="1">AC_RIGHT</option>
+			<option value="2">AC_ALTERNATE</option>
+		</param>
+		<param name="list_widthimage" type="text" default="120" label="AC_WIDTHIMAGE" description="AC_WIDTHIMAGE" />		
+	</params>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Fabrik - Validation Rules</name>
+  <author>Manel Zaera, manelzaera@yahoo.es</author>
+  <version>1.0 for Fabrik 2.0</version>
+  <description>Definition for Fabrik Validation Rules</description>
+  <reference>
+  	<table name="fabrik_validation_rules">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="validation_rule_label" translate="1">Validation Rule Label</field>
+		<field type="text" name="validation_rule_expression" translate="1">Validation Rule Expression</field>
+  	</table>
+  </reference>
+</joomfish>

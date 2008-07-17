@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Glossary</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style3 {font-size: 14px}
+.Style4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<h1>AlphaContent</h1>
+
+<p><strong>Pr&eacute;sentation:</strong> AlphaContent est un composant qui permet de cr&eacute;er des annuaires de type Yahoo &agrave; partir des sections et cat&eacute;gories de votre site Joomla!. Il permet &eacute;galement d'ajouter les articles non cat&eacute;goris&eacute;s (articles statiques) comme une section &agrave; l'instar des composants weblinks et contact. AlphaContent poss&egrave;de son propre syst&egrave;me de vote en ajax qui peut &ecirc;tre utilis&eacute; en remplacement du syst&egrave;me de vote natif. </p>
+<p><strong>Licence:</strong> AlphaContent version 4.x est r&eacute;alis&eacute; sous licence <a href="http://en.wikipedia.org/wiki/Donationware">Donationware</a>. Tous droits r&eacute;serv&eacute;s.</p>
+<p><strong>Installation : </strong>Installer le composant via l'interface d'administration de Joomla. Lors de l'installation, le plugin s'installe et est publi&eacute; automatiquement. Si toutefois le r&eacute;pertoire Plugins n'a pas les droits en &eacute;criture, une erreur survient et arverti l'utilisateur. Le composant devra &ecirc;tre r&eacute;install&eacute; apr&egrave;s modifications des droits sur le r&eacute;pertoire Plugins.</p>
+<p><strong>Mise en route :</strong></p>
+<p><strong><span class="Style3">Etape 1 - Param&eacute;trage</span><br />
+</strong>Via le panneau d'administration, cliquez sur le composant AlphaContent puis param&eacute;trez la configuration g&eacute;n&eacute;rale du composant.</p>
+<p><strong>G&eacute;n&eacute;ral :</strong> cet ensemble de param&egrave;tres d&eacute;termine les principaux param&egrave;tres pour l'affichage du listing des r&eacute;sultats.<br />
+  - Page d'accueil du composant permet d'afficher une liste de r&eacute;sultat au choix entre les sections de contenu, les articles statiques, la section Weblink, la section contacts ou une liste d'articles choisis, ou bien de rien afficher du tout.<br />
+  - Items ID: indiquez les ID des articles si vous avez s&eacute;lectionn&eacute; l'option S&eacute;lection manuelle au dessus.<br />
+  - Nombre de colonnes: Vous pouvez afficher votre liste de r&eacute;sultats sur 1 ou 2 colonnes.<br />
+  - Style intro : possibilit&eacute; entre pas d'intro, une intro texte uniquement (sans balise html) ou l'intro originale de l'article avec les plugins associ&eacute;s.<br />
+  - Nombre maxi de caract&egrave;res: si vous avez s&eacute;lectionn&eacute; intro texte, vous pouvez limiter le nombre de caract&egrave;re &agrave; l'affichage.<br />
+  - Titre cliquable : oui ou non.<br />
+  - Num&eacute;ro d'index : affiche une num&eacute;rotation devant chaque article du listing.<br />
+  - Ic&ocirc;ne Nouveau : affiche une ic&ocirc;ne &quot;Nouveau&quot; &agrave; la suite du titre de l'article.<br />
+  - Nombre de jours: saisissez le nombre de jours durant lequel l'ic&ocirc;ne &quot;Nouveau&quot; doit appara&icirc;tre.<br />
+  - Ic&ocirc;ne Hot : affiche une ic&ocirc;ne &quot;Hot&quot; &agrave; la suite du titre de l'article.<br />
+  - Nombre de hits : indiquez le nombre de hits d&eacute;terminant l'affichage de l'ic&ocirc;ne &quot;Hot&quot;.<br />
+  - Date de l'article : affichez ou non la date de l'article ou la date de modification.<br />
+  - Format date : s&eacute;lection du format d'affichage de la date.<br />
+  - Auteur article : affichez ou non l'auteur de l'article.<br />
+  - Section/Cat&eacute;gorie : affichez le nom de la section et de la cat&eacute;gorie de l'article.<br />
+  - Hits : Affichez ou non le nombre de hits concernant l'article. (d&eacute;sactiv&eacute; pour la section contacts)<br />
+  - Nombre de commentaires: affichez ou non le nombre de commentaires concernant l'article.<br />
+  - Syst&egrave;me de commentaire: s&eacute;lectionnez le syst&egrave;me de commentaire servant &agrave; afficher le nombre d ecommentaires.<br />
+  - Imprimer : affiche un lien &quot;imprimer&quot; dans le listing.<br />
+  - PDF : affiche un lien &quot;PDF&quot; dans le listing.<br />
+  - Email : affiche un lien &quot;envoyer&quot; dans le listing.<br />
+  - Lire la suite : affiche un lien &quot;lire la suite&quot; dans le listing si l'option intro texte est activ&eacute; et que le texte a &eacute;t&eacute; tronqu&eacute; ou si l'article poss&egrave;de naturellement une suite.<br />
+  - Lien Plan : Affiche un lien vers Google Maps (voir plus bas).<br />
+  - Nombre de pages: affiche le nombre de page sur le total de pages existantes.<br />
+  - Nombre de r&eacute;sultats par page : S&eacute;lectionnez le nombre d'articles &agrave; afficher par page.<br />
+  - Recherche : affiche une boite de saisie pour les recherches.<br />
+  - Bouton recherche : affiche un bouton apr&egrave;s la boite de saisie.<br />
+  - Ordre des r&eacute;sultats: s&eacute;lectionnez l'ordre par d&eacute;faut des r&eacute;sultats du listing.<br />
+  - Image article : affiche ou non la premi&egrave;re ou la derni&egrave;re image contentue dans un article.<br />
+  - Position image : s&eacute;lectionnez &agrave; gauche du listing, &agrave; droite du listing ou altern&eacute;.<br />
+- Dimension de l'image: saisissez le nombre maxi en pixel de l'image affich&eacute;e.</p>
+<p><strong>Google Maps :</strong> cet ensemble de param&egrave;tres permet d'utiliser les fonction int&eacute;gr&eacute;es &agrave; AlphaContent pour afficher un lien &quot;carte&quot; ou &quot;plan&quot; au moyen de l'API google Maps. Pour fonctionner correctement, vous devez acquerir une API Key aupr&egrave;s de Google Maps <a href="http://www.google.com/apis/maps/signup.html">http://www.google.com/apis/maps/signup.html</a>.<br />
+  - API Key : Entrez la cl&eacute; obtenue aupr&egrave;s des services Google Maps.<br />
+  - Niveau de Zoom : Entrez un niveau de zoom pour l'affichage de la carte.<br />
+  - Largeur de la carte : entrez un nombre en pixels pour d&eacute;terminer la largeur de la fen&ecirc;tre Google Maps.<br />
+  - Hauteur de la carte : entrez un nombre en pixels pour d&eacute;terminer la hauteur de la fen&ecirc;tre Google Maps.<br />
+  - types : afficher les types de cartes disponibles (carte, satellite, hybride) dans la fen&ecirc;tre Google Maps.<br />
+- Contr&ocirc;les : afficher les outils de navigation dans la fen&ecirc;tre Google Maps.</p>
+<p><strong>Comment utiliser le plugin Google Maps ?</strong><br />
+Pour cr&eacute;er un lien vers Google Maps, vous devez saisir le tag suivant dans votre article: {ALPHAGMAP=longitude|latitude|marker text}. Latitude et longitude sont num&eacute;riques et marker est le message texte de votre position dans la carte (le code HTML est support&eacute; mais pas les apostrophes). Exemple pour Paris: {ALPHAGMAP=48.85667|2.35099|Paris!}</p>
+<p><strong>Syst&egrave;me de vote en Ajax :</strong> cet ensemble de param&egrave;tres permet d'utiliser le syst&egrave;me de vote int&eacute;gr&eacute; &agrave; AlphaContent.<br />
+  - Utilisez le syst&egrave;me de vote : oui ou non.<br />
+  - Nombre d'&quot;&eacute;toiles&quot; &agrave; afficher.<br />
+  - Largeur de l'&eacute;toile : Si vous choisissez de modifier cette dimension dans le cas o&ugrave; vous souhaitez utiliser votre propre image pour le vote, pensez &eacute;galement &agrave; modifier le fichier CSS (rating.css) situ&eacute; dans components/com_alphacontent/assets/css/ et remplacer l'image de vote dans components/com_alphacontent/assets/images/starrating.gif. La valeur par d&eacute;faut est de 16 pixels.</p>
+<p> 
+<em>Notes : Dans le cas ou vous souhaitez utiliser &eacute;galement le syst&egrave;me de vote en dehors du cadre de l'utilisaton d'AlphaContent il est n&eacute;cessaire d'&eacute;diter les param&egrave;tres du plugin alphacontent et positionner &agrave; &quot;enabled&quot;.</em></p>
+<p><b>Sharethis Widget</b>: cet ensemble de param&egrave;tres permet d'utiliser le  widget de <a href="http://sharethis.com" target="_blank">Sharethis</a> . Vous pouvez cr&eacute;er votre  widget personnel sur <a href="http://sharethis.com/publisher?type=stapi#configurator" target="_blank">http://sharethis.com/publisher?type=stapi#configurator</a>. Il suffit juste de vous inscrire auparavant puis param&eacute;trer votre widget pour obtenir son code.<br />
+-- <i>Utilisez Sharethis </i>: oui ou non.<br />
+-- <i>Sharethis widget code</i>: Coller votre code Sharethis dans cette zone de texte.</p>
+<p> <em>Notes : Dans le cas ou vous souhaitez utiliser &eacute;galement le widget Sharethis en dehors du cadre de l'utilisaton d'AlphaContent il est n&eacute;cessaire d'&eacute;diter les param&egrave;tres du plugin alphacontent et positionner &agrave; &quot;enabled&quot;.</em></p>
+<p><span class="Style4">Etape 2 - Cr&eacute;ation du menu</span><br />
+Cr&eacute;ez un menu li&eacute; au composant AlphaContent via le panneau d'administration de Joomla. Puis &eacute;ditez les param&egrave;tres sp&eacute;cifiques pour ce menu.</p>
+<p>Dans la partie <em>param&egrave;tre de base</em>, vous trouverez tous les param&egrave;tres n&eacute;cessaire &agrave; la cr&eacute;ation du r&eacute;pertoire, choix des sections etc... <br />
+Dans la partie <em>avanc&eacute;e</em>, vous avez la possibilit&eacute; d'ajouter des fonctionnalit&eacute; au r&eacute;pertoire telles que l'affichage de l'image des sections et cat&eacute;gories, taille de l'image ainsi que la possibilit&eacute;  d'ajouter une image aux sections weblinks, contacts et articles statiques.</p>
+<p>- Articles relatifs : vous pouvez afficher &agrave; la suite de l'article un certain nombre d'article ayant les m&ecirc;mes mots cl&eacute; que l'article s&eacute;lectionn&eacute;.<br />
+  - Nombre d'articles : indiquez le nombre d'articles relatifs &agrave; afficher &agrave; la fin de l'article en cours.</p>
+<p>- Tags : Vous pouvez avec cette option afficher une liste de tags au-dessus de l'article. Chaque tag affich&eacute; permet de lancer une recherche dans les articles ayant le m&ecirc;me tag.<br />
+  - Nombre de tag &agrave; afficher : indiquez le nombre de tags &agrave; afficher.</p>
+<p>- Syst&egrave;me de vote : activez ou non le syst&egrave;me de vote pour ce r&eacute;pertoire.<br />
+- S&eacute;lection du syst&egrave;me de vote : Vous avez le choix entre le syst&egrave;me natif de Joomla ou bien le syst&egrave;me de vote en Ajax d'AlphaContent.</p>
+<p>Dans la partie <em>composant</em>, vous retrouvez tous les param&egrave;tres de base saisis dans l'administration du composant. Chaque menu peut &ecirc;tre param&eacute;tr&eacute; diff&eacute;remment et permet de publier ainsi plusieurs annuaires distincts.</p>
+</body>
+</html>

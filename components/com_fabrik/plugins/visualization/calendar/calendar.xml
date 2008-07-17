@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="visualization">
+	<name>Calendar</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2008</creationDate>
+	<copyright>(C) 2005-2006 pollen-8.co.uk</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Defines behaviour of calendar visualization plugin</description>
+	<files>
+		<filename fabrikplugin="calendar">calendar.php</filename>
+		<filename>index.html</filename>
+		<filename>calendar.php</filename>
+	</files>
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="calendar_connection" type="connections" label="Connection" />
+		<param name="calendar_layout" label="template" type="folderlist" directory="/components/com_fabrik/plugins/visualization/calendar/tmpl/" />
+	</params>
+
+	<params group="fields" repeat="1">
+		<param name="calendar_table[]" type="fabriktables" observe="calendar_connection" label="Table"/>
+		<param name="calendar_date_element[]" type="element" connection="calendar_connection" table="calendar_table" label="Date element" />
+		<param name="calendar_label_element[]" type="element" connection="calendar_connection" table="calendar_table" label="Label element" />
+		<param name="colour[]" type="text" label="Colour" />	
+	</params>
+</install>

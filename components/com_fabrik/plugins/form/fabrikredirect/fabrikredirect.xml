@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="form">
+	<name>Redirect</name>
+	<author>Rob Clayburn</author>
+	<creationDate>March 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Performs redirect once form has been submitted</description>
+	<files>
+		<filename fabrikplugin="fabrikRedirect">fabrikRedirect.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params repeat="1" repeatcontrols="0">
+		<param name="jump_page" type="text" size="40" default="" label="JUMPPAGE" description="JUMPPAGEDESC"/>
+		<param name="thanks_message" type="textarea" default="" rows="8" cols="60" label="REDIRECTTHANKSMSG" description="REDIRECTTHANKSMSGDESC" />
+		<param name="save_insession" type="radio" default="0" label="SAVEINSESSION" description="SAVEINSESSIONDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="save_full_elname_in_session" type="radio" default="0" label="SESSIONNAMEFORMAT" description="SESSIONNAMEFORMATDESC">
+			<option value="0">Short</option>
+			<option value="1">Full</option>
+		</param>
+		<param name="append_jump_url" type="radio" default="0" label="APPENDJUMPURL" description="APPENDJUMPURLDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

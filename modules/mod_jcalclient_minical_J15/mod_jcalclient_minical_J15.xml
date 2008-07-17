@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>JCal Client Mini-calendar</name>
+  <creationDate>2-Nov-2007</creationDate>
+  <author>Anything Digital</author>
+  <copyright>Released under GNU/GPL License</copyright>
+  <authorEmail>admin@anything-digital.com</authorEmail>
+  <authorUrl>dev.anything-digital.com</authorUrl>
+  <version>1.5.3 Beta224 (J1.5)</version>
+  <description>Mini-calendar module for the JCal Client calendar component. NOTE that this module has some parameters which you can change here in Administration by going to Modules, selecting Site Modules and selecting JCal Pro Mini-calendar.</description>
+  <files>
+   <filename module="mod_jcalclient_minical_J15">mod_jcalclient_minical_J15.php</filename>
+  </files>
+  <params>
+	  <param name="calendar" type="text" default="" label="Calendar" description="Calendar name to show. Leave blank for all." />
+      <param name="categories" type="text" default="" label="Categories" description="Ids of JCal Pro categories to show (comma seperated). Leave blank for all." />
+	  <param name="limit_categories" type="radio" default="1" label="Limit links to Categories" description="Limit all links to only disply events from the categories indicated above.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="mini_cal_def_picture" type="text" default="def_pic.gif" label="Default Picture Filename" description="The filename of the little picture to display. The file you choose MUST be uploaded manually to your server, into the folder components/com_extcalendar/images/minipics. (The default image, \'def_pic.gif\', is already there.) Recommended width of picture is 135 pixels." />
+	  <param name="picture" type="list" default="0" label="Picture Display Options" description="Type of display for the mini-picture. \'None\' is self-explanatory; \'Random\' chooses random pictures you\'ve uploaded to the \'minipics\' folder; to use the others you MUST upload image files manually to the folder components/com_extcalendar/images/minipics with NUMBERS as the names -- i.e. 1.gif, 2.gif., etc. Daily will use up to 365, a new one every day; Weekly will use up to 7, and so on. Images should be 135 pixels wide to avoid ugliness, but will be resized by the browser if they\'re not.">
+				<option value="0">None</option>
+				<option value="1">Default Image (already exists)</option>
+				<option value="2">Daily Rotation (must upload numbered images)</option>
+				<option value="3">Weekly Rotation (must upload numbered images)</option>
+				<option value="4">Random (must upload images, any name)</option>
+	  </param>
+	  <param name="navigation_controls" type="radio" default="1" label="Show Navigation Arrows" description="Yes is recommended. If No, then no arrows will display to move to next/previous month. But a bit of the CSS formatting goes away, too.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="use_specific_itemid" type="radio" default="0" label="Use specific Itemid" description="If \'yes\' then you can specify a Itemid value in the field below, this way the links can be opened in a specific page of your site.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="specific_itemid_mini" type="text" default="" label="Specific Itemid for displaying the module" description="Fill this option in case you want minical to open within a specific menu option. Left blank otherwise ." />
+	  <param name="show_minical_add_event_button" type="radio" default="1" label="Show 'Post New Event' Button" description="If \'yes\' then a small button appears below the minicalendar to add a new event.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="month_to_display" type="radio" default="0" label="Month to display" description="Month to Display">
+				<option value="-1">Previous Month</option>
+				<option value="0">This Month</option>
+				<option value="1">Next Month</option>
+	  </param>
+	  <param name="target" type="text" default="" label="Window Target When Clicking a Date" description="Leave blank to load in same window (same as \'_self\'). This is recommended. I can\'t think of any reason why you\'d type something here, but I included it it just in case. You can type \'_blank\' to have events open in a new window, which can get ugly, or maybe you have a set up where you need to target a different named frame or something." />
+	  <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (normally just \'table.moduletable\'), this allows individual module styling" />
+  </params>
+</install>

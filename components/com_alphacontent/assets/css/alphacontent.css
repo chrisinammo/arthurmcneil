@@ -1,0 +1,166 @@
+/* CSS document */
+
+/* Default CSS for AlphaContent */
+
+#alphacontent {
+	font-size        : 12px;
+	font-weight      : normal;
+}
+
+#alphabeticalbar div {	
+	background-color : #F0F0F0;
+	padding          : 5px 0 0 0;
+	font-size        : 12px;
+	border-top       : 1px solid #CECECE;
+	border-bottom    : 1px solid #CECECE;
+	vertical-align   : middle;	
+}
+
+#alphabeticalbar p {	
+	text-align       : center;
+}
+
+#alphabeticalbar a:link, a:visited {
+}
+
+#alphabeticalbar a:hover {
+	background-color :#CECECE;
+}
+
+#alphapathway {
+	padding-top      : 10px;
+	padding-left     : 5px;
+	font-size        : 12px;
+	color            : #666666;
+}
+
+#alphadirectory {
+	padding-top      : 10px;
+	border-bottom    : 1px solid #CECECE;	
+}
+
+.ac_title_section_directory {
+	font-size        : 16px;
+	font-weight      : bold;
+}
+
+.ac_title_section_directory a:link{
+	font-weight      : bold;
+}
+
+.ac_counter_directory {
+}
+
+.ac_categories_directory {
+}
+
+.ac_section_description, .ac_category_description {
+	color            : #666666;
+}
+
+.ac_image_directory {
+	display          : block;
+	float            : left;
+	padding-right    : 8px;
+}
+
+#alphasection, #alphacategory {
+	padding-top      : 10px;
+	padding-left     : 5px;
+	border-bottom    : 1px solid #CECECE;	
+}
+
+#alphatags{
+	background-color : #F0F0F0;
+	padding          : 5px;
+	/*padding-left     : 5px;*/
+	border-bottom    : 1px solid #CECECE;	
+}
+
+#searchbar {
+	padding-top      : 10px;
+	padding-left     : 5px;
+}
+
+.orderinglist {
+	display          : block;
+	float            : right;
+}
+
+#alphapagecounter p{
+	padding-top      : 12px;
+	padding-left     : 5px;
+}
+
+#alphapagination p{
+	clear			 : both;
+	display			 : block;
+	padding-top      : 20px;
+	text-align       : center;
+}
+
+.ac_title_relateditems p{
+}
+
+#alpharelateditems {
+	/*
+	special class for related items
+	*/	
+}
+#alpharelateditems p{
+	padding-top      : 20px;
+	font-weight		 : bold;	
+}
+#alpharelateditems li{
+}
+
+.ac_rss2 {
+	display			 : block;
+	float			 : left;
+	background       : url('../images/rss.png') no-repeat;
+	padding			 : 1px 10px 0px 20px;
+}
+
+
+/*  START FOR EACH LISTING   */
+
+.alphalisting {
+	padding-top      : 12px;
+	padding-left     : 0px;
+}
+._alphanum {
+	font-size        : 12px;
+}
+._alphatitle {
+	font-size        : 12px;
+	font-weight      : bold;
+}
+
+._alphafeatured {
+	font-size        : 10px;
+	font-weight      : bold;
+	color			 : #000099;
+}
+
+._imageleft div{
+	
+}
+._imageleft img {		
+	float			 : left;
+	padding-right	 : 10px;
+}
+
+
+._imageright div{
+	
+}
+._imageright img {
+	float			 : right;
+	padding-left	 : 10px;
+}
+
+._separate {
+	display			 : none ;
+}
+
+/*  END FOR EACH LISTING   */

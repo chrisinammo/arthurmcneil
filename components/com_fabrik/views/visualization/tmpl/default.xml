@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Article Layout">
+		<message>
+			<![CDATA[STANDARD ARTICLE LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Fabrik Visualization</name>
+		<description>Choose from a selections of fabrik visualizations</description>
+		<url addpath="/administrator/components/com_fabrik/elements">
+			<param name="visualizationid" type="visaulizationlist" default="0" label="Select Visualization" description="" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,72 @@
+.oddRow1{
+	background-color:#8dcff3;
+}
+
+.oddRow0{
+	background-color:#ace2ff;
+}
+
+.fabrikTable, .filtertable{
+	margin:5px;
+	border-collapse:collapse;
+	border:1px solid #666666!important;
+	color:#2e2e2e;
+	font-weight:bold;
+}
+
+.fabrikTable a{
+    color:#2e2e2e;
+}
+
+.fabrikTable td{
+	border-bottom:1px solid #dddddd!important;
+}
+.fabrikTable td, .fabrikTable th, .filtertable td, .filtertable th{
+	padding:4px !important;
+}
+
+.fabrikHover{
+	background-color:#e7f6fe;
+}
+
+.fabrikRowClick{
+	background-color:#edf9ff;
+}
+
+.fabrikTable th, .filtertable th{
+	background: #595959 url(icons/bluesky-heading.gif) bottom left repeat-x;
+	color:#edf9ff;
+	white-space: nowrap;
+	padding-bottom:9px !important;
+}
+
+.fabrikTable a.fabrikorder-desc{
+	background: transparent url(icons/bluesky-orderdesc.png) no-repeat right;
+	padding-right:9px;
+}
+
+.fabrikTable a.fabrikorder-asc{
+	background: transparent url(icons/bluesky-orderasc.png) no-repeat right;
+	padding-right:9px;
+}
+
+.emptyDataMessage{
+	text-align:center;
+	border:2px solid #8dcff3;
+	font-size:1.3em;
+	font-weight:bold;
+	padding:10px;
+	background-color:#D8EBF0;
+	margin-bottom:20px;
+	color:#2e2e2e;
+	margin:5px;
+}
+
+.fabrikTable{
+	width:150px !important;
+}
+
+.addbutton{
+	background: transparent url(icons/add.png) no-repeat left;
+	padding:2px 0 0 20px;
+}

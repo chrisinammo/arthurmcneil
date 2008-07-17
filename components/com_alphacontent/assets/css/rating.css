@@ -1,0 +1,97 @@
+/*  styles for the unit rater
+--------------------------------------------------------- 
+ryan masuga, masugadesign.com
+ryan@masugadesign.com 
+Licensed under a Creative Commons Attribution 3.0 License.
+http://creativecommons.org/licenses/by/3.0/
+See readme.txt for full credit details.
+--------------------------------------------------------- */
+
+.ratingblock {
+	display:block;
+	padding-left    : 0px;
+	padding-top		: 2px;	
+}
+	
+.ratingbar {
+	display:block;
+	padding-bottom:0px;
+}
+
+.loading {
+	height: 16px;
+	background: url('../images/working.gif') 50% 50% no-repeat;
+}
+	
+.unit-rating { /* the UL */
+	list-style:none;
+	margin: 0px;
+	padding:0px;
+	height: 16px;
+	position: relative;
+	background: url('../images/starrating.gif') top left repeat-x;		
+}
+
+.unit-rating li{
+    text-indent: -9000px;
+	padding:0px;
+	margin:0px;
+	float: left;
+}
+	
+.unit-rating li a {
+	outline: none;
+	display:block;
+	width:16px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 20;
+	position: absolute;
+	padding: 0px;
+}
+	
+.unit-rating li a:hover{
+	background: url('../images/starrating.gif') left center;
+	z-index: 2;
+	left: 0px;
+}
+
+.unit-rating a.r1-unit{left: 0px;}
+.unit-rating a.r1-unit:hover{width:16px;}
+.unit-rating a.r2-unit{left:16px;}
+.unit-rating a.r2-unit:hover{width: 32px;}
+.unit-rating a.r3-unit{left: 32px;}
+.unit-rating a.r3-unit:hover{width: 48px;}
+.unit-rating a.r4-unit{left: 48px;}	
+.unit-rating a.r4-unit:hover{width: 64px;}
+.unit-rating a.r5-unit{left: 64px;}
+.unit-rating a.r5-unit:hover{width: 80px;}
+.unit-rating a.r6-unit{left: 80px;}
+.unit-rating a.r6-unit:hover{width: 96px;}
+.unit-rating a.r7-unit{left: 96px;}
+.unit-rating a.r7-unit:hover{width: 112px;}
+.unit-rating a.r8-unit{left: 112px;}
+.unit-rating a.r8-unit:hover{width: 128px;}
+.unit-rating a.r9-unit{left: 128px;}
+.unit-rating a.r9-unit:hover{width: 144px;}
+.unit-rating a.r10-unit{left: 144px;}
+.unit-rating a.r10-unit:hover{width: 160px;}
+
+.unit-rating li.current-rating {
+	background: url('../images/starrating.gif') left bottom;
+	position: absolute;
+	height: 16px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+}
+
+.votinginfo {
+	display:block;
+	float:left;
+	height:16px;
+	padding-left:6px;
+} 
+
+.thanks {color:#36AA3D;}

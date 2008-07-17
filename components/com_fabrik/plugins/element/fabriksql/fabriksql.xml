@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik SQL</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders the results of an sql statement</description>
+	<files>
+		<filename fabrikplugin="fabriksql">fabriksql.php</filename>
+		<filename>index.html</filename>
+	</files>
+		
+	<languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriksql.ini</language>
+	</languages>
+	
+	<params>
+	<param name="sql" type="textarea" cols="40" rows="7" size="40" default="" label="PLUGIN_SQL" description=""/>
+	</params>
+</install>

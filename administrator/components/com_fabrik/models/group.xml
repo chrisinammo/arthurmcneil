@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Group Edit Form</name>
+	<params group="pagination">
+		<param name="split_page" type="radio" default="0" label="SPLITPAGE" description="SPLITPAGEDESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="split_page_save" type="radio" default="1" label="SPLITPAGESAVE" description="SPLITPAGESAVEDESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+	<params addpath="/administrator/components/com_fabrik/elements">
+		
+		<param name="repeat_group_button" type="radio" default="0" label="REPEATGROUPBUTTON" description="REPEATGROUPBUTTONDESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="repeat_group_show_first" type="radio" default="1" label="SHOWGROUP" description="SHOWGROUPDESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="repeat_group_js_add" type="textarea" default="" rows="8" cols="60" label="CUSTOMJSADD" description="CUSTOMJSADDDESC" />
+		<param name="repeat_group_js_delete" type="textarea" default="" rows="8" cols="60" label="CUSTOMJSDEL" description="CUSTOMJSDELDESC" />	
+	</params>
+</form>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Fabrik form layout">
+		<message>
+			<![CDATA[STANDARD Fabrik form layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Fabrik Form</name>
+		<description>Link to a Fabrik form</description>
+		<url addpath="/administrator/components/com_fabrik/elements">
+			<param name="fabrik" type="formlist" default="" label="Form" description="The form to show - if the view is set to view form" />
+			<param name="rowid" type="text" size="3" default="" label="Row id" description="The table row to show in the form - if the view is set to view form" />
+			<param name="usekey" type="text" size="15" default="" label="Key name" description="Column name to use with Row id, leave blank to use primary key (only set this if you know what you are doing!)" />
+			<param name="random" type="radio" default="0" label="Show random records" description="Setting this to yes will randomly display a record. Note prefilters are still applied">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="fabriklayout" type="folderlist" directory="/components/com_fabrik/views/form/tmpl/" default="default" label="template" descrption="The form template to use" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

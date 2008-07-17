@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Display Text</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders Plain text</description>
+	<files>
+		<filename fabrikplugin="fabrikdisplaytext">fabrikdisplaytext.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="eval" type="eval" default="0" label="Eval" />
+	</params>
+</install>

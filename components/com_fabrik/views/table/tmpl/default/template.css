@@ -1,0 +1,97 @@
+table.fabrikTable{
+	border-collapse:collapse;
+	margin-top:10px;
+}
+
+table.fabrikTable td,
+table.fabrikTable th{
+	padding:5px;
+	border:1px solid #cccccc;
+}
+
+.fabrikForm{
+	margin-top:15px;
+}
+
+table.fabrikTable tr.fabrik_calculations td{
+	border:0 !important;
+}
+
+table.fabrikTable th{
+	background-color:#e0e0e0;
+}
+
+.oddRow0{
+	background-color:#FAFAFA;
+}
+
+.oddRow1{
+	background-color:#Efefef;
+}
+
+.fabrikTable a.fabrikorder-desc{
+	background: transparent url(icons/orderdesc.png) no-repeat right;
+	padding-right:9px;
+}
+
+.fabrikTable a.fabrikorder-asc{
+	background: transparent url(icons/orderasc.png) no-repeat right;
+	padding-right:9px;
+}
+
+.firstPage, .previousPage, .aPage, .nextPage, .lastPage{
+	display:inline;
+	padding:3px;
+}
+
+table.filtertable{
+	width:50%;
+	float:right;
+}
+
+.fabrikHover{
+	background-color:#ffffff;
+}
+
+/** highlight the last row that was clicked */
+.fabrikRowClick{
+	background-color:#ffffff;
+}
+
+/** highlight the loaded row - package only */
+.activeRow{
+	background-color:#FFFFCC;
+}
+
+.addbutton{
+	background: transparent url(icons/add.png) no-repeat left;
+	padding:2px 5px 0 20px;
+}
+
+.feedButton{
+	background: transparent url(icons/feed.png) no-repeat left;
+	padding:2px 5px 0 20px;
+}
+
+.csvExportButton{
+	background: transparent url(icons/csv-export.png) no-repeat left;
+	padding:2px 5px 0 20px;
+}
+
+.csvImportButton{
+	background: transparent url(icons/csv-import.png) no-repeat left;
+	padding:2px 5px 0 20px;
+}
+
+
+.emptyDataMessage{
+	background-color:#EFE7B8;
+	border-color:#EFD859;
+	border-width:2px 0;
+	border-style:solid;
+	padding:5px;
+	margin:10px 0;
+	font-size:1em;
+	color:#CC0000;
+	font-weight:bold;
+}

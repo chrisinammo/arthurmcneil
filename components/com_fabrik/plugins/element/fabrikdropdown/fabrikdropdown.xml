@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Dropdown</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders Drop down / multiple select box</description>
+	<files>
+		<filename fabrikplugin="fabrikdropdown">fabrikdropdown.php</filename>
+		<filename>admin.js</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdropdown.ini</language>
+	</languages>
+	<params>
+		
+		<param name="multiple" type="radio" default="0" label="ALLOWMULTISELECT" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="allow_frontend_addtodropdown" type="radio" default="0" label="EDITDROPDOWN" description="EDITDROPDOWNDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="dd-allowadd-onlylabel" type="radio" default="0" label="ONLYADDLABEL" description="ONLYADDLABELDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+				<param name="dd-savenewadditions" type="radio" default="0" label="SAVENEWADDITIONS" description="SAVENEWADDITIONSDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

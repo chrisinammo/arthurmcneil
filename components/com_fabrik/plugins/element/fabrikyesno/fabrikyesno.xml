@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Yes/No</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders yes / no radio buttons</description>
+	<files>
+		<filename fabrikplugin="fabrikyesno">fabrikyesno.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+			<param name="yesno_default" type="list" default="0" label="Default" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

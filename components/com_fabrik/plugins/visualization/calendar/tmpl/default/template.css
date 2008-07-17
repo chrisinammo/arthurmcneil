@@ -1,0 +1,68 @@
+.viewMode{
+	text-align:right;
+	padding:0;
+	margin:0;
+}
+.viewMode li{
+	display:inline;
+	border:1px solid #999999;
+	background-color:#f7f7f7;
+	margin:0 3px;
+	padding:3px;
+	cursor:pointer;
+}
+
+.viewMode li:hover{
+	background-color:#FFFFFF;
+}
+
+.popWin{
+	padding:5px;
+	background-color:#ffffff;
+}
+
+
+.otherMonth{
+	background-color:#f6f6f6 !important;
+	color:#999999 !important;
+}
+
+.selectedDay{
+	background-color:#FFFFFF !important;
+}
+
+/**** legend *****/
+#legend{
+	margin:10px;padding:5px;
+	border:1px solid #dddddd;
+}
+
+#legend ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#legend li{
+	clear:left;
+	padding:3px;
+}
+
+#legend li div{
+	float:left;
+	width:15px;
+	height:15px;
+	border:1px solid #dddddd;
+}
+
+#legend li span{
+	padding-left:5px;
+}
+
+/*** end legend ***/
+	
+/**** calendarNav ****/
+
+#calendarNav{
+	background-color:rgb(247, 247, 247);
+}

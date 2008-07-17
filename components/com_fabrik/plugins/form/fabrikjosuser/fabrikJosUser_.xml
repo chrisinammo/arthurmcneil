@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="form">
+	<name>Email</name>
+	<author>Rob Clayburn</author>
+	<creationDate>March 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Binds data to a Joomla user account</description>
+	<files>
+		<filename fabrikplugin="fabrikJosUser">fabrikJosUser.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params repeat="1" repeatcontrols="0">
+		<param name="josuser_fieldid" type="text" size="30" default="" label="Field with userid to bind to" description=""/>
+		<param name="josuser_make_vm_shopper" type="radio" default="0" label="Make Virtuemart Shopper" description="Create a virtuemart shopper account for this user">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="josuser_make_vm_vendor" type="radio" default="0" label="Make Virtuemart Vendor" description="Create a virtuemart vendor account for this user">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Fabrik - Table</name>
+  <author>Rob Clayburn</author>
+  <version>1.0 for Fabrik 2.0</version>
+  <description>Definition for Fabrik Tables</description>
+  <reference>
+  	<table name="fabrik_tables">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="label" translate="1">Label</field>  		
+		<field type="textarea" name="introduction" translate="1">Introduction</field>	  		
+  	</table>
+  </reference>
+</joomfish>

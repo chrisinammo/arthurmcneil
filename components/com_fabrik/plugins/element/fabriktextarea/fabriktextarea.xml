@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Text Area</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders Text Area</description>
+	<files>
+		<filename fabrikplugin="fabriktextarea">fabriktextarea.php</filename>
+		<filename>index.html</filename>
+	</files>
+		
+	<languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriktextarea.ini</language>
+	</languages>
+	
+	<params group="extra" addpath="/administrator/components/com_fabrik/elements">
+		<param name="use_wysiwyg" type="radio" default="0" label="USEWYSIWYGEDITOR" description="USEWYSIWYGEDITORDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="textarea-showmax" type="radio" default="0" label="Show max limit" description="TEXTAREAMAXLIMITDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="textarea-maxlength" type="text" size="5" default="255" label="MAXLENGTH" description="TEXTAREAMAXLENGTHDESC"/>
+	</params>
+	<params>
+		<param name="width" type="width" label="Width"/>
+		<param name="height" type="text" default="" size="3" label="Height" />
+		<param name="eval" type="eval" default="0" label="Eval" />
+		<param name="default" type="default" default="" label="Default" />
+	</params>
+</install>

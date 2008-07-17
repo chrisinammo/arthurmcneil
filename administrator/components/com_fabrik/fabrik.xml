@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<install type="component" version="1.5.0" method="upgrade">
+	<name>fabrik</name>
+	<creationDate>April 2008</creationDate>
+	<author>Rob Clayburn</author>
+  <copyright>This component is released under the GNU/GPL License</copyright>
+  <authorEmail>rob@pollen-8.co.uk</authorEmail>
+  <authorUrl>www.pollen-8.co.uk</authorUrl>
+  <version>2.0b</version>
+  <description>Application Creation Component</description>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">installation/queries.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">installation/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="components/com_fabrik">
+		<folder>adaptors</folder>
+		<folder>css</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>js</folder>
+		<folder>libs</folder>
+		<folder>models</folder>
+		<folder>plugins</folder>
+		<folder>views</folder>
+		<file>controller.php</file>
+		<file>fabrik.php</file>
+		<file>router.php</file>
+	</files>
+		
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.ini</language>
+	</languages>
+	
+	<installfile>installation/install.fabrik.php</installfile>
+	<uninstallfile>installation/uninstall.fabrik.php</uninstallfile>
+		
+  <administration>
+		<menu>Fabrik</menu>
+		<submenu>
+			<menu link="option=com_fabrik&amp;c=package">Packages</menu>
+			<menu link="option=com_fabrik&amp;c=plugin">Plugins</menu>
+			<menu link="option=com_fabrik&amp;c=connection">Connections</menu>
+			<menu link="option=com_fabrik&amp;c=visualization">Visualizations</menu>
+     	<menu link="option=com_fabrik&amp;c=table">Tables</menu>
+      <menu link="option=com_fabrik&amp;c=form">Forms</menu>
+      <menu link="option=com_fabrik&amp;c=group">Groups</menu>
+			<menu link="option=com_fabrik&amp;c=element">Elements</menu>
+    </submenu>
+		
+		<files folder="administrator/components/com_fabrik">
+			<folder>installation</folder>
+			<folder>contentelements</folder>
+			<folder>elements</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<file>admin.fabrik.php</file>
+	 		<file>config.xml</file>
+			<file>configuration.php</file>
+		</files>
+		
+		<languages folder="administrator/language" >
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcascadingdropdowns.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcheckbox.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdatabasejoin.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdate.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdropdown.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikfield.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikfileupload.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikimage.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriklink.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriksql.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabriktextarea.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikuser.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.form.fabrikemail.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.form.fabrikphp.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.form.fabrikreceipt.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.form.fabrikredirect.ini</language>
+		</languages>
+		<languages folder="components/com_fabrik/plugins/element/fabrikgooglemap/administrator/language" >
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikgooglemap.ini</language>			
+		</languages>
+		<languages folder="components/com_fabrik/plugins/element/fabrikcaptcha/administrator/language" >
+			<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcaptcha.ini</language>
+		</languages>
+	</administration>
+</install>

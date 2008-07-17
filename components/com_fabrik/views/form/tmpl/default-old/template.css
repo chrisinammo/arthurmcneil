@@ -1,0 +1,75 @@
+.fabrikForm{
+	text-align:left;
+}
+
+.fabrikLabel{
+	width:200px;
+	float:left;
+}
+
+.fabrikElement{
+	clear:both;
+	padding:3px;
+}
+
+
+.fabirkElementContainer, .fabirkElement{
+	margin-left:200px;
+}
+.fabrikRadioDiv{
+	margin:5px;
+	width:45%;
+	float:left;	
+}
+.fabrikForm h3{
+	clear:both;
+}
+
+.fabrikError{
+	color:#C34C4C;
+	font-weight:bold;
+	padding:7px 10px 7px 20px;
+	background:transparent url(images/alert.png) no-repeat center left;
+}
+
+.fabrikHide{
+	display:none;
+}
+
+.fabrikShow{
+	display:block;
+}
+
+.isemail{
+	background: transparent url(images/email.gif) no-repeat top right;
+}
+
+.notempty{
+	background: transparent url(images/required.gif) no-repeat top right;
+}
+
+.isalphanumeric{
+	background: transparent url(images/alphanumeric.gif) no-repeat top right;
+}
+
+.fabrikActions{
+	padding-top:15px;
+	clear:left;
+	padding-bottom:15px;
+}
+
+.inputbox:focus{
+	background-color:#ffffcc;
+	border:1px solid #aaaaaa;
+	padding:1px 1px 3px 1px;
+}
+
+.fabrikGroupRepeater{
+	float:left;
+	width:19%;
+}
+
+.fabrikSubGroupElements{
+	width:80%;
+	float:left;
+}

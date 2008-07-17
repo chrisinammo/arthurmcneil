@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Fabrik table layout">
+		<message>
+			<![CDATA[STANDARD Fabrik table layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Fabrik Table</name>
+		<description>Link to a Fabrik table</description>
+		<url addpath="/administrator/components/com_fabrik/elements">
+			<param name="tableid" type="fabriktables" size="3" default="" label="Table" description="The table id to show - if the view is set to view table" />
+			<param name="calculations" type="radio" default="0" label="Reload Calculations" description="If table view selected then setting this to yes will recaculate the table calculations each time the table is viewed (can slow down your tables performance)">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="fabriklayout" type="folderlist" directory="/components/com_fabrik/views/table/tmpl/" default="default" label="template" descrption="The table template to use" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

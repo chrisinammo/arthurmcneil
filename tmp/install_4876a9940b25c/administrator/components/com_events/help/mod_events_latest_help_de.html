@@ -1,0 +1,554 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Modul Events Neue Termine - Dokumentation</title>
+<link href="../../css/admin.css" type=text/css rel=stylesheet>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body style="font-size:10pt;font-family : Arial, Helvetica, sans-serif;">
+
+<p class="sectionname" style="text-align:center;">Modul neue Termine Hilfe</p>
+<p>
+	<a href="#" onClick="window.close()" title="Fenster Schliessen">Fenster Schliessen</a>
+    &nbsp;|&nbsp;
+    <a href="#" onClick="window.print()" title="Drucken">Drucken</a>
+</p>
+
+<p>
+	Dieses - optionale - Modul zeigt die neuesten (und wenn so konfiguriert) auch vergangene Termine an.<br />
+	Das Modul ist <strong>nicht</strong> Bestandteil der Komponente und muss extra von der <br />
+	<a href="http://joomlacode.org/gf/project/jevents" title="JEvents" target="_blank">JEvents Projektseite</a>
+	downgeloaded und installiert, sowie Ver&ouml;ffentlicht werden!
+</p>
+
+<p class="contentheading">Ausgabeformat:</p>
+
+<p>
+	Die Ausgabe des Moduls erfolgt mittels einer HTML-Tabelle mit n Reihen mit 1 Kolumne, wobei der Wert n
+	die Anzahl der angezeigten Termine angibt.<br />
+	Die maximale Anzeige wird mittels eines der folgenden Parameter definiert (Vorgabe ist 5)
+</p>
+
+<p class="contentheading">CSS Stil:</p>
+
+<p>
+	Jeder Termin begintn mit einem Beginndatum in der ersten Zelle, gefolgt von dem Termintitel in der 2. Zeile.<br />
+	Beide - das Datum sowie der Titel - haben eine eigene CSS-Klasse.
+</p>
+<p>
+	Der erste angezeigte Termin hat ebenso seine eigene CSS-Klasse (mod_events_latest_first). Alle nachfolgenden
+	Termine verwenden die CSS-Klasse (mod_events_latest). Die Termine werden durch eine horizontale Linie getrennt.
+</p>
+<p>
+	<strong>Hinweis</strong>: Alle CSS-Klassen sind in der generellen Komponenten-CSS-Datei enthalten und k&ouml;nnen
+	innerhalb dieser Konfiguration ge&auml;ndert werden <strong>Tab CSS</strong>
+</p>
+
+<p class="contentheading">Modul Parameter:</p>
+
+<p>
+	Das Modul wird durch zahlreiche Parameter unterst&uuml;tzt welche haupts&auml;chlich das Aussehen der Termine
+	bestimmen.
+</p>
+
+<p class="contentheading">Parameterdefinitionen:</p>
+
+<table width="95%" align="center" border="1" cellpadding="5" cellspacing="0">
+	<tr>
+		<td style="text-align:center; color:blue; font-weight:bold">Parameter</td>
+		<td style="text-align:center; color:blue; font-weight:bold">Beschreibung</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<span style="font-weight:bold">Maximal x Termine</span>
+		</td>
+		<td>
+			Anzahl der maximal gleichzeitig anzuzeigenden Termine (1 - 150, Vorgabe ist 5)
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<span style="font-weight:bold">Anzeigemodus</span>
+		</td>
+		<td>
+			<ul>
+                <li>
+                    0 (Vorgabe) - Anzeige der n&auml;chsten Termine der aktuellen Woche PLUS folgende Woche bis <strong>maximal anzuzeigende Termine</strong>
+                </li>
+                <li>
+                    1  &Auml;hnlich der Einstellung 0, ausser dass auch Termine der Vorwoche angezeigt werden, wenn die Anzahl der nachfolgenden Termine kleiner als der Maximalwert aller anzuzeigenden Termine ist
+                </li>
+                <li>
+                	2  Anzeige der Termine welche am n&auml;chsten der Anzahl <strong>Tage Vor-Nachher</strong> liegen
+                </li>
+                <li>
+                	3  &Auml;hnlich dem Modus 2, ausgenommen wenn die maximale Anzahl der anzuzeigenden Termine innerhalb des Bereichs liegen, werden auch die bereits vergangenen Termin angezeigt (Relativ zum heutigen Tag)
+                </li>
+                <li>
+                	4  Anzeige der am n&auml;chsten liegenden Termine bis zum Maximalwert des aktuellen Monats - relativ zum heutigen Tag
+                </li>
+            </ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>Tage Vor-Nachher</strong>
+		</td>
+		<td>
+			Anzahl der anzuzeigenden Tage - relativ zum heutigen Tag (Vorgabe ist 7 Tage)
+			<br />
+			<strong>Hinweis</strong>: nur g&uuml;ltig f&uuml;r Modus 1 oder 3
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>Wiederholungstermin nur einmal anzeigen</strong>
+		</td>
+		<td>
+			Erstreckt sich ein Termin &uuml;ber mehrere Tage oder ist es es Wiederholungstermin, kann hier angegeben werden, ob er mehrmals oder nur einmal angezeigt werden soll
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>Termine als Link anzeigen</strong>
+		</td>
+		<td>
+			Sollen die Termine als Link ausgef&uuml;hrt werden - ein Klick darauf &ouml;ffnet dann die Detailansicht
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>Jahr anzeigen</strong>
+		</td>
+		<td>
+			Soll im Termin auch das Jahr angezeigt werden
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>CSS für Datumsfeld ausschalten</strong>
+		</td>
+		<td>
+			Soll die definierte CSS-Klasse <span style="font-style:italic; font-weight:bold; color:#FF6600">mod_events_latest_date</span> f&uuml;r das Datumsfeld verwendet werden
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>CSS für Titel ausschalten</strong>
+		</td>
+		<td>
+			Soll der Termintitle mit der vorhandenen CSS-Klasse <span style="font-style:italic;font-weight:bold;color:#FF6600">mod_events_latest_content</span> angezeigt werden
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">
+			<strong>Individuelle Formatierung</strong>
+		</td>
+		<td>
+= string<br />Hier kann eine individuelle Formatierung zur Terminanzeige eingegeben werden (Format ist string).
+Es kann sowohl eines der u.a. M&ouml;glichkeiten verwendet werden, als auch zus&auml;tzlich weitere HTML.Tags.
+Weiters kann jedes Feld in der Form ${event_field} verwendet werden.
+<br />
+Wenn gew&uuml;nscht k&ouml;nnen auch CSS-Formatierungsangaben verwendet werden ( &lt;div&gt; oder &lt;span&gt;).
+Ebenso k&ouml;nnen neue CSS-Klassen in der CSS-Datei definiert werden und diese dann hier verwendet werden.
+<br /><br />
+
+= [cond: string ] Hier kann eine individuelle Formatierung zur Terminanzeige eingegeben werden
+die nur angezeigt wird, wenn die Bedingung "cond" true ist.<br /><br />
+	Verf&uuml;gbare Bedingungen:<br /><br />
+	<b>a</b>&nbsp;Termin ist ganzt&auml;gig(ohne Zeitangaben)<br />
+	<b>!a</b>&nbsp;Termin ist nicht ganzt&auml;gig(ohne Zeitangaben)<br /><br />
+
+M&ouml;gliche Felder sind: ${startDate}, ${eventDate}, ${endDate}, ${title}, ${category}, ${contact},
+${content}, ${addressInfo}, ${extraInfo}, ${createdByAlias}, ${createdByUserName}, ${createdByUserEmail},
+${createdByUserEmailLink}, ${eventDetailLink}, ${color}
+<br /><br />
+Die Felder <strong>${startDate}, ${eventDate} und ${endDate}</strong> sind spezielle Formatierungsfelder,
+welche weiters individuell angepasst werden k&ouml;nnen.<br />
+Zur einsatz kommen hier die PHP-Eigenen Funktionen [ date() und strftime() ] - mehr darzu unter 
+<a href="http://de3.php.net/manual/de/function.date.php" title="PHP date" target="_blank">PHP date-funktion</a> und 
+<a href="http://de3.php.net/manual/de/function.strftime.php" title="PHP strftime" target="_blank">PHP strftime-funktion</a>
+<br /><br />
+<strong>Hinweis</strong>: wird in der Formatierung ein <strong>%s</strong> verwendet, wird automatisch das strftime-Format angewendet (lokale Einstellungen werden unterst&uuml;tzt)!
+        </td>
+    </tr>
+    <tr>
+    	<td>Beispiel</td>
+    	<td>
+    		Die Verwendung von: ${startDate('D, M jS, Y, @g:ia')} ergibt: Fri, Aug 1st, 2006, @7:30pm
+    		<br />
+    		<br />
+    		<strong>Hinweis</strong>: als Vorgabe wird '${eventDate}[!a: - ${endDate(%I:%M%p)}]&lt;br /&gt;${title}' verwendet,
+			damit sieht die  Terminanzeige so aus: Datum des Termins (oder wenn Mehrt&auml;giger oder Wiederkehrender dann den heutigen Teil).
+			Die Start- und Endezeit wird nur angezeigt, wenn es kein ganzt&auml;giger Termin ist(Bedingung !a).
+        </td>
+    </tr>
+</table>
+
+<p class="contentheading">Datumsformatierungen:</p>
+
+<p>
+	Im nachfolgenden eine Kurzreferenz (genauere Beschreibung siehe die Links zu php.net oben).
+	<strong>Hinweis</strong>: es kann entweder <strong>nur</strong> das date() oder das strftime() Format verwendet werden - ein mixen der Beiden ist <strong>nicht</strong> m&ouml;glich!
+</p>
+
+<p><strong><u>php date() Parameter:</u></strong></p>
+
+<table width="95%" align="center">
+	<tr>
+		<td width="10%" style="vertical-align:text-top;">a</td>
+		<td>am (ante meridiem) und pm (post meridiem) Kleingeschrieben (US-Format)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">A</td>
+		<td style="vertical-align:text-top;">AM (ante meridiem) und PM (post meridiem) Grossgeschrieben  (US-Format)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">B</td>
+		<td style="vertical-align:text-top;">Swatch Internet Zeit ( 000 bis 999 )</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">d</td>
+		<td style="vertical-align:text-top;">Tag, 2 Stellen mit f&uuml;hrender Null (01 bis 31)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">D</td>
+		<td style="vertical-align:text-top;">Textform der Tage in Kurzform - 3 Buchstaben (Mon - Son)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">F</td>
+		<td style="vertical-align:text-top;">Textform der Monate - ausgeschrieben ( Jannuar bis Dezember)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">g</td>
+		<td style="vertical-align:text-top;">Stunden im 12-Stundenformat (1 bis 12) ohne f&uuml;hrende Null</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">G</td>
+		<td style="vertical-align:text-top;">Stunden im 24-Stundenformat (01 bis 24) mit f&uuml;hrender Null</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">h</td>
+		<td style="vertical-align:text-top;">Stunden im 12-Stundenformat (01 bis 12) mit f&uuml;hrender Null</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">H</td>
+		<td style="vertical-align:text-top;">Stunden im 24-Stundenformat (01 bis 23) mit f&uuml;hrender Null</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">i</td>
+		<td style="vertical-align:text-top;">Minuten mit f&uuml;hrender Null ( 00 bis 56)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">I</td>
+		<td style="vertical-align:text-top;">(Grosses i) Ber&uuml;cksichtigt eventuelle Sommer-/Winterzeit (1 ja, 0 nein)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">j</td>
+		<td style="vertical-align:text-top;">Tag ohne f&uuml;hrender Null (1 bis 31)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">l</td>
+		<td style="vertical-align:text-top;">(Kleines L) Tage voll ausgeschrieben (Sonntag bis Samstag)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">L</td>
+		<td style="vertical-align:text-top;">Anzeige ob Schaltjahr oder nicht (1 ja, 0 nein)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">m</td>
+		<td style="vertical-align:text-top;">Monat als Zahl f&uuml;hrender Null (01 bis 12)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">M</td>
+		<td style="vertical-align:text-top;">Monate im 3-Zeichenformat (Jan bis Dez)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">n</td>
+		<td style="vertical-align:text-top;">Monate als Zahl, ohne f&uuml;hrender Null (1 bis 12)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">O</td>
+		<td style="vertical-align:text-top;">Differenz zur Greenwich time (GMT) in Stunden. Beispiel: +0200</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">r</td>
+		<td style="vertical-align:text-top;">RFC 822 Konforme Datumsformatierung. Beispiel: Thu, 21 Dec 2000 16:01:07 +0200</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">s</td>
+		<td style="vertical-align:text-top;">Sekunden mit f&uuml;hrender Null (00 bis 59)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">S</td>
+		<td style="vertical-align:text-top;">Erweiterung bei Anzeige als anglikanisches Datum (st, nd, rd oder th). In Kombination mit dem Parameter j</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">t</td>
+		<td style="vertical-align:text-top;">Anzahl der Monatstage (28 bis 31)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">T</td>
+		<td style="vertical-align:text-top;">Zeitzone - Beipiele: EST, MDT, usw.</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">U</td>
+		<td style="vertical-align:text-top;">Sekunden seit Beginn der UNIX-Zeitrechnung( 1. Jannuar 1970 00:00:00 GMT)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">w</td>
+		<td style="vertical-align:text-top;">Wochentag als Zahl ( 0 - f&uuml;r Sonntag bis 6 - f&uuml;r Samstag)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">W</td>
+		<td style="vertical-align:text-top;">ISO-8601 Wochennummer, Woche startet mit Montag. Beispiel: 42 (42. woche des angezeigten Jahres)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">Y</td>
+		<td style="vertical-align:text-top;">Jahreszahl mit 4 Stellen (z.B. 2006)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">y</td>
+		<td style="vertical-align:text-top;">Jahreszahl mit 2 Stellen (z.B. 06 f&uuml;r 2006)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">z</td>
+		<td style="vertical-align:text-top;">Nummer des Tages im laufenden Jagr( 0 bis 366)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">Z</td>
+		<td style="vertical-align:text-top;">Zeitzonenunterscheid in Sekunden (nach Greenwich). Westlich daon negatibe Werte, &ouml;stlich davon positive Werte (-43200 bis 43200)</td>
+	</tr>
+</table>
+
+<br /><br />
+
+<p><strong><u>php strftime() Formate:</u></strong></p>
+
+<table width="95%" align="center">
+	<tr>
+		<td colspan="2"><strong>Hinweis</strong>: alle folgenden Einstellungen sind abh&auml;ngig von den richtigen Servereinstellungen!<br />
+		Sollte die eine oder/und Andere Einstellung nicht das gew&uuml;nschte ergebnis anzeigen, dann bitte mit dme Provider in Verbindung setzen und den (eventuell) h&ouml;flich darauf hinweisen dass er die lokalen Servereinstellungen &uuml;berpr&uuml;fen sollte!
+		</td>
+	<tr>
+		<td width="10%" style="vertical-align:text-top;">%a</td>
+		<td style="vertical-align:text-top;">Abgek&uuml;rzter Wochentag</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%A</td>
+		<td style="vertical-align:text-top;">Voll ausgeschriebener Wochentag</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%b</td>
+		<td style="vertical-align:text-top;">Abgek&uuml;rzter Monatsname</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%B</td>
+		<td style="vertical-align:text-top;">Voll ausgeschriebener Monatsname</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%c</td>
+		<td style="vertical-align:text-top;">Bevorzugte Anzeige von Datum und Uhrzeit</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%C</td>
+		<td style="vertical-align:text-top;">Nummer des Jahrhunderts (Jahr dividiert durch 100, umgewandelt zu einem Integer, 00 bis 99)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%d</td>
+		<td style="vertical-align:text-top;">Tag als Dezimalzahl (01 bis 31)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%D</td>
+		<td style="vertical-align:text-top;">Das Gleiche wie %m/%d/%y</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%e</td>
+		<td style="vertical-align:text-top;">Aktueller Tag des Monats als Dezimalzahl ohne f&uuml;hrende Null, stattdessen mit Leerzeichen ( ' 1' bis '31')</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%g</td>
+		<td style="vertical-align:text-top;">Wie %G, aber ohne Jahrhundert</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%G</td>
+		<td style="vertical-align:text-top;">Jahrezahl mit 4 Stellen (z.B. 2006) in &Uuml;bereinstimmung zur ISO-Wochennummer (siehe auch %V)
+		<br />
+		Dieser Parameter verwendet im Prinzp dieselbe Ausgabe wie %V, ausgenommen wenn die ISO_Woche zum Vorjahr oder n&auml;chsten Jahr geh&ouml;rt, wird das jahr angezeigt</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%h</td>
+		<td style="vertical-align:text-top;">Wie %b</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%H</td>
+		<td style="vertical-align:text-top;">Stunde als Dezimlazahl im 24-Stundenformat (00 bis 23)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%I</td>
+		<td style="vertical-align:text-top;">Stunde als Dezimalzahl im 12-Stundenformat (01 to 12)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%j</td>
+		<td style="vertical-align:text-top;">Tag als Dezimalzahl mit f&uuml;hrenden Nullen (001 bis 366)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%m</td>
+		<td style="vertical-align:text-top;">Monat als Dezimalzahl mit f&uuml;hrender Null (01 bis 12)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%M</td>
+		<td style="vertical-align:text-top;">Minute asl Dezimalzahl mit f&uuml;hrender Null (00 bis 59)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%n</td>
+		<td style="vertical-align:text-top;">Neue Linie (als Trennzeichen)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%p</td>
+		<td style="vertical-align:text-top;">entweder 'am' oder 'pm' (abh&auml;ngig von der Zeitanzeige) oder die jeweilige Anzeige zur lokalen Einstellung</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%r</td>
+		<td style="vertical-align:text-top;">Zeit als a.m. oder p.m. (nur Anglikanisch)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%R</td>
+		<td style="vertical-align:text-top;">Zeit im 24-Stundenformat (00 bis 24)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%S</td>
+		<td style="vertical-align:text-top;">Sekunde als Dezimalzahl (00 bis 59)</td>
+	</tr>
+	<tr>
+		<td width=10% style="vertical-align:text-top;">%t</td>
+		<td style="vertical-align:text-top;">Abstand als Tab</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%T</td>
+		<td style="vertical-align:text-top;">Lokale Zeit (wie %H:%M:%S)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%u</td>
+		<td style="vertical-align:text-top;">Wochentag als Dezimalzahl (1 bis 7 - Montag ist 1!)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%U</td>
+		<td style="vertical-align:text-top;">Wochennummer des aktuellen jahres als Dezimalzahlm beginnend mit Sonntag als dem ersten Tag der ersten Woche</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%V</td>
+		<td style="vertical-align:text-top;">Die Wochennummer als ISO 8601:1988 des aktuellen jahres (01 bis 53), wobei als erste Woche diejenige ist, welche mindestens 4 Tage des aktuellen Jahres hat (Die Verwendung von %G oder %g f&uuml;r das Jahr erzeugt im Prinzip  das Gleiche, ist aber abh&auml;ngig vor angegebenen Datumsdarstellung)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%W</td>
+		<td style="vertical-align:text-top;">Wochennummer des aktuellen jahres als Dezimalzahl, beginnend mit Montag als dem ersten Tag der ersten Woche</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%w</td>
+		<td style="vertical-align:text-top;">Tag der Woche als Dezimalzahl, beginnend mit Sonntag als 0</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%x</td>
+		<td style="vertical-align:text-top;">Anzeige des lokalen Datums ohne Uhrzeit</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%X</td>
+		<td style="vertical-align:text-top;">Anzeige der lokalen Uhrzeit ohne Datum</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%y</td>
+		<td style="vertical-align:text-top;">Jahr als Dezimalzahl mit 2 Stellen (00 bis 99)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%Y</td>
+		<td style="vertical-align:text-top;">Jahr alas 4-stellige Dezimalzahl (z.B. 2006)</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%Z</td>
+		<td style="vertical-align:text-top;">Zeitzone</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:text-top;">%%</td>
+		<td style="vertical-align:text-top;">Wird als `%' angezeigt</td>
+	</tr>
+</table>
+
+<br /><br />
+
+<p class="contentheading">Weitere einsetzbare Veriablen:</p>
+	<ul>
+		<li>${createdByUserEmail}		- Emailadresse des Veranstalters</li>
+		<li>
+			${createdByUserEmailLink}	- Emailadresse als Link zum Veranstalter
+			<br />
+			Beispiel f&uuml;r eine Emailadresse als Link anzuzeigen:  &lt;a href=${createdByUserEmailLink&gt;Anfrage&lt;/a&gt;
+		</li>
+		<li>
+			${eventDetailLink}		- Link zur Termindetailseite.
+			<br />
+			<strong>Hinweis</strong>: Diese Anzeige ist etwas unterschiedlich zur Anzeige eines Veranstalterlinks. Beispiel siehe weiter unten
+		</li>
+		<li>
+			${color}			- Die Farbe welche f&uuml;r die kategorie angegeben wurde. Kann als Inline-CSS innherhalb des ${customFormatStr} verwendet werden um die Ausgabe der Hintergrundfarbe sowie der Schriftfarbe zu ver&auml;ndern
+		</li>
+	</ul>
+
+<p class="contentheading">Weiter Beispiele zum Einsatz von '${customFormatStr}':</p>
+
+<P><strong>Beispiel 1</strong></p>
+
+<p>
+	<span style="color:blue;">
+		displayLinks=1<br />
+		mode=0<br />
+		customFormatStr='&lt;div style='background-color:${color};'&gt;${startDate('m/d/y')}, ${title}&lt;/div&gt;'
+	</span>
+	<br /><br />
+	Ergibt eine Anzeige: einfaches Datum ( Monat/Tag/Jahr - je zweistellig ), gefolgt von einem Hyperlink zum Termintitel, gleicher Hintergrund wie im backend festgelegt.
+	<br />Bei dieser Art von Anzeige muss man vorsichtig sein, da keine Textfarbe definiert ist und es daher - abh&auml;ngig vom Templatedesign - zu schlechteren Leseergebnissen kommen k&ouml;nnte
+</p>
+
+<p><strong>Beispiel 2</strong></p>
+
+<p>
+	<span style="color:blue;">
+        displayLinks=1<br />
+        disableDateStyle=1<br />
+        disableContentStyle=1<br />
+        mode=2<br />
+        days=14<br />
+        customFormatStr='&lt;span class='mod_events_latest_date'&gt;${startDate('%x, %X - ')}${endDate('%X')}&lt;/span&gt;&lt;br /&gt;&lt;span class='mod_events_latest_content'&gt;${category}: ${title}&lt;/span&gt;'
+	</span>
+	<br /><br />
+	Dieses Beispiel zeigt das Datum und die Uhrzeit in einer 'bevrozugten' Darstellung (abh&auml;ngig von den lokalen Servereinstellungen. Benutzt wird die Sprache lt. Einstellungen (ebenso Serverabh&auml;ngig!).
+	<br />
+	Achtung auf die Parameter 'disableDateStyle' und 'disableContentStyle' welche das automatische Formatieren der ${startDate}, ${endDate}, oder ${title} unterbindet da verschiedene Benutzerfelder mit eingeschlossenem text verwendet werden.<br />
+	Es ist immer besser spezifische CSS-Klassen zu verwenden mit einem HTML-Element &lt;span&gt; um unerw&uuml;nschte Textformatierungen zu vermeiden.
+	<br /><br />
+	Ebenso wird in diesem Beispiel der Text an der rechten Modulseite umgebrochen falls nicht genug Platz sein sollte. In diesem Fall kann entweder die Schriftgr&ouml;sse reduziert, die Modulbreite angepasst werden oder eine Kombination davon oder andere Methoden.
+</p>
+
+<p><strong>Beispiel 3</strong></p>
+
+<p>
+	<span style="color:blue;">
+		displayLinks=0<br />
+		customFormatStr='&lt;div style='cursor: default;' onMouseOver="this.style.border='thin dotted red';" onMouseOut="this.style.border='none';" onclick="parent.location = ${eventDetailLink};"&gt;${startDate}&lt;br /&gt;${title}&lt;/div&gt;'
+	</span>
+	<br /><br />
+	Dieses Beispiel zeigt eine sehr erweiterte M&ouml;glichkeit der Darstellung an. Es werden sowohl Inline-CSS-Styles als auch Mouse-Events eingesetzt, demonstriert aber die extreme Flexibilit&auml;t der Komponente und des Moduls.
+	<br />
+	Befindet sisch hier der Cursor &uuml;ber dem Termin wird ein roter Rand angezeigt, Klicken auf den Termin &ouml;ffnet diesen im Hauptbereich des CMS da als Hyperlink ausgef&uuml;hrt.
+</p>
+<p>
+    <a href="#" onClick="window.close()" title="Fenster Schliessen">Fenster Schliessen</a>
+    <br />
+    <a href="#" onClick="window.print()" title="Drucken">Drucken</a>
+    <br />
+    <a href="http://developer.joomla.org/sf/projects/jevents" target="_blank" title="JEvents">Aktuellste Version hier</a>
+</p>
+<p style="font-size:9pt; color:#666666;">Doc.Revision: 1.0 - 2006.08.01</p>
+</body>
+</html>

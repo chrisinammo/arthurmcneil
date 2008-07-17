@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Glossary</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style1 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<h1>AlphaContent</h1>
+
+<p>  <strong>Presentation:</strong> AlphaContent is a component that allows the creation of directories such as Yahoo from sections and categories on your site Joomla!. It also helps to add items not categorized (Articles static) as a section like weblinks components and contacts. AlphaContent has its own voting system in ajax which can be used to replace the voting system natively. <br />
+  <br />
+  <strong>License:</strong> AlphaContent version 4.x is made under license <a href="http://en.wikipedia.org/wiki/Donationware" target="_blank">Donationware</a>. All rights reserved. <br />
+  <br />
+  <strong>Installation: </strong>Install the component via the administrative interface to Joomla. During installation, the plugin  is automatically installed and published. If the plugin directory does not have permission in writing, and an error occurs. The component would have to be repeated after fee changes on the plugin directory. <br />
+<br />
+<strong>Getting Started: </strong><br />
+<br />
+<span class="Style1">Step 1 - General settings </span><br />
+Via the admin panel, click the component AlphaContent and set the general configuration of the component. <br />
+<br />
+<strong>General listing results settings:</strong> this set of parameters determine the main parameters for displaying the listing of results. <br />
+-- <i>Home listing</i> can display a list of results to choose between the sections of content, articles static Weblink section, the section contacts or a list of selected items, or to see anything at all. <br />
+-- <i>Featured Items ID</i>: specify the ID articles if you have selected the option to manual selection. <br />
+-- <i>Num columns</i>: You can view your results list on 1 or 2 columns. <br />
+-- <i>Intro style</i>: Possibility between no intro,  intro text only (no html tag) or the original intro of the article parsed with all  content plugins. <br />
+-- <i>Limit chars intro</i>: if you selected intro text, you can limit the number of character to the display. <br />
+-- <i>Title linkable</i>: yes or no. <br />
+-- <i>Num index</i>: displays a numbering each item before the listing. <br />
+-- <i>Icon New</i>: displays an icon "New" in the wake of the title of the article. <br />
+-- <i>Number days</i>: enter the number of days during which the icon "New" should appear. <br />
+-- <i>Icon hot</i>: displays an icon "Hot" in the wake of the title of the article. <br />
+-- <i>Number of hits</i>: indicate the number of hits decisive display of the icon "Hot". <br />
+-- <i>Date  article</i>: show/hide the date of the article or the modification date. <br />
+-- <i>Format date</i>: selection of the display format of the date. <br />
+-- <i>Author article</i>: show/hide the author of the article. <br />
+-- <i>Section/Category</i>: display the name of the section and the category of the article. <br />
+-- <i>Hits</i>: show/hide the number of hits on the article. (Deactivated for the contacts section) <br />
+-- <i>Number comments</i>: show/hide the number of comments on the article. <br />
+-- <i>Comment system</i>: selected comment system used to display the number of ecommentaires. <br />
+-- <i>Print</i>: displays a link "print" in the listing. <br />
+-- <i>PDF</i>: displays a link "PDF" in the listing. <br />
+-- <i>Email</i>: displays a link to "send" in the listing. <br />
+-- <i>Read More</i>: displays a link "read more" in the listing if the option is enabled intro text and the text is truncated or whether the article has naturally follow. <br />
+-- <i>Link map</i>: Displays a link to Google Maps (<a href="#googlemaps">see below</a>). <br />
+-- <i>Number pages total</i>: displays the page on the total of existing pages. <br />
+-- <i>Results per page</i>: Select the number of items to be displayed per page. <br />
+-- <i>Search box</i>: displays a search box. <br />
+-- <i>Search box button</i>: displays a button box after the search box. <br />
+-- <i>Default ordering</i>: Select the default order of the results of the listing. <br />
+-- <i>Show Image article</i>: show/hide the first or the last image  in article content. <br />
+-- <i>Image position</i>: selected to the left of the listing, to the right of the listing or alternately. <br />
+-- <i>Width image(px)</i>: enter the number of pixel for image. <br />
+<br />
+<strong>Google Maps Location settings: </strong>This set of parameters allows use of integrated AlphaContent function to display a link to "map"  through google Maps API. To work properly, you must get an API Key to Google Maps <a href="http://www.google.com/apis/maps/signup.html" target="_blank">http://www.google.com/apis/maps/signup.html</a>. <br />
+-- <i>API Key Google Maps</i>: Enter a key obtained from the Google Maps. <br />
+-- <i>Zoom Level</i>: Enter a level of zoom to the map. <br />
+-- <i>Width map</i>: enter a number pixels to determine the width of the Google Maps. <br />
+-- <i>Height map</i>: enter a number pixels to determine the height of the window Google Maps. <br />
+-- <i>Map Type Menu</i>: display types of maps available (map, satellite, hybrid) in the window Google Maps. <br />
+-- <i>Map Controls Menu</i>: display navigation tools in the window Google Maps. <br />
+<br />
+<strong>How to use Google Maps plugin? </strong><br />
+<a name="googlemaps" id="googlemaps"></a>To create a link to Google Maps, you must enter the following tag in your article: {ALPHAGMAP=longitude|latitude|marker text}. Latitude and longitude are digital and marker is the message text of your location map (HTML is supported but not the quotation marks). Example for Paris: {ALPHAGMAP=48.85667|2.35099|Paris!}<br />
+<br />
+<strong>Ajax Rating System:</strong> this set of parameters may use the ajax voting system integrated with AlphaContent.<br />
+-- <i>Use ajax rating system</i>: yes or no. <br />
+-- <i>stars</i> : number of &quot;stars&quot; to display. <br />
+-- <i>Width</i>: If you choose to alter this width, if you want to use your own image for the vote, you may also consider changing the CSS file (rating.css) in components / com_alphacontent / assets / css / and replace the image of voting in components / com_alphacontent / assets / images / starrating.gif. Default is 16 pixels. <br />
+<br />
+Notes: In case you want to use the voting system outside the framework of the AlphaContent when using it is necessary to edit the parameters of the plug and move to alphacontent "enabled". </p>
+<p><b>Sharethis Widget</b>: this set of parameters allows use the widget of <a href="http://sharethis.com" target="_blank">Sharethis</a>  . You can create your personal widget at <a href="http://sharethis.com/publisher?type=stapi#configurator" target="_blank">http://sharethis.com/publisher?type=stapi#configurator</a>. Just registered before.<br />
+-- <i>Use Sharethis widget</i>: Yes or no.<br />
+-- 
+<i>Sharethis widget code</i>: Paste your Sharethis widget code in this textarea.</p>
+<p>Notes: In case you want to use the Sharethis option outside the framework of the AlphaContent when using it is necessary to edit the parameters of the plug and move to alphacontent "enabled". <br />
+  <br />
+  <span class="Style1">Step 2 - Create a menu </span><br />
+  Create a menu related AlphaContent component via the admin panel of Joomla. Then edit the parameters specific to this menu. <br />
+  <br />
+  In Part <em>basic parameter</em>, you find all parameters needed to create the directory. <br />
+  In Part <em>advanced</em>, you will be able to add functionality to the directory, such as displaying the image of sections and categories, image size and the ability to add an image in sections weblinks, contacts and Articles static. Possibility to showing a RSS link with icon. <br />
+  <br />
+  -- Related Articles: You can show as a result of the article a number of article with the same keywords that the selected item. <br />
+  -- Number of items: provide a number of the articles on display at the end of the article. <br />
+  <br />
+  -- Tags: You can with this option displays a list of tags above article. Each tag displayed can launch a search in articles with the same tag. <br />
+  -- Number of tag to display: indicate the number of tags to be displayed. <br />
+  <br />
+  -- Voting system: activate or not the voting system for this directory. <br />
+  -- Selection of the voting system: You can choose between the native system Joomla or the voting system in Ajax AlphaContent. <br />
+  <br />
+  In Part component, you find all the basic parameters entered in the administration of the component. Each menu can be configured differently and can publish <b>several different directories</b>.</p>
+<p>&nbsp;</p>
+</body>
+</html>

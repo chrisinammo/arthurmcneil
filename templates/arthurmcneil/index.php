@@ -21,12 +21,12 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/arthurmcneil/css/template.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/arthurmcneil/css/menu.css" type="text/css" />
-<!--[if lte IE 6]>
-<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie6only.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<?php if($this->direction == 'rtl') : ?>
-	<link href="<?php echo $this->baseurl ?>/templates/arthurmcneil/css/template_rtl.css" rel="stylesheet" type="text/css" />
-<?php endif; ?>
+<!--[if IE 7]>
+<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 
 </head>
 <body id="page_bg" class="color_<?php echo $this->params->get('colorVariation'); ?> bg_<?php echo $this->params->get('backgroundVariation'); ?> width_<?php echo $this->params->get('widthStyle'); ?>">

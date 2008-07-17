@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="AC_DIRECTORY_LAYOUT">
+		<message>
+			<![CDATA[AC_DIRECTORY_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>AC_DIRECTORY_LAYOUT</name>
+		<description>AC_DIRECTORY_LAYOUT_DESC</description>
+		<params>
+			<param name="content" type="list" default="" label="AC_CONTENT" description="AC_CONTENTDESC">
+				<option value="0">AC_CONTENTITEMONLY</option>
+				<option value="1">AC_STATICTCONTENTONLY</option>
+				<option value="2">AC_BOTH</option>
+				<option value="3">AC_NONE</option>
+			</param>
+			<param name="archived" type="radio" default="0" label="AC_ARCHIVED" description="AC_ARCHIVED">
+				<option value="0">AC_NO</option>
+				<option value="1">AC_YES</option>
+			</param>			
+			<param name="sectionid" type="text" default="" label="AC_SECTIONID" description="AC_SECTIONIDDESC" />
+			<param name="categoryid" type="text" default="" label="AC_CATEGORYID" description="AC_CATEGORYIDDESC" />			
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="weblinkssection" type="radio" default="1" label="AC_WEBLINKSASSECTION" description="AC_WEBLINKSASSECTIONDESC">
+				<option value="0">AC_NO</option>
+				<option value="1">AC_YES</option>
+			</param>			
+			<param name="weblinksthumbnail" type="radio" default="1" label="AC_WEBLINKSTHUMBNAIL" description="AC_WEBLINKSTHUMBNAILDESC">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="contactsection" type="radio" default="0" label="AC_CONTACTASSECTION" description="AC_CONTACTASSECTIONDESC">
+				<option value="0">AC_NO</option>
+				<option value="1">AC_YES</option>
+			</param>			
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="showalphabeticalbar" type="radio" default="1" label="AC_ALPHABETICALBAR" description="AC_ALPHABETICALBARDESC">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="alphabeticalindex" type="textarea" row="2" cols="20" default="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" label="AC_ALPHABETICALINDEX" description="AC_ALPHABETICALINDEXDESC" />
+			<param name="seperatingchar" type="text" default="|" label="AC_SEPERATINGCHAR" description="AC_SEPERATINGCHAR" />		
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="showdirectory" type="radio" default="1" label="AC_DIRECTORY" description="AC_DIRECTORY">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="numcols" type="list" default="3" label="AC_NUMCOLS" description="AC_NUMCOLS">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</param>
+			<param name="limitnumcat" type="list" default="0" label="AC_LIMITCATEGORIES" description="AC_LIMITCATEGORIES">
+				<option value="0">AC_NOLIMITED</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="30">30</option>
+				<option value="40">40</option>
+				<option value="50">50</option>
+			</param>
+			<param name="showsumcategoriesitems" type="radio" default="1" label="AC_SHOWSUMCATEGORIESITEMS" description="AC_SHOWSUMCATEGORIESITEMSDESC">
+				<option value="0">AC_NO</option>
+				<option value="1">AC_YES</option>
+			</param>
+			<param name="separativecharcatgeneralepage" type="list" default="," label="AC_SEPERATINGCATEGORIESGENERALEPAGE" description="AC_SEPERATINGCHARFORCATEGORIESGENERALEPAGE">
+				<option value=",">,</option>
+				<option value=" &#124;">|</option>
+				<option value=" &#187;">»</option>
+				<option value=" &#171;">«</option>				 	
+				<option value=" &#166;">¦</option>  
+				<option value=" -">-</option>
+				<option value=" +">+</option>
+				<option value="line_break_br">AC_LINE_BREAK</option>
+				<option value="list_li">AC_LIST</option>				
+			</param>
+			<param name="separativecharcatsectionpage" type="list" default="," label="AC_SEPERATINGCATEGORIESSECTIONPAGE" description="AC_SEPERATINGCHARFORCATEGORIESSECTIONPAGE">
+				<option value=",">,</option>
+				<option value=" &#124;">|</option>
+				<option value=" &#187;">»</option>	
+				<option value=" &#171;">«</option>	
+				<option value=" &#166;">¦</option>         				 	
+				<option value=" -">-</option>
+				<option value=" +">+</option>
+				<option value="line_break_br">AC_LINE_BREAK</option>
+				<option value="list_li">AC_LIST</option>				
+			</param>
+			<param name="orderingsectioncat" type="list" default="ordering ASC" label="AC_SORTSECTIONSCATEGORIESBY" description="AC_SORTSECTIONSCATEGORIESBY">
+				<option value="title ASC">AC_TITLE_ASC</option>
+				<option value="title DESC">AC_TITLE_DESC</option>
+				<option value="ordering ASC">AC_INTERNAL_ORDERING</option>
+			</param>	
+		</params>
+		<advanced>
+			<param name="showsectiondescription" type="radio" default="0" label="AC_SHOWSECTIONDESCRIPTION" description="AC_SHOWSECTIONDESCRIPTION">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="showcategorydescription" type="radio" default="0" label="AC_SHOWCATEGORYDESCRIPTION" description="AC_SHOWCATEGORYDESCRIPTION">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>		
+			<param name="showimagesection" type="radio" default="0" label="AC_IMAGESECTION" description="AC_IMAGESECTION">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="showimagecategory" type="radio" default="0" label="AC_IMAGECATEGORY" description="AC_IMAGECATEGORY">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="widthimagesectioncat" type="text" default="80" label="AC_IMAGEWIDTH" description="AC_IMAGEWIDTHDESC" />
+			<param name="imageuncategorizedsection" type="imagelist" directory="/images/stories" hide_default="1" default="" label="AC_IMAGEUNCATEGORIZEDSECTION" description="AC_IMAGEUNCATEGORIZEDSECTIONDESC" />
+			<param name="imageweblinkssection" type="imagelist" directory="/images/stories" hide_default="1" default="" label="AC_IMAGEWEBLINKSSECTION" description="AC_IMAGEWEBLINKSSECTIONDESC" />
+			<param name="imagecontactsection" type="imagelist" directory="/images/stories" hide_default="1" default="" label="AC_IMAGECONTACTSECTION" description="AC_IMAGECONTACTSECTIONDESC" />
+			<param name="showrss" type="radio" default="1" label="AC_SHOWRSS" description="AC_SHOWRSSDESC">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>	
+			<param name="showsharethiswidget" type="radio" default="0" label="AC_SHARETHISWIDGET" description="AC_SHARETHISWIDGET">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>					
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="showrelateditems" type="radio" default="0" label="AC_RELATEDITEM" description="AC_RELATEDITEM">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="numrelateditems" type="list" default="5" label="AC_NUMRELATEDITEMS" description="AC_NUMRELATEDITEMS">
+				<option value="3">3</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="50">50</option>					
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="showtags" type="radio" default="0" label="AC_TAGS" description="AC_TAGSINLISTING">
+				<option value="0">AC_HIDE</option>
+				<option value="1">AC_SHOW</option>
+			</param>
+			<param name="numtags" type="list" default="5" label="AC_NUMOFTAGS" description="AC_NUMOFTAGS">
+				<option value="3">3</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="50">50</option>			
+			</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showsystemrating" type="radio" default="1" label="AC_SYSTEMRATING" description="AC_SYSTEMRATINGDESC">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>
+		<param name="systemrating" type="list" default="1" label="AC_SELECTSYSTEMRATING" description="AC_SELECTSYSTEMRATING">
+			<option value="0">AC_NATIVEJOOMLARATINGBAR</option>
+			<option value="1">AC_AJAXALPHACONTENTRATINGBAR</option>
+		</param>		
+		<param name="showinfosrating" type="radio" default="1" label="AC_SHOWRATINGINFOS" description="AC_SHOWRATINGINFOSDESC">
+			<option value="0">AC_HIDE</option>
+			<option value="1">AC_SHOW</option>
+		</param>		
+		</advanced>
+	</state>
+</metadata>

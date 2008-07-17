@@ -1,0 +1,667 @@
+#extcalendar td,#extcalendar tr,#extcalendar p, #extcalendar div {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+#extcalendar select {
+	color: inherit;
+}
+
+#extcalendar strong {
+	color: inherit;
+}
+
+#extcalendar h2.title {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-image :   url(images/box_left_icon.gif);
+	background-repeat : no-repeat;
+	background-position : left;
+	padding-left : 13px;
+	font-size: 11px;
+	margin: 0px;
+  color : #606F79;
+}
+
+#extcalendar p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 2px 0px;
+}
+
+#extcalendar hr {
+	color : #000000;
+	height: 1px;
+}
+
+#extcalendar .textinput {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #686868;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #9BAAAF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #AABBBF;
+
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #9BAAAF;
+
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #9BAAAF;	
+	padding-right: 3px;
+	padding-left: 3px;
+  background-image:   url(images/txtboxbg.gif);
+
+}
+
+#extcalendar .textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #686868;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #9BAAAF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #AABBBF;
+
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #9BAAAF;
+
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #9BAAAF;	
+	padding-right: 3px;
+	padding-left: 3px;
+
+}
+
+#extcalendar .listbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: groove 1px;
+}
+
+#extcalendar .button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #AABBBF;
+	background-color : #FFFFFF;
+    color:#404F59;
+	background-image: url("images/btn_bg.gif");
+	padding: 2px;
+}
+
+
+#extcalendar a {
+	color: #606F79;
+	text-decoration: none;
+}
+
+#extcalendar a:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .apptitle { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size:18px; font-weight: bold; 
+}
+
+#extcalendar .appdesc { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight: normal; 
+}
+
+
+#extcalendar .buttontext a {
+	font-size: 9px;
+	color: #606F79;
+	text-decoration: none;
+}
+
+#extcalendar .buttontext:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .previousmonth, #extcalendar .previousday, #extcalendar .previousweek {
+	font-size: 10px;
+	color: #606F79;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+
+	background-color: #d8e0e4;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+#extcalendar .previousmonth, #extcalendar .nextmonth, #extcalendar .previousweek, #extcalendar .nextweek, #extcalendar .previousday, #extcalendar .nextday {
+	width: 33%;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#extcalendar .miniarrow {
+	vertical-align: middle;
+	margin: 0 5px 0 5px;
+}
+
+#extcalendar .previousmonth a:hover, #extcalendar .previousday a:hover, #extcalendar .previousweek a:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .nextmonth, #extcalendar .nextday, #extcalendar .nextweek {
+	font-size: 10px;
+	color: #606F79;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+
+	background-color: #d8e0e4;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+#extcalendar .cal_message {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	vertical-align: middle;
+}
+
+#extcalendar .nextmonth a:hover, #extcalendar .nextday a:hover, #extcalendar .nextweek a:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .currentmonth, #extcalendar .currentday, #extcalendar .currentweek {
+	font-size: 12px;
+	color: #606F79;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	background-color: #eef0f0;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+#extcalendar .currentmonth, #extcalendar .currentday, #extcalendar .currentweek {
+	width: 34%;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#extcalendar .tablev1 {
+	background-color: #708088 ;
+	border-top: 1px solid #95A5AD;
+	border-left: 1px solid #95A5AD;
+	border-right: 0px solid #62727A;
+	border-bottom: 0px solid #62727A;
+  	margin: 0px;
+	color : #E0E4E4;
+	padding-top: 12px;
+	padding-right: 2px;
+	padding-bottom: 12px;
+	padding-left: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-decoration: none;
+	text-transform: uppercase; 
+	vertical-align: middle;
+}
+
+#extcalendar .tablev1 a {
+	color : #E0E4E4;
+	text-decoration: none;
+}
+
+#extcalendar .tablev1 a:hover {
+	color : #E0E4E4;
+	text-decoration: underline;
+}
+
+#extcalendar .searchlink {
+	font-size: 10px;
+	color: #606F79;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#extcalendar .searchlink:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .searchdesc {
+	font-size: 10px;
+	color: #606F79;
+}
+
+#extcalendar .eventtitle {
+	font-size: 10px;
+	color: #606F79;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#extcalendar .eventtitle:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .eventdesc {
+	font-size: 10px;
+	color: #606F79;
+}
+
+#extcalendar .eventdesclarge {
+	font-size: 12px;
+	color: #505F69;
+	line-height: 18px;
+}
+
+#extcalendar .cattitle, #extcalendar .usertitle, #extcalendar .grouptitle {
+	font-size: 11px;
+	color: #606F79;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#extcalendar .cattitle:hover, #extcalendar .usertitle:hover, #extcalendar .grouptitle:hover {
+	color: #8090A3;
+	text-decoration: underline;
+}
+
+#extcalendar .catdesc, #extcalendar .userdesc, #extcalendar .groupdesc {
+	font-size: 10px;
+	color: #606F79;
+}
+
+#extcalendar .titlehighlight {
+	color: #4488BB;
+	text-decoration: underline;
+}
+
+#extcalendar .highlight {
+	color: #80A000;
+	text-decoration: underline;
+}
+
+#extcalendar .tableh1 {
+  color:#606F79;
+  font-size: 11px;
+  height: 26px;
+  background-image:   url(images/tile_back1.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+	padding-top: 8px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #CED2D6;
+}
+
+#extcalendar .tableh2   {
+	background-image:  url(images/tile_sub.gif);
+	background-color: #708088 ;
+	border-left: 1px solid #95A5AD;
+	border-right: 0px solid #62727A;
+	margin: 0px;
+	color : white;
+	padding-top: 6px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#extcalendar .tableh2_nobackground   {
+	color : white;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#extcalendar .tableb {
+	color : black;
+	background-color: #E4E8E8 ;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	line-height: 16px;
+}
+
+#extcalendar .tablec {
+	color : black;
+	background-color: #d8e0e4;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+
+#extcalendar .maintable {
+	border: 1px solid #99a0aa;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+#extcalendar .error {
+	color : Red;
+	font-weight : bold;
+}
+
+#extcalendar .today {
+	font-size: 9px;
+	color: #606F79;
+	font-weight: bold;
+}
+
+#extcalendar .atomic {
+	font-size: 9px;
+}
+
+#extcalendar .legend {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.4pt;
+	font-size: 11px;
+}
+
+/* Weekday Label Cells */
+
+#extcalendar .caldaydigits {
+	font-size: 9px;
+}
+
+#extcalendar .weekdaytopclr, #extcalendar .sundaytopclr {
+	background-image:  url(images/tile_sub.gif);
+	background-color: #607080 ;
+	border-left: 1px solid #95A5AD;
+	border-right: 0px solid #62727A;
+  margin: 0px;
+	color : #FFFFFF;
+	padding-top: 6px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#extcalendar .sundaytopclr {
+	background-color: #708094;
+}
+
+/* Day Cells */
+
+#extcalendar .weekdayclr {
+	background-color: #EEF0F0;
+	color: #C0C4C8;
+	font-size: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+#extcalendar .todayclr {
+	background-color: #D0E6F6;
+	color: #C0C4C8;
+	font-size: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+#extcalendar .sundayemptyclr {
+	background-color: #DDE0E0;
+	color: #C0C4C8;
+	font-size: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+#extcalendar .weekdayemptyclr {
+	background-color: #E4E8E8;
+	color: #C0C4C8;
+	font-size: 10px;
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+/* Text Editor classes */
+
+#extcalendar .tdBtn {
+  padding-left: 3px;
+  padding-top:3px;
+}
+
+#extcalendar .btnOut {    
+  border: 1px solid;
+  border-color: #E4E8E8;
+	background-color: #E4E8E8;
+}
+
+#extcalendar .btnOver {    
+  border: 1px solid;
+  border-top-color: #FFFFFF;
+  border-left-color: #FFFFFF;
+  border-right-color: #C0C4C4;
+  border-bottom-color: #C0C4C4;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+#extcalendar .btnDown {    
+  border: 1px solid;
+  border-top-color: #C0C4C4;
+  border-left-color: #C0C4C4;
+  border-right-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+	background-color: #D4D8D8;
+	cursor: auto;
+}
+
+#extcalendar a.flatButton img {
+  border: 1px solid #E4E8E8;
+  border-color: #d8e0e4;
+}
+
+#extcalendar a.flatButton:hover img {
+  border: 1px solid;
+  border-top-color: #FFFFFF;
+  border-left-color: #FFFFFF;
+  border-right-color: #C0C4C4;
+  border-bottom-color: #C0C4C4;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+/* Monthly View classes */
+#extcalendar .eventstyle {
+	font-size: 9px;
+  padding: 3px;
+  border-bottom: 2px solid #555555;
+	text-align: left;
+}
+#extcalendar .eventfull {
+  margin-left: 3px;
+  margin-right: 3px;
+  border-top: 1px solid #D0D4D4;
+  border-left: 1px solid #D0D4D4;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+#extcalendar .eventstart {
+  margin-left: 3px;
+  border-top: 1px solid #D0D4D4;
+  border-left: 1px solid #D0D4D4;
+  border-bottom: 1px solid #FFFFFF;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+#extcalendar .eventmiddle {
+  border-top: 1px solid #D0D4D4;
+  border-bottom: 1px solid #FFFFFF;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+#extcalendar .eventend {
+  margin-right: 3px;
+  border-top: 1px solid #D0D4D4;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+	background-color: #E4E8E8;
+	cursor: auto;
+}
+
+#extcalendar .imagecell {    
+	background-color: #C8D2D8;
+  padding: 8px;
+}
+#extcalendar .imagecell img {    
+  border: 1px solid;
+  border-top-color: #FFFFFF;
+  border-left-color: #FFFFFF;
+  border-right-color: #C0C6C6;
+  border-bottom-color: #C0C6C6;
+	cursor: auto;
+}
+
+
+#extcal_minical .extcal_navbar {
+	background-image: url(images/bg1.gif);
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #B4B4B6;
+}
+#extcal_minical .extcal_tiny_add_event_link {
+	font-family: Verdana;
+	font-size: 9px;
+	font-weight: normal;
+	color:#575767;
+	text-decoration: none;
+}
+#extcal_minical TABLE.extcal_weekdays {
+	background-image: url(images/bg1.gif);
+	background-repeat: repeat-x;
+	border-top: 1px solid #FFFFFF;
+}
+#extcal_minical TD.extcal_weekdays {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 4px;
+}
+#extcal_minical .extcal_small {
+	font-family: Verdana;
+	font-size: 9px;
+	color:#575767;
+	text-decoration: none;
+}
+#extcal_minical .extcal_small:link,#extcal_minical .extcal_small:visited {
+	text-decoration: none;
+}
+#extcal_minical .extcal_small:hover {
+	text-decoration: underline;
+}
+
+#extcal_minical .extcal_daycell,#extcal_minical .extcal_todaycell,
+#extcal_minical .extcal_sundaycell,#extcal_minical .extcal_othermonth {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color:#555555;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+#extcal_minical .extcal_todaycell {
+	color:#99AAAA;
+	background-image: url(images/rect.gif);
+}
+
+#extcal_minical .extcal_sundaycell {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_othermonth {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_daylink, #extcal_minical .extcal_sundaylink,
+#extcal_minical .extcal_busylink  {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#extcal_minical .extcal_daylink:link,#extcal_minical .extcal_daylink:visited {
+	color:#555555;
+}
+
+#extcal_minical .extcal_busylink:link,#extcal_minical .extcal_busylink:visited { 
+	color:#2266EE;
+	text-decoration: none; 
+}
+
+#extcal_minical .extcal_sundaylink:link,#extcal_minical .extcal_sundaylink:visited {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_month_label {
+	font-family: Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 10px;
+	font-weight: bold;
+	color: #565666;
+}
+#extcal_minical .extcal_picture {
+}
+#extcal_minical .extcal_weekcell {
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="search">
+	<name>Search - Fabrik</name>
+	<author>Rob Claybrun</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Rob Clayburn. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.5</version>
+	<description>Allows Searching of Fabrik information</description>
+	<files>
+		<filename plugin="fabrik">fabrik.php</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	</params>
+</install>

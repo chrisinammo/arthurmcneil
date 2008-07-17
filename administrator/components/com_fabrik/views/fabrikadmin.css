@@ -1,0 +1,15 @@
+.addButton {
+    display: block;
+    height: 16px;
+    padding-left: 23px;
+    background: transparent url(../images/add.png) no-repeat top left;
+		width:1em;
+}
+
+.removeButton {
+    display: block;
+    height: 16px;
+    padding-left: 23px;
+    background: transparent url(../images/remove.png) no-repeat top left;
+		width:1em;
+}

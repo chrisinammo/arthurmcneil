@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Table Edit Form</name>
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="state" type="radio" default="0" label="Published">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="created_by" type="author" default="" label="Author" description="DETAILAUTHOR" />
+		<param name="created_by_alias" type="text" size="20" default="" label="Author Alias" description="DETAILAUTHORALIAS" />
+		<param name="created" type="calendar" default="" label="Created Date" description="DETAILCREATED" />
+		<param name="publish_up" type="calendar" default="" label="Start Publishing" description="DETAILSTART" />
+		<param name="publish_down" type="calendar" default="" label="Finish Publishing" description="DETAILFINISH" />
+	</params>
+	
+	<params group="rss">
+		<param name="rss" type="radio" default="0" label="RSSFEED" description="RSSFEEDDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="feed_title" type="tablefields" default="" label="Feed title"  />
+		<param name="feed_date" type="tablefields" default="" label="Feed date"  />
+		<param name="rsslimit" type="text"  size="5" default="150" label="RSSLIMIT" description="RSSLIMITDESC" />
+		<param name="rsslimitmax" type="text"  size="6" default="2500" label="RSSLIMITMAX"  description="RSSLIMITMAXDESC" />
+	</params>
+	
+	<params group="csv">
+		<param name="csv_import_frontend" type="radio" default="0" label="CSVIMPORT" description="CSVIMPORTDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="csv_export_frontend" type="radio" default="0" label="CSVEXPORT" description="CSVEXPORTDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="csvfullname" type="radio" default="0" label="CSVEXPORTUSEFULLNAME" description="CSVEXPORTUSEFULLNAMEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+	</params>
+
+	<params group="access">
+		<param name="access" type="fullaccesslevel" default="0" label="View table" description="Access rights to view the table" />
+		<param name="allow_view_details" type="fullaccesslevel" default="0" label="View records" description="Access rights to view detailed records" />
+		<param name="allow_edit_details" type="fullaccesslevel" default="20" label="Edit records" description="Access rights to edit records" />
+		<param name="allow_add" type="fullaccesslevel" default="0" label="Add records" description="Access rights to add new records" />
+		<param name="allow_delete" type="fullaccesslevel" default="20" label="Delete records" description="Access rights to delete records" />
+		<param name="allow_drop" type="fullaccesslevel" default="25" label="Drop data" description="Access rights to drop all records from the table" />
+	</params>
+
+	<params group="layout">
+		<param name="detaillink" type="radio" default="0" label="DETAILLINK" description="DETAILLINKDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="empty_data_msg" type="text" size="35" default="" label="EMPTYDATAMESSAGE" description="EMPTYDATAMESSAGEDESC" />
+		<param name="detailurl" type="text" size="100" default="" label="DETAILURL" description="DETAILURLDESC" />
+		<param name="advanced-filter" type="radio" default="0" label="ADVANCED_SEARCH" description="ADVANCED_SEARCH_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show-table-nav" type="radio" default="1" label="SHOWTABLENAV" description="SHOWTABLENAVDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="pdf" type="list" default="" label="PDFICON" description="PDFICONDESC">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+	
+	<params group="prefilter">
+		<param name="prefilter_query" type="text" size="35" default="" label="PREFILTERQUERY" description="PREFILTERQUERYDESC" />
+	</params>
+	
+	<params group="grouping">
+		<param name="group_by_order" type="tablefields" label="Order by" description="" />
+		<param name="group_by_order_dir" type="ascendingdescending" size="35" default="" label="Order direction" description="" />
+	</params>
+	
+</form>

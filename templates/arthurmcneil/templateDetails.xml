@@ -71,6 +71,17 @@
 		<position>footer</position>
 		<position>debug</position>
 		<position>syndicate</position>
+	    <position>MOUS_RelatedCourses</position>
+		<position>MOUS_Calendar</position>
+		<position>MOUS_UpcomingEvents</position>
+		<position></position>
+		<position></position>
+		<position></position>
+		<position></position>
+		<position></position>
+		<position></position>
+		<position></position>
+		<position></position>
 	</positions>
 	<params>
 		<param name="colorVariation" type="list" default="white" label="Color Variation" description="Color variation to use">

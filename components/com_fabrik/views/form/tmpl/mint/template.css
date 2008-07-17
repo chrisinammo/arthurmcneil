@@ -1,0 +1,108 @@
+.fabrikForm ul{
+	list-style:none;
+}
+
+.fabrikForm ul, .fabrikForm li{
+	padding:0;
+	margin:0;
+}
+
+.fabrikForm li{
+	padding:5px 0;
+	margin-top:10px;
+}
+
+.fabrikElement{
+	margin-left:112px;
+	
+}
+
+.fabrikLabel{
+	width:100px;
+	clear:left;
+	padding-left:10px;
+	float:left;
+}
+
+
+.fabrikError{
+	margin: 0; 
+	font-weight: bold; 
+	margin-bottom: 10px; 
+	padding:7px 10px 7px 40px;
+	color: #c00; 
+	background: #EFE7B8 url(images/alert.png) no-repeat center left;
+	border-top: 3px solid #F0DC7E; 
+	border-bottom: 3px solid #F0DC7E;
+}
+
+
+.fabrikHide{
+	display:none;
+}
+
+.fabrikShow{
+	display:block;
+}
+
+.isemail{
+	background: transparent url(images/email.gif) no-repeat top right;
+}
+
+.notempty{
+	background: transparent url(images/required.png) no-repeat top right;
+}
+
+.isalphanumeric{
+	background: transparent url(images/alphanumeric.png) no-repeat top right;
+}
+
+.fabrikActions{
+	padding-top:15px;
+	clear:left;
+	padding-bottom:15px;
+}
+
+.inputbox:focus{
+	background-color:#ffffcc;
+	border:1px solid #aaaaaa;
+	padding:1px 1px 3px 1px;
+}
+
+.fabrikGroupRepeater{
+	float:left;
+	width:19%;
+}
+
+.fabrikSubGroupElements{
+	width:80%;
+	float:left;
+}
+
+.fabrikForm h3{
+	background-color:#2E2E2E;
+	font-size:1.3em;
+	line-height:20px;
+	margin:0;
+	color:#E6F2FF;
+	padding:5px ;
+	padding-bottom:9px;
+}
+
+.fabrikGroup{
+	padding-bottom:10px;
+	background:#ABDB6C url(images/bg.gif) repeat-x;
+	color:white;
+	margin-bottom:10px;
+}
+
+.addoption{
+	clear:left;
+	padding:3px;
+	background-color:#efefef;
+}
+
+.addoption dd, .addoption dt{
+	padding:2px;
+	display:inline;
+}

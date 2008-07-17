@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Database Join</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Drop down or radio lists containing data looked up in another table</description>
+	
+	<files>
+		<filename fabrikplugin="fabrikdatabasejoin">fabrikdatabasejoin.php</filename>
+		<filename fabrikplugin="fabrikdatabasejoin">javascript.js</filename>
+		<filename>index.html</filename>
+	</files>
+	
+  <languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdatabasejoin.ini</language>
+	</languages>
+
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="hidden" type="hidden" default="" size="3" label="Hidden" />
+	</params>
+		
+	<params group="intro" addpath="/administrator/components/com_fabrik/elements">
+		<param name="database_join_display_type" type="list" default="dropdown" label="RENDERJOIN" description="RENDERJOINDESC">
+			<option value="dropdown">Drop down list</option>
+			<option value="radio">Radio Buttons</option>
+		</param>
+		
+		<param name="show_both_with_radio_dbjoin" type="list" default="0" label="ALLRADIOBUTTON" description="ALLRADIOBUTTONDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="joinType" type="radio" default="simple" label="Join type">
+			<option value="simple">Simple</option>
+			<option value="advanced">Advanced</option>
+		</param>
+		<param name="join_conn_id" type="connections" default="" label="Connection" js="changeDynaList( 'join_db_name', connectiontables, $('paramsjoin_conn_id').getValue(), 0, 0);" /> 
+	</params>
+	
+	<params group="xtra">
+		<param name="database_join_where_sql" type="text" size="35" default="" label="JOINWHERESTATEMENT" description="JOINWHERESTATEMENTDESC" />	
+		<param name="database_join_noselectionvalue" type="text" size="5" default="" label="NOSELECTIONVALUE" description="NOSELECTIONVALUEDESC" />
+	</params>
+	
+	<params group="frontend">
+		<param name="fabrikdatabasejoin_frontend_add" type="radio" default="0" label="FABRIKDATABASEJOIN_FRONTEND_ADD" description="FABRIKDATABASEJOIN_FRONTEND_ADD_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+	</params>
+	
+	<params group="simple">
+		
+	</params>
+</install>

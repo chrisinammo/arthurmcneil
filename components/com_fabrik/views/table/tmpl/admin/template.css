@@ -1,0 +1,19 @@
+table.fabrikTable{
+border-collapse:collapse;
+}
+
+.sequenceName{
+color:#6022E5;
+}
+
+.oddrow0{
+background-color:#FAFAFA;
+}
+
+.oddrow1{
+background-color:#Efefef;
+}
+
+.button2-right.off .prev {
+background:transparent url(../images/j_button2_prev_off.png) no-repeat scroll 0%;
+}

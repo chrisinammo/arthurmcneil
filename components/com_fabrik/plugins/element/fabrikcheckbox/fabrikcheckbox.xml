@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Checkbox</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders Checkbox element</description>
+	<files>
+		<filename fabrikplugin="fabrikcheckbox">fabrikcheckbox.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+  <languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcheckbox.ini</language>
+	</languages>
+	
+	<params>
+		<param name="ck_value" type="text" size="30" default="" label="NONESELECTEDVALUE" description=""/>
+		<param name="element_before_label" type="radio" default="1" label="ELEMENTBEFORELABEL" description="ELEMENTBEFORELABELDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="options_per_row" type="width" default="4" label="Options per row" description="" />
+		
+		<param name="allow_frontend_addtocheckbox" type="radio" default="0" label="EDITDROPDOWN" description="EDITDROPDOWNDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="chk-allowadd-onlylabel" type="radio" default="0" label="ONLYADDLABEL" description="ONLYADDLABELDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+				<param name="chk-savenewadditions" type="radio" default="0" label="SAVENEWADDITIONS" description="SAVENEWADDITIONSDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

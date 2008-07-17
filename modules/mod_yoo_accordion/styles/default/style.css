@@ -1,0 +1,29 @@
+/* (C) 2007 YOOtheme.com */
+
+div.default div.yoo-accordion {
+	padding: 1px;
+	border: 1px solid #C8C8C8;
+}
+
+div.default div.yoo-accordion dt.toggler {
+	height: 30px;
+	background: url(styles/default/images/item_header.png) 0 0 repeat-x;
+	line-height: 30px;
+	text-indent: 10px;
+	font-size: 125%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.default div.yoo-accordion dt:hover.toggler, div.default div.yoo-accordion dt.sfhover {
+	background: url(styles/default/images/item_header.png) 0 -30px repeat-x;
+}
+
+div.default div.yoo-accordion dd div.article {
+	padding: 10px 20px 10px 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+div.default div.yoo-accordion dd.last div.article {
+	border-bottom: none;
+}

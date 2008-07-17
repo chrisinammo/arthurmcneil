@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Events</name>
+	<creationDate>July 2007</creationDate>
+	<author>JEvents Project Group</author>
+	<copyright>(C) 2006-2007 JEvents Project Group</copyright>
+	<licence>http://www.gnu.org/copyleft/gpl.html</licence>
+	<authorEmail></authorEmail>
+	<authorUrl>joomlacode.org/gf/project/jevents</authorUrl>
+	<version>1.5alpha</version>
+	<description>Events, meetings and more</description>
+	<files>
+		<filename>controller.php</filename>
+		<filename>events.class.php</filename>
+		<filename>events.html.php</filename>
+		<filename>events.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		
+		<filename>includes/adminutils.php</filename>
+		<filename>includes/comutils.php</filename>
+		<filename>includes/index.html</filename>
+		<filename>includes/modutils.php</filename>
+		
+		<filename>js/colorpicker.js</filename>
+		<filename>js/index.html</filename>
+		<filename>js/overlib_shadow.js</filename>
+		
+		<filename>language/brazilian_portuguese.php</filename>
+		<filename>language/bulgarian.php</filename>
+		<filename>language/catalan.php</filename>
+		<filename>language/cymraeg.php</filename>
+		<filename>language/czech.php</filename>
+		<filename>language/danish.php</filename>
+		<filename>language/dutch.php</filename>
+		<filename>language/english.php</filename>
+		<filename>language/estonian.php</filename>
+		<filename>language/finnish.php</filename>
+		<filename>language/french.php</filename>
+		<filename>language/germanf.php</filename>
+		<filename>language/germani.php</filename>
+		<filename>language/greek.php</filename>
+		<filename>language/hungarian.php</filename>
+		<filename>language/index.html</filename>
+		<filename>language/italian.php</filename>
+		<filename>language/lithuanian.php</filename>
+		<filename>language/norwegian.php</filename>
+		<filename>language/polish.php</filename>
+		<filename>language/portuguese.php</filename>
+		<filename>language/russian.php</filename>
+		<filename>language/spanish.php</filename>
+		<filename>language/swedish.php</filename>
+		<filename>language/simplified_chinese.php</filename>
+		<filename>language/traditional_chinese.php</filename>
+		<filename>language/turkish.php</filename>
+		<filename>language/welsh.php</filename>
+		<filename>language/newfor15.php</filename>
+		
+		<filename>layouts/index.html</filename>
+		
+		<filename>layouts/default/css/modstyle.css</filename>
+		<filename>layouts/default/events_calendar_cell.php</filename>
+		<filename>layouts/default/events_css.css</filename>
+		<filename>layouts/default/eventsView.php</filename>
+		<filename>layouts/default/modView.php</filename>
+		<filename>layouts/default/view_thumbnail.png</filename>
+		
+		<filename>layouts/alternative/css/modstyle.css</filename>
+		<filename>layouts/alternative/events_calendar_cell.php</filename>
+		<filename>layouts/alternative/events_css.css</filename>
+		<filename>layouts/alternative/eventsView.php</filename>
+		<filename>layouts/alternative/modView.php</filename>
+		<filename>layouts/alternative/view_thumbnail.png</filename>
+		<filename>layouts/alternative/images/calmonth2.png</filename>
+		<filename>layouts/alternative/images/calweek2.png</filename>
+		<filename>layouts/alternative/images/calday2.png</filename>
+		
+		<filename>layouts/geraint/css/modstyle.css</filename>
+		<filename>layouts/geraint/events_calendar_cell.php</filename>
+		<filename>layouts/geraint/events_css.css</filename>
+		<filename>layouts/geraint/eventsView.php</filename>
+		<filename>layouts/geraint/modView.php</filename>
+		<filename>layouts/geraint/view_thumbnail.png</filename>
+		<filename>layouts/geraint/images/cal1x.jpg</filename>
+		<filename>layouts/geraint/images/cal2x.jpg</filename>
+		<filename>layouts/geraint/images/cal3x.jpg</filename>
+		<filename>layouts/geraint/images/cal5x.jpg</filename>
+		<filename>layouts/geraint/images/cal8x.jpg</filename>
+		<filename>layouts/geraint/images/cal9x.jpg</filename>
+
+		<filename>layouts/ext/css/modstyle.css</filename>
+		<filename>layouts/ext/events_calendar_cell.php</filename>
+		<filename>layouts/ext/events_css.css</filename>
+		<filename>layouts/ext/eventsView.php</filename>
+		<filename>layouts/ext/modView.php</filename>
+		<filename>layouts/ext/view_thumbnail.png</filename>		
+		<filename>layouts/ext/images/addsign.gif</filename>
+		<filename>layouts/ext/images/addsign_a.gif</filename>
+		<filename>layouts/ext/images/arrowleft.gif</filename>
+		<filename>layouts/ext/images/arrowright.gif</filename>
+		<filename>layouts/ext/images/banner.png</filename>
+		<filename>layouts/ext/images/bannerbg.gif</filename>
+		<filename>layouts/ext/images/bg1.gif</filename>
+		<filename>layouts/ext/images/box_left_icon.gif</filename>
+		<filename>layouts/ext/images/btn_bg.gif</filename>
+		<filename>layouts/ext/images/btn_bold.gif</filename>
+		<filename>layouts/ext/images/btn_center.gif</filename>
+		<filename>layouts/ext/images/btn_image.gif</filename>
+		<filename>layouts/ext/images/btn_italic.gif</filename>
+		<filename>layouts/ext/images/btn_left.gif</filename>
+		<filename>layouts/ext/images/btn_link.gif</filename>
+		<filename>layouts/ext/images/btn_right.gif</filename>
+		<filename>layouts/ext/images/btn_underline.gif</filename>
+		<filename>layouts/ext/images/colorpicker.gif</filename>
+		<filename>layouts/ext/images/days1.gif</filename>
+		<filename>layouts/ext/images/days2.gif</filename>
+		<filename>layouts/ext/images/def_pic.gif</filename>
+		<filename>layouts/ext/images/errormessage.gif</filename>
+		<filename>layouts/ext/images/icon-add.gif</filename>
+		<filename>layouts/ext/images/icon-addevent.gif</filename>
+		<filename>layouts/ext/images/icon-apprevent.gif</filename>
+		<filename>layouts/ext/images/icon-archive.gif</filename>
+		<filename>layouts/ext/images/icon-calendarview.gif</filename>
+		<filename>layouts/ext/images/icon-cat-active.gif</filename>
+		<filename>layouts/ext/images/icon-cat-inactive.gif</filename>
+		<filename>layouts/ext/images/icon-cats.gif</filename>
+		<filename>layouts/ext/images/icon-colorpicker.gif</filename>
+		<filename>layouts/ext/images/icon-daily.gif</filename>
+		<filename>layouts/ext/images/icon-del.gif</filename>
+		<filename>layouts/ext/images/icon-delevent.gif</filename>
+		<filename>layouts/ext/images/icon-edit.gif</filename>
+		<filename>layouts/ext/images/icon-editevent.gif</filename>
+		<filename>layouts/ext/images/icon-event-active.gif</filename>
+		<filename>layouts/ext/images/icon-event-enddate.gif</filename>
+		<filename>layouts/ext/images/icon-event-inactive.gif</filename>
+		<filename>layouts/ext/images/icon-event-middate.gif</filename>
+		<filename>layouts/ext/images/icon-event-onedate.gif</filename>
+		<filename>layouts/ext/images/icon-event-startdate.gif</filename>
+		<filename>layouts/ext/images/icon-flyer.gif</filename>
+		<filename>layouts/ext/images/icon-group.gif</filename>
+		<filename>layouts/ext/images/icon-info.gif</filename>
+		<filename>layouts/ext/images/icon-loginpic.gif</filename>
+		<filename>layouts/ext/images/icon-mini-week.gif</filename>
+		<filename>layouts/ext/images/icon-minus.gif</filename>
+		<filename>layouts/ext/images/icon-photo.gif</filename>
+		<filename>layouts/ext/images/icon-plus.gif</filename>
+		<filename>layouts/ext/images/icon-print.gif</filename>
+		<filename>layouts/ext/images/icon-recur-event-active.gif</filename>
+		<filename>layouts/ext/images/icon-recur-event-inactive.gif</filename>
+		<filename>layouts/ext/images/icon-release-dev.gif</filename>
+		<filename>layouts/ext/images/icon-release.gif</filename>
+		<filename>layouts/ext/images/icon-search.gif</filename>
+		<filename>layouts/ext/images/icon-tag-menu.gif</filename>
+		<filename>layouts/ext/images/icon-update.gif</filename>
+		<filename>layouts/ext/images/icon-user-active.gif</filename>
+		<filename>layouts/ext/images/icon-user-inactive.gif</filename>
+		<filename>layouts/ext/images/icon-user-profile.jpg</filename>
+		<filename>layouts/ext/images/icon-user.gif</filename>
+		<filename>layouts/ext/images/icon-visibility.gif</filename>
+		<filename>layouts/ext/images/icon-weekly.gif</filename>
+		<filename>layouts/ext/images/index.html</filename>
+		<filename>layouts/ext/images/logo.gif</filename>
+		<filename>layouts/ext/images/mini_arrowleft.gif</filename>
+		<filename>layouts/ext/images/mini_arrowleft_inactive.gif</filename>
+		<filename>layouts/ext/images/mini_arrowright.gif</filename>
+		<filename>layouts/ext/images/minical.png</filename>
+		<filename>layouts/ext/images/preview.gif</filename>
+		<filename>layouts/ext/images/rect.gif</filename>
+		<filename>layouts/ext/images/selected.gif</filename>
+		<filename>layouts/ext/images/spacer.gif</filename>
+		<filename>layouts/ext/images/tile_back1.gif</filename>
+		<filename>layouts/ext/images/tile_sub.gif</filename>
+		<filename>layouts/ext/images/txtboxbg.gif</filename>		
+		
+		<filename>libraries/commonfunctions.php</filename>
+		<filename>libraries/commonqueries.php</filename>
+		<filename>libraries/datamodel.php</filename>
+		<filename>libraries/eventsrss.php</filename>
+		<filename>libraries/eventViewer.php</filename>
+		<filename>libraries/frontendAdministration.php</filename>
+		<filename>libraries/helper.php</filename>
+		<filename>libraries/iCalImport.php</filename>
+		<filename>libraries/index.html</filename>
+		<filename>libraries/modfunctions.php</filename>
+		<filename>libraries/vCal.class.php</filename>
+
+		<filename>old/events.class.old.php</filename>
+		<filename>old/events.old.php</filename>
+
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/cal1x.jpg</filename>
+		<filename>images/cal2x.jpg</filename>
+		<filename>images/cal3x.jpg</filename>
+		<filename>images/cal5x.jpg</filename>
+		<filename>images/cal8x.jpg</filename>
+		<filename>images/cal9x.jpg</filename>
+		<filename>images/d_blue.gif</filename>
+		<filename>images/d_gray.gif</filename>
+		<filename>images/d_green.gif</filename>
+		<filename>images/d_orange.gif</filename>
+		<filename>images/d_red.gif</filename>
+		<filename>images/d_yellow.gif</filename>
+		<filename>images/dd_blue.gif</filename>
+		<filename>images/dd_gray.gif</filename>
+		<filename>images/dd_green.gif</filename>
+		<filename>images/dd_orange.gif</filename>
+		<filename>images/dd_red.gif</filename>
+		<filename>images/dd_yellow.gif</filename>
+		<filename>images/evback.jpg</filename>
+		<filename>images/event.png</filename>	
+		<filename>images/g_blue.gif</filename>
+		<filename>images/g_gray.gif</filename>
+		<filename>images/g_green.gif</filename>
+		<filename>images/g_orange.gif</filename>
+		<filename>images/g_red.gif</filename>
+		<filename>images/g_yellow.gif</filename>
+		<filename>images/gg_blue.gif</filename>
+		<filename>images/gg_gray.gif</filename>
+		<filename>images/gg_green.gif</filename>
+		<filename>images/gg_orange.gif</filename>
+		<filename>images/gg_red.gif</filename>
+		<filename>images/gg_yellow.gif</filename>
+		<filename>images/index.html</filename>
+		<filename>images/help.gif</filename>
+		<filename>images/logo.gif</filename>
+		<filename>images/transp.gif</filename>
+		<filename>images/vcal.gif</filename>
+	</images>
+	<install>
+		<queries>
+			<query>CREATE TABLE IF NOT EXISTS `#__events` (
+				`id` int(12) NOT NULL auto_increment,
+				`sid` int(11) NOT NULL default '0',
+				`catid` int(11) NOT NULL default '1',
+				`title` varchar(100) NOT NULL default '',
+				`content` longtext NOT NULL default '',
+				`adresse_info` VARCHAR(120) NOT NULL default '',
+				`contact_info` VARCHAR(120) NOT NULL default '',
+				`extra_info` VARCHAR(240) NOT NULL default '',
+				`color_bar` VARCHAR(8) NOT NULL default '',
+				`useCatColor` TINYINT(1) NOT NULL default '0',
+				`state` tinyint(3) NOT NULL default '0',
+				`mask` int(11) unsigned NOT NULL default '0',
+				`created` datetime NOT NULL default '0000-00-00 00:00:00',
+				`created_by` int(11) unsigned NOT NULL default '0',
+				`created_by_alias` varchar(100) NOT NULL default '',
+				`modified` datetime NOT NULL default '0000-00-00 00:00:00',
+				`modified_by` int(11) unsigned NOT NULL default '0',
+				`checked_out` int(11) unsigned NOT NULL default '0',
+				`checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+				`publish_up` datetime NOT NULL default '0000-00-00 00:00:00',
+				`publish_down` datetime NOT NULL default '0000-00-00 00:00:00',
+				`images` text NOT NULL default '',
+				`reccurtype` tinyint(1) NOT NULL default '0',
+				`reccurday` varchar(4) NOT NULL default '',
+				`reccurweekdays` varchar(20) NOT NULL default '',
+				`reccurweeks` varchar(10) NOT NULL default '',
+				`approved` tinyint(1) NOT NULL default '1',
+				`ordering` int(11) NOT NULL default '0',
+				`archived` tinyint(1) NOT NULL default '0',
+				`access` int(11) unsigned NOT NULL default '0',
+				`hits` int(11) NOT NULL default '0',
+				PRIMARY KEY  (`id`)
+				) TYPE=MyISAM;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_categories` (
+				`id` INT(12) NOT NULL default '0' PRIMARY KEY,
+				`color` VARCHAR(8) NOT NULL default''
+				) TYPE=MyISAM;
+			</query>
+		</queries>
+	</install>
+	<uninstall>
+		<queries>
+		</queries>
+	</uninstall>
+	<installfile>install.events.php</installfile>
+	<uninstallfile>uninstall.events.php</uninstallfile>
+	<administration>
+		<menu>JEvents</menu>
+			<submenu>
+				<menu>JEvents</menu>
+			</submenu>
+		<files>
+			<filename>admin.controller.php</filename>
+			<filename>admin.events.html.php</filename>
+			<filename>admin.events.main.php</filename>
+			<filename>admin.events.php</filename>
+			<filename>default.css</filename>
+			<filename>events_config.ini.php</filename>
+			<filename>index.html</filename>			
+			<filename>toolbar.events.php</filename>
+			<filename>toolbar.events.html.php</filename>					
+			
+			<filename>css/eventsadmin.css</filename>
+
+			<filename>help/help.css</filename>
+			<filename>help/index.html</filename>
+			<filename>help/mod_events_calendar_help_de.html</filename>
+			<filename>help/mod_events_calendar_help_en.html</filename>
+			<filename>help/mod_events_latest_help_de.html</filename>
+			<filename>help/mod_events_latest_help_de.php</filename>
+			<filename>help/mod_events_latest_help_en.html</filename>
+			<filename>help/mod_events_latest_help_en.php</filename>
+			<filename>help/README_de.php</filename>
+			<filename>help/README_en.php</filename>
+			<filename>help/screen.jevent.edit_new_de.html</filename>
+
+			<filename>js/editical.js</filename>
+			<filename>js/index.html</filename>
+			<filename>js/view_detail.js</filename>
+
+			<filename>language/admin_english.php</filename>
+			<filename>language/admin_french.php</filename>
+			<filename>language/admin_german.php</filename>
+			<filename>language/admin_polish.php</filename>
+			<filename>language/admin_simplified_chinese.php</filename>
+			<filename>language/admin_traditional_chinese.php</filename>
+			<filename>language/index.html</filename>
+			
+			<filename>lib/categories/categoryClass.php</filename>
+			<filename>lib/categories/categoryController.php</filename>
+			<filename>lib/categories/categoryHTML.php</filename>
+			<filename>lib/categories/index.html</filename>
+			<filename>lib/adminqueries.php</filename>
+			<filename>lib/checklocale.php</filename>
+			<filename>lib/colorMap.php</filename>
+			<filename>lib/colours.html</filename>
+			<filename>lib/colours.html.php</filename>
+			<filename>lib/config.php</filename>
+			<filename>lib/icalManagement.php</filename>
+			<filename>lib/index.html</filename>
+			<filename>lib/migration.php</filename>
+			<filename>lib/version.php</filename>
+
+		</files>
+		<images>
+			<filename>images/events.png</filename>
+			<filename>images/events_ico.png</filename>
+			<filename>images/help_ques.gif</filename>
+			<filename>images/help_ques_inact.gif</filename>
+			<filename>images/index.html</filename>
+			<filename>images/logo.gif</filename>
+			<filename>images/reload.png</filename>
+		</images>
+	</administration>
+	<params>
+		<param name="catid0" type="mos_category" default="0" scope="com_events" label="Specified category" description="Shows events only from the selected category" />
+		<param name="catid1" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid2" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid3" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+		<param name="catid4" type="mos_category" default="0" scope="com_events" label="Additional category" description="Also include events from this additional category" />
+	</params>
+</install>

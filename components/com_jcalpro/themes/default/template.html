@@ -1,0 +1,456 @@
+{META}
+<!-- javascript pop-up -->
+<script type = "text/javascript">
+    <!--
+
+
+    document.imageArray = new Array(10);
+    preloadImage(0, '{THEME_DIR}/images/addsign.gif', '{THEME_DIR}/images/addsign_a.gif');
+
+    var x, y;
+    window.onload = init;
+
+    function init()
+        {
+        if (document.Event)
+            {
+            if (document.captureEvents)
+                {
+                document.captureEvents(Event.MOUSEMOVE);
+                document.onmousemove = getXY;
+                }
+            }
+        }
+
+    function getXY(e)
+        {
+        x = (document.Event) ? e.screenX : event.screenX;
+        y = (document.Event) ? e.screenY : event.screenY;
+        }
+
+    function MM_OpenBrWindow(theURL, winName, features)
+        {
+        new_window = window.open(theURL, winName, features);
+        new_window.focus();
+        }
+
+    function MM_openBrWindow(theURL, winName, features, width, height, mode)
+        {
+        var w = 800, h = 600;
+        var leftPos, topPos;
+
+        if (navigator.appName == "Microsoft Internet Explorer")
+            {
+            screenY = document.body.offsetHeight
+            screenX = window.screen.availWidth
+            }
+
+        else
+            { // Navigator coordinates
+            screenY = screen.height;
+            screenX = screen.width;
+            }
+
+        if (mode)
+            {
+            var cursorX = x;
+            var cursorY = y;
+
+            var spacingX = 10;
+            var spacingY = 10;
+
+            if ((cursorY + height + spacingY) > screenY)
+                // make sizes a negative number to move left/up
+                {
+                spacingY = (-30) + (height * -1);
+                // if up or to left, make 30 as padding amount
+                }
+
+            if ((cursorX + width + spacingX) > screenX)
+                {
+                spacingX = (-30) + (width * -1);
+                // if up or to left, make 30 as padding amount
+                }
+
+            if (document.all)
+                {
+                leftPos = cursorX + spacingX
+                topPos = cursorY + spacingY
+                }
+
+            else
+                { // adjust Netscape coordinates for scrolling
+                leftPos = (cursorX - pageXOffset + spacingX)
+                topPos = (cursorY - pageYOffset + spacingY)
+                }
+            }
+
+        else
+            {
+            leftvar = (screenX - width) / 2
+            rightvar = (screenY - height) / 2
+
+            if (document.all)
+                {
+                leftPos = leftvar
+                topPos = rightvar
+                }
+
+            else
+                { // adjust Netscape coordinates for scrolling
+                leftPos = (leftvar - pageXOffset)
+                topPos = (rightvar - pageYOffset)
+                }
+            }
+
+        var win_opt = features;
+        win_opt += ",width=" + width + ",height=" + height + ",top=" + topPos;
+        win_opt += ",left=" + leftPos;
+
+        w = window.open(theURL, winName, win_opt);
+        w.focus();
+        }
+
+    function showOnBar(Str)
+        {
+        window.status = Str;
+        return true;
+        }
+
+    function cOn(myObject, color)
+        {
+        if (document.getElementById || (document.all && !(document.getElementById)))
+            {
+            if (!color)
+                color = "#6187E5"
+
+            myObject.style.backgroundColor = color;
+            }
+        }
+
+    function cOut(myObject, color)
+        {
+        if (document.getElementById || (document.all && !(document.getElementById)))
+            {
+            if (!color)
+                color = "#5177C5"
+
+            myObject.style.backgroundColor = color;
+            }
+        }
+
+    function preloadImage()
+        {
+        var args = preloadImage.arguments;
+        document.imageArray[args[0]] = new Array(args.length - 1);
+
+        for (var i = 1; i < args.length; i++)
+            {
+            document.imageArray[args[0]][i - 1] = new Image;
+            document.imageArray[args[0]][i - 1].src = args[i];
+            }
+        }
+
+    function cal_switchImage(imgName, imgSrc)
+        {
+        if (document.images)
+            {
+            if (imgSrc != "none")
+                {
+                document.images[imgName].src = imgSrc;
+                }
+            }
+        }
+
+    function verify(msg)
+        {
+        if (!msg)
+            msg = "Are you absolutely sure that you want to delete this item?";
+
+        //all we have to do is return the return value of the confirm() method
+        return confirm(msg);
+        }
+
+    function getElement(psID)
+        {
+        if (document.all)
+            {
+            return document.all[psID];
+            }
+
+        else if (document.getElementById)
+            {
+            return document.getElementById(psID);
+            }
+
+        else
+            {
+            for (iLayer = 1; iLayer < document.layers.length; iLayer++)
+                {
+                if (document.layers[iLayer].id == psID)
+                    return document.layers[iLayer];
+                }
+            }
+
+        return Null;
+        }
+
+    function changeClass(id, newClass)
+        {
+        elementObj = getElement(id);
+        elementObj.className = newClass;
+        }
+
+    // Functions related to text editor
+
+    var myAgent = navigator.userAgent.toLowerCase();
+    var myVersion = parseInt(navigator.appVersion);
+
+    var is_ie = ((myAgent.indexOf("msie") != -1) && (myAgent.indexOf("opera") == -1));
+    var is_nav = ((myAgent.indexOf('mozilla') != -1) && (myAgent.indexOf('spoofer') == -1)
+                     && (myAgent.indexOf('compatible') == -1) && (myAgent.indexOf('opera') == -1)
+                     && (myAgent.indexOf('webtv') == -1) && (myAgent.indexOf('hotjava') == -1));
+
+    var is_win = ((myAgent.indexOf("win") != -1) || (myAgent.indexOf("16bit") != -1));
+
+    function emoticon(theSmilie)
+        {
+        doInsert(" " + theSmilie + " ", "", false);
+        }
+
+    function simpletag(thetag)
+        {
+        /*
+        inserttext = prompt(prompt_start + "\n[" + thetag + "]xxx[/" + thetag + "]");
+        if ( (inserttext != null) && (inserttext != "") )
+        {
+            doInsert("[" + thetag + "]" + inserttext + "[/" + thetag + "] ", "");
+        }
+        */
+
+        doInsert("[" + thetag + "]", "[/" + thetag + "]", false);
+        }
+
+    function tag_url()
+        {
+        var FoundErrors = false;
+        var enterURL = "";
+        var enterTITLE = "";
+
+        enterURL = prompt(text_enter_url, "");
+
+        if (enterURL)
+            enterTITLE = prompt(text_enter_url_name, "Web Link");
+
+        if (!enterURL || !enterTITLE)
+            FoundErrors = true;
+
+        if (!FoundErrors)
+            doInsert("[URL=" + enterURL + "]" + enterTITLE + "[/URL]", "");
+        }
+
+    function tag_image()
+        {
+        var FoundErrors = false;
+        var enterURL = prompt(text_enter_image, "");
+
+        if (!enterURL)
+            FoundErrors = true;
+
+        if (!FoundErrors)
+            doInsert("[IMG]" + enterURL + "[/IMG]", "");
+        }
+
+    function tag_email()
+        {
+        var emailAddress = prompt(text_enter_email, "");
+
+        if (emailAddress)
+            doInsert("[EMAIL]" + emailAddress + "[/EMAIL]", "");
+        }
+
+    function doInsert(extTag, extClsTag)
+        {
+        var obj_ta = document.eventform.description;
+
+        if ((myVersion >= 4) && is_ie && is_win) // Ensure it works for IE4up / Win only
+            {
+            if (obj_ta.isTextEdit)
+                { // this doesn't work for NS, but it works for IE 4+ and compatible browsers
+                obj_ta.focus();
+                var sel = document.selection;
+                var rng = sel.createRange();
+                rng.colapse;
+
+                if ((sel.type == "Text" || sel.type == "None") && rng != null)
+                    {
+                    //if(extClsTag != "" && rng.text.length > 0)
+                    extTag += rng.text + extClsTag;
+                    rng.text = extTag;
+                    }
+                }
+
+            else
+                {
+                obj_ta.value += extTag;
+                }
+            }
+
+        else
+            {
+            obj_ta.value += extTag;
+            }
+
+        obj_ta.focus();
+        }
+
+    /*
+     * returns a cookie variable with the given name.
+     */
+    function getCookie(name)
+        {
+        var dc = document.cookie;
+        var prefix = extcal_cookie_id + '_' + name + "=";
+        var begin = dc.indexOf("; " + prefix);
+
+        if (begin == -1)
+            {
+            begin = dc.indexOf(prefix);
+
+            if (begin != 0)
+                return null;
+            }
+
+        else
+            {
+            begin += 2;
+            }
+
+        var end = document.cookie.indexOf(";", begin);
+
+        if (end == -1)
+            {
+            end = dc.length;
+            }
+
+        return unescape(dc.substring(begin + prefix.length, end));
+        }
+
+
+    /*
+     * Sets a Cookie with the given name and value.
+     */
+    function setCookie(name, value, persistent)
+        {
+        var today = new Date();
+        var expiry = new Date(today.getTime() + 364 * 24 * 60 * 60 * 1000); // 364 days
+        var expires = "";
+        var domain = extcal_cookie_domain;
+        var path = extcal_cookie_path;
+        var secure = false;
+        var prefix = extcal_cookie_id + '_' + name + "=";
+
+        if (persistent)
+            {
+            expires = "; expires = " + expiry.toGMTString();
+            }
+
+        document.cookie = prefix + escape(value) + ((expires) ? expires : "") + ((path) ? "; path=" + path : "")
+                              + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "") + ';';
+        }
+
+    //==========================================
+    // Set DIV ID to hide
+    //==========================================
+
+    function my_hide_div(itm)
+        {
+        if (!itm)
+            return;
+
+        itm.style.display = "none";
+        }
+
+    //==========================================
+    // Set DIV ID to show
+    //==========================================
+
+    function my_show_div(itm)
+        {
+        if (!itm)
+            return;
+
+        itm.style.display = "";
+        }
+
+    //==========================================
+    // Toggle category
+    //==========================================
+
+    function togglecategory(fid, add)
+        {
+        saved = new Array();
+        clean = new Array();
+
+        //==========================================
+        // Get any saved info
+        //==========================================
+
+        if (tmp = getCookie('collapseprefs'))
+            {
+            saved = tmp.split(",");
+            }
+
+        //==========================================
+        // Remove bit if exists
+        //==========================================
+
+        for (i = 0; i < saved.length; i++)
+            {
+            if (saved[i] != fid && saved[i] != "")
+                {
+                clean[clean.length] = saved[i];
+                }
+            }
+
+        //==========================================
+        // Add?
+        //==========================================
+
+        if (add)
+            {
+            clean[clean.length] = fid;
+            my_show_div(getElement(fid + '_close'));
+            my_hide_div(getElement(fid + '_open'));
+            }
+
+        else
+            {
+            my_show_div(getElement(fid + '_open'));
+            my_hide_div(getElement(fid + '_close'));
+            }
+
+        setCookie('hidden_display', clean.join(','), 1);
+        }
+
+    // sets dynamically the content of a given html tag id
+    function setText(id, value)
+        {
+        var label = getElement(id);
+        label.firstChild.nodeValue = value;
+        }
+
+    function printDocument()
+        {
+        self.focus();
+        self.print();
+        }
+
+        //-->
+</script>
+
+<div align = "center" id = "extcalendar">
+    <div style = "width:{MAIN_TABLE_WIDTH};">
+        {MAIN_MENU} {ADMIN_MENU} {CONTENT}
+    </div>
+</div>

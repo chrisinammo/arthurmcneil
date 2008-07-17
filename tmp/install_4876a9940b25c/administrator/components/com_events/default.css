@@ -1,0 +1,463 @@
+/*********************
+* Calendar style
+**********************/
+table#jevents_body{
+	width:100%;
+}
+.cal_table {
+   border: 1px solid #000000;
+}
+.cal_td_daysnames {
+    border-bottom: 1px solid #000000;
+    height:25px ! important;
+    line-height:25px;
+    background-image: url("images/evback.jpg");
+   	background-repeat: repeat-x; 
+   	background-position: top left;
+   	color:black;
+    background-color:#E9B4A1;
+    font-weight:bold;
+    text-align:center !important;
+}
+.cal_td_daysnames .sunday{
+	color:red;
+}
+.cal_td_daysnames .saturday{
+}
+.cal_daysnames {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.cal_td_daysoutofmonth {
+    background-color: #B0C4DE;
+}
+.cal_daysoutofmonth {
+    font-family:  Arial;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.cal_td_today {
+    background-color:#E9B4A1;
+    padding:0px !important;
+}
+.cal_td_daysnoevents {
+    background-color: #FFDEAD;
+    padding:0px !important;
+}
+a.cal_daylink:link {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+a.cal_daylink:visited{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+a.cal_daylink:hover{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: Red;
+    text-decoration: none;
+}
+a.cal_titlelink:link, a.cal_titlelink:visited, a.cal_titlelink:hover {
+    font-size:10px;
+    font-weight: bold;
+    font-family: Verdana;
+    text-decoration: none;
+    color:inherit!important;
+    display:block;
+    margin-bottom:1px;
+}
+
+/***************************
+* List style
+**************************/
+ul.ev_ul {
+	list-style:none;
+	padding:0px;
+	margin:5px;
+}
+ul.ev_ul li.ev_td_li {
+	border-style:solid;
+	border-width:0 0 0 5px;
+	margin-bottom:1px;
+	padding-left:2px;
+	background-image:none
+}
+a.ev_link_cat:link {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_cat:visited  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_cat:hover  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Black;
+}
+a.ev_link_row:link {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_row:visited  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_row:hover  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Black;
+}
+a.ev_link_unpublished {
+    color:red;
+    text-decoration:none;
+}
+a.ev_link_weekday:link {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_weekday:visited  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Gray;
+    text-decoration:none;
+}
+a.ev_link_weekday:hover  {
+    font-size:12px;
+    font-family: Verdana;
+    color: Black;
+}
+.ev_fieldset {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    /* color: black; */
+}
+.ev_table {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.ev_table tr {
+}
+.ev_table td {
+    padding:5px;
+}
+.ev_td_right {
+	width:100%;
+    /*background-color: #FFDEAD;*/
+    border-top: 1px solid #000000;
+}
+.ev_td_left {
+    background-color: #c5d5e5;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    text-align : left;
+    vertical-align: top;
+}
+.ev_td_today {
+    background-color: #E9B4A1;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+}
+
+/**********************
+* Form style
+**********************/
+ /* Styles for dhtml tabbed-pages */
+.ontab {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: ThreedShadow;
+    border-left: outset 1px #ff9900;
+    border-right: outset 1px #808080;
+    border-top: outset 1px #ff9900;
+    border-bottom: solid 1px #d5d5d5;
+    text-align: center;
+    cursor: hand;
+    font-weight: bold;
+    /* color: #FFFFFF; */
+}
+.offtab {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #EEEEEE;
+	border-left: outset 1px #E0E0E0;
+	border-right: outset 1px #E0E0E0;
+	border-top: outset 1px #E0E0E0;
+	border-bottom: solid 1px #d5d5d5;
+	text-align: center;
+	cursor: hand;
+	font-weight: normal;
+}
+.tabpadding {
+	border-bottom: solid 0px #777777;
+}
+.tabheading {
+	background-color: #ffae00;
+	border-left: solid 1px #777777;
+	border-right: solid 1px #777777;
+	/* color: #FFFFFF; */
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-align: left;
+}
+.tabcontent {
+    /* background-color: ThreedFace; */
+    border-top: solid 1px #777777;
+    border-left: solid 1px #777777;
+    border-right: solid 1px #777777;
+    border-bottom: solid 1px #777777;
+    /* color: #FFFFFF; */
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-align: left;
+}
+.pagetext {
+	visibility: hidden;
+   display: none;
+	position: relative;
+	top: 0;
+}
+.frm_td_bydays {
+    background-color: #FFF8DC;
+    font-size: 12px;
+    color: black;
+}
+.frm_td_byweeks {
+    background-color: #FFF0F5;
+    font-size: 12px;
+    color: black;
+}
+.frm_td_bymonth {
+    background-color: #FDF5E6;
+    font-size: 12px;
+    color: black;
+}
+.frm_td_byyear {
+    background-color: #F0F8FF;
+    font-size: 12px;
+    color: black;
+}
+/* Calendar navigaton area */
+div.ev_navigation {
+}
+/* Calendar admin panel */
+div.ev_adminpanel {
+}
+/**********************
+* Nav bar style
+**********************/
+a.nav_bar_link:link {
+    font-size: 10px;
+    font-family: Verdana;
+    color: Green;
+}
+a.nav_bar_link:visited  {
+    font-size:10px;
+    font-family: Verdana;
+    color: Teal;
+}
+a.nav_bar_link:hover  {
+    font-size:10px;
+    font-family: Verdana;
+    color: Lime;
+}
+.nav_bar_cell  {
+    background-color: #ECECEC;
+}
+
+/****************************
+* Iconic calendar navigation
+****************************/
+
+td.iconic_td {
+   width:60px!important;
+   margin:0px;
+   padding:0px;
+   font-size:8pt;
+}
+div.nav_bar_cal{
+   margin:0px;
+   padding:0px;
+   width:50px;
+}
+div.nav_bar_cal img, div.nav_bar_cal a{
+   height:31px;
+   width:50px;
+   border:0;
+}
+tr.icon_labels{
+ font-size:70%;
+ margin:0px;
+ padding:0px;
+}
+div#ev_icon_yearly {
+     background-image: url("images/cal5x.jpg");
+     background-repeat: no-repeat;
+}
+div#ev_icon_monthly {
+     background-image: url("images/cal1x.jpg");
+     background-repeat: no-repeat;
+}
+div#ev_icon_weekly{
+     background-image: url("images/cal2x.jpg");
+     background-repeat: no-repeat;
+}
+div#ev_icon_daily{
+     background-image: url("images/cal3x.jpg");
+     background-repeat: no-repeat;
+}
+div#ev_icon_search{
+     background-image: url("images/cal8x.jpg");
+     background-repeat: no-repeat;
+}
+div#ev_icon_jumpto{
+     background-image: url("images/cal9x.jpg");
+     background-repeat: no-repeat;
+}
+
+/* Event Legend Module Styling */
+div.event_legend_container {
+	border:solid black 1px;
+	background-color: #FFDEAD;
+	color:black;
+	padding:3px;
+	font-size:0.9em;
+}
+ul.event_legend_list{
+	list-style:none !important;
+	padding:0px;
+	margin:5px;
+}
+ul.event_legend_list li {
+	list-style:none !important;
+	border:solid black 1px;
+	background-image:none !important;
+	padding-left:0px;
+}
+div.event_legend_name {
+	padding:3px;
+	font-weight:bold;
+}
+div.event_legend_name a{
+	display:block;
+	text-decoration:none;
+   	background-color:inherit;
+   	color:black;
+}
+	
+div.event_legend_desc {
+	background-color:white;
+	color:black;
+	padding:3px 3px 3px 20px;
+	
+}
+
+/* tabs */
+
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Print version */
+@media print {
+   table.contentpaneopen {
+   		background-image:none!important;
+       background-color:white!important;
+   }
+	div.ev_navigation {
+		display:none;
+	}
+	div.ev_adminpanel {
+		display:none;
+	}
+}
+
+/**
+* Narrow template handling 
+* Uncomment the following settings if your template is narrow 
+*/
+/*
+fieldset {
+    padding:0px!important;
+}
+.cal_table {
+   width:100%!important;
+}
+.cal_td_daysnames {
+   font-size:0.9em;
+}
+*/

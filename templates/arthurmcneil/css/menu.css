@@ -3,7 +3,9 @@ height:64px;
 width:928px;
 background-image:url(../images/nav_bg.gif);
 margin-left:11px;
+
 }
+*html div#majnav{margin-left:0px;}
 
 ul#mainmenu{
 padding:0;

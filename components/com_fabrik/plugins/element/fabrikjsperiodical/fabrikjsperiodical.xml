@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>FabrikJSPeriodical</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>An element which periodically observes the form and stores data about it</description>
+	<files>
+		<filename fabrikplugin="fabrikjsperiodical">fabrikjsperiodical.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="password" type="radio" default="0" label="PASSWORD" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="jsperiod_period" type="text" size="3" default="100" label="PERIODTIME" description=""/>
+		<param name="jsperiod_code" type="textarea" rows="10" cols="50" default="text" label="OBSERVERCODE" description="" />
+	</params>
+</install>

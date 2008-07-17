@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="fbConf_wysiwyg_label" type="radio" default="0" label="Use WYSIWYG editor for element labels" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fbConf_alter_existing_db_cols" type="radio" default="1" label="Alter field types" description="If no selected then fabrik will not alter database table field types, when saving elements. If yes selected then fabrik will update your database table structure to assure maximum compatibility">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="remove_tables_on_unistall" type="radio" default="1" label="Remove tables on uninstall" description="drop tables that contain data collected by fabrik when unistalling fabrik">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="usefabrik_mootools" type="radio" default="0" label="Use fabrik version of mootools" description="If yes selected then fabrik will attempt to replace Joomla's version of mootools with the latest mootools version - note this may stop other modules from working on fabrik pages">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</config>

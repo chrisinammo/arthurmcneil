@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>fabrikvideo</name>
+	<author>Rob Clayburn</author>
+	<creationDate>nov 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders Video</description>
+	<files>
+		<filename fabrikplugin="fabrikvideo">fabrikvideo.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="ul_directory" type="text" size="30" default="" label="UPLOAD_DIR" description="UPLOAD_DIR_LONG"/>	
+
+		<param name="fbVideoController" type="radio" default="1" label="CONTROLLER" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fbVideoAutoPlay" type="radio" default="0" label="AUTOPLAY" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fbVideoLoop" type="radio" default="0" label="LOOP" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		
+		<param name="fbVideoEnableJS" type="radio" default="1" label="ENABLEJS" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fbVideoPlayEveryFrame" type="radio" default="0" label="PLAYEVERYFRAME" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fbVideoShowVideoInTable" type="radio" default="0" label="SHOWVIDEOINTABLE" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="fbVideoWidth" type="text" default="300" label="WIDTH"  />
+		<param name="fbVideoHeight" type="text" default="300" label="HEIGHT"  />
+		
+		<param name="fbVideoBgColor" type="text" default="" label="BGCOLOR"  />
+		<param name="fbVideoEndTime" type="text" default="" label="ENDTIME"  />
+		<param name="fbVideoStartTime" type="text" default="" label="STARTTIME"  />
+		<param name="fbVideoVolume" type="text" default="100" label="VOLUME" description="between 0(mute) and 100 (full volume)" />
+		
+		
+	</params>
+</install>

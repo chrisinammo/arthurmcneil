@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>alphacontent</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2008 05 26</creationDate>
+	<author>Bernard Gilly</author>
+	<authorEmail>http://www.alphaplug.com</authorEmail>
+	<authorUrl>http://www.alphaplug.com</authorUrl>
+	<copyright>2008 - Bernard Gilly - All Rights Reserved</copyright>
+	<license>DonationWare. All Rights Reserved</license>
+	<!--  The version string is recorded in the components table -->
+	<version>4.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[Provide a Directory Structure for content, weblinks and contact components.]]></description>	
+	<!-- Custom install file -->
+	<!-- Site Main File Copy Section -->
+	<files folder="frontend">
+		<filename>index.html</filename>
+		<filename>alphacontent.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/alphacontent/index.html</filename>
+		<filename>views/alphacontent/view.html.php</filename>
+		<filename>views/alphacontent/metadata.xml</filename>
+		<filename>views/alphacontent/tmpl/index.html</filename>
+		<filename>views/alphacontent/tmpl/default.php</filename>
+		<filename>views/alphacontent/tmpl/default.xml</filename>
+		<filename>models/index.html</filename>
+		<filename>models/alphacontent.php</filename>
+		<filename>models/listing.php</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/alphacontent.css</filename>		
+		<filename>assets/css/rating.css</filename>		
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/hot_en-gb.gif</filename>
+		<filename>assets/images/hot_fr-fr.gif</filename>
+		<filename>assets/images/hot_de-de.gif</filename>
+		<filename>assets/images/new_en-gb.gif</filename>
+		<filename>assets/images/new_fr-fr.gif</filename>
+		<filename>assets/images/new_de-de.gif</filename>
+		<filename>assets/images/starrating.gif</filename>
+		<filename>assets/images/linkpic_shadow.gif</filename>		
+		<filename>assets/images/working.gif</filename>
+		<filename>assets/images/rss.png</filename>
+		<filename>assets/includes/index.html</filename>
+		<filename>assets/includes/alphacontent.db.php</filename>
+		<filename>assets/includes/alphacontent.drawrating.php</filename>
+		<filename>assets/includes/alphacontent.functions.php</filename>
+		<filename>assets/includes/alphacontent.google_map.php</filename>
+		<filename>assets/includes/alphacontent.rpc.php</filename>		
+		<filename>assets/js/index.html</filename>
+		<filename>assets/js/arc90_linkthumb.js</filename>
+		<filename>assets/js/behavior.js</filename>
+		<filename>assets/js/rating.js</filename>
+	</files>	
+	<!-- Language frontend -->
+	<languages folder="languages-front">
+		<language tag="en-GB">en-GB/en-GB.com_alphacontent.ini</language>
+		<language tag="">fr-FR/fr-FR.com_alphacontent.ini</language>
+		<language tag="">fi-FI/fi-FI.com_alphacontent.ini</language>
+	</languages>
+	<installfile>install.alphacontent.php</installfile>
+	<uninstallfile>uninstall.alphacontent.php</uninstallfile>	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>AlphaContent</menu>		
+		<!-- Administration Main File Copy Section -->
+		<files folder="backend">
+	    <!-- Site Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>admin.alphacontent.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>CHANGELOG.php</filename>
+			<filename>install.sql</filename>
+			<filename>views/index.html</filename>
+			<filename>views/alphacontent/index.html</filename>
+			<filename>views/alphacontent/view.html.php</filename>
+			<filename>views/alphacontent/tmpl/index.html</filename>
+			<filename>views/alphacontent/tmpl/default.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/alphacontent.php</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/alphacontent.jpg</filename>
+			<filename>assets/includes/index.html</filename>
+			<filename>assets/includes/functions.php</filename>
+			<filename>assets/includes/version.php</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.alphacontent.html</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/fr-FR/index.html</filename>
+			<filename>help/fr-FR/screen.alphacontent.html</filename>
+			<filename>help/fr-FR/css/index.html</filename>
+			<filename>help/fr-FR/css/help.css</filename>
+			<filename>configuration/index.html</filename>
+			<filename writable="yes">configuration/configuration.php</filename>
+			<filename>install/index.html</filename>
+			<filename>install/plugins/index.html</filename>
+			<filename>install/plugins/alphacontent.php</filename>
+			<filename>install/plugins/alphacontent.xml</filename>			
+		</files>		
+		<!-- Language administrator -->
+		<languages folder="languages-admin">
+			<language tag="en-GB">en-GB/en-GB.com_alphacontent.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_alphacontent.menu.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphacontent.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphacontent.menu.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphacontent.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphacontent.menu.ini</language>			
+		</languages>
+	</administration>
+</install>

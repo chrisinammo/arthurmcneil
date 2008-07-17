@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="validationrule">
+	<name>Is email</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2008</creationDate>
+	<copyright>(C) 2005-2008 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Test to ensure the data entered is a valid email address</description>
+	<files>
+		<filename fabrikplugin="isemail">isemail.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+	</params>
+</install>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Cacading Dropdowns</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders 2 drop downs the content of the second being defined by the selection in the first</description>
+	<files>
+		<filename fabrikplugin="fabrikcascadingdropdowns">fabrikcascadingdropdowns.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+  <languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikcascadingdropdowns.ini</language>
+	</languages>
+	
+	<params>
+		<param name="password" type="radio" default="0" label="PASSWORD" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="maxlength" type="text" size="3" default="255" label="MAXLENGTH" description=""/>
+	</params>
+</install>

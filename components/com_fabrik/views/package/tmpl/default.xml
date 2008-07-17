@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Fabrik package layout">
+		<message>
+			<![CDATA[STANDARD Fabrik package layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Fabrik Package</name>
+		<description>Link to a Fabrik package</description>
+		<url addpath="/administrator/components/com_fabrik/elements">
+			<param name="packageid" type="fabrikpackagelist" default="" label="Package" description="The Package id to show" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

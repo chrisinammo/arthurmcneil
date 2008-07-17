@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Date</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders Standard Date Picker</description>
+	<files>
+		<filename fabrikplugin="fabrikdate">fabrikdate.php</filename>
+		<filename>index.html</filename>
+		<filename>javascript.js</filename>
+	</files>
+	
+	 <languages folder="administrator/language" >
+		<language tag="en-GB">en-GB/en-GB.com_fabrik.plg.element.fabrikdate.ini</language>
+	</languages>
+	
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="width" type="width" label="Width"/>
+		<param name="hidden" type="hidden" default="" size="3" label="Hidden" />
+		<param name="eval" type="eval" default="0" label="Eval" />
+		<param name="default" type="default" default="" label="Default" />
+	</params>
+	<params group="extra">
+		<param name="date_table_format" type="text" default="Y-m-d" label="Table date format" description="DATEFORMATDESC" />
+		<param name="date_form_format" type="text" default="%Y-%m-%d" label="Form date format" description="DATEFORMATDESC" />
+		<param name="date_showtime" type="radio" default="0" label="DATESHOWTIME" description="DATESHOWTIMEDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="date_defaulttotoday" type="radio" default="0" label="DATEDEFAULTTODAY" description="DATEDEFAULTTODAYDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

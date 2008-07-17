@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Colour Picker</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders a colour picker</description>
+	<files>
+		<filename fabrikplugin="fabrikcolourpicker">fabrikcolourpicker.php</filename>
+		<filename>index.html</filename>
+		<filename>/images/track.gif</filename>
+		<filename>/images/handle.gif</filename>
+		<filename>colour-picker.js</filename>
+		
+	</files>
+	<params>
+	</params>
+</install>

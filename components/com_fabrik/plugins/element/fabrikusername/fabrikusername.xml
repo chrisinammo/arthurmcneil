@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik Username</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Renders the current users username in a hidden field</description>
+	<files>
+		<filename fabrikplugin="fabrikusername">fabrikusername.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/administrator/components/com_fabrik/elements">
+		<param name="hidden" type="hidden" default="" size="3" label="Hidden" />
+	</params>
+	<params group="extra">
+			<param name="my_data" type="list" default="0" label="MYDATA" description="MYDATADESC">
+			<option value="id">ID</option>
+			<option value="name">Name</option>
+			<option value="username">User Name</option>
+			<option value="email">Email</option>
+			<option value="usertype">User Type</option>
+			<option value="block">Block</option>
+			<option value="sendEmail">Send Email</option>
+			<option value="gid">Group ID</option>
+			<option value="registerDate">Registered Date</option>
+			<option value="lastvisitDate">Last Visit Date</option>
+			<option value="activation">Activation</option>
+		</param>
+	</params>
+</install>

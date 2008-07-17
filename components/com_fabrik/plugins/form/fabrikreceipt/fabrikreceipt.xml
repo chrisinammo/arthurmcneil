@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="form">
+	<name>Email</name>
+	<author>Rob Clayburn</author>
+	<creationDate>March 2007</creationDate>
+	<copyright>(C) 2005-2007 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>2.0</version>
+	<description>Performs receipt tasks on form submission</description>
+	<files>
+		<filename fabrikplugin="fabrikReceipt">fabrikReceipt.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params repeat="1" repeatcontrols="0">
+		<param name="ask-receipt" type="radio" default="0" label="USERCHOOSESRECEIPT" description="USERCHOOSESRECEIPTDESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="receipt_to" type="text" size="30" default="" label="RECEIPTTO" description="RECEIPTTODESC"/>
+		<param name="receipt_subject" type="text" size="30" default="" label="RECEIPTTITLE" description="RECEIPTTITLEDESC"/>
+		<param name="receipt_message" type="textarea" default="" rows="8" cols="60" label="RECEIPTMESSAGE" description="" />
+	</params>
+</install>

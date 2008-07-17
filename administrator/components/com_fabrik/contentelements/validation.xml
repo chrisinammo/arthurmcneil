@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Fabrik - Validations</name>
+  <author>Manel Zaera, manelzaera@yahoo.es</author>
+  <version>1.0 for Fabrik 2.0</version>
+  <description>Definition for Fabrik Validations</description>
+  <reference>
+  	<table name="fabrik_validations">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="message" translate="1">Error message</field>
+  	</table>
+  </reference>
+</joomfish >

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="visualization">
+	<name>chart</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Sept 2007</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Show charts</description>
+	<files>
+		<filename fabrikplugin="chart">chart.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<params group="connection" addpath="/administrator/components/com_fabrik/elements">
+		<param name="chart_connection" type="connections" label="Connection" />
+	</params>
+	
+	<params repeatcontrols="1" repeat="1" addpath="/administrator/components/com_fabrik/elements">
+		<param name="chart_table" type="fabriktables" repeat="0" observe="chart_connection" label="Table"/>
+		<param name="chart_elementList" type="element" connection="chart_connection" table="chart_table" label="Element" />
+		<param name="chart_axis_labels" type="text" label="Label" />
+		<param name="chart_colours" type="text" label="Colour" description="HEX colour" />
+		<param name="x_axis_label" type="element" connection="chart_connection" table="chart_table" label="Axis label" />
+	</params>
+	
+	<params group="rest">
+		<param name="graph_type" type="list" default="BarChart" label="Chart type" description="">
+			<option value="">None</option>
+
+			<option value="lc">Single Line Chart</option>
+			<option value="lxy">Multi Line Chart</option>
+			<option value="ls">Sparkline</option>
+			<option value="bhs">Horizontal Bar Chart</option>
+			<option value="bvs">Vertical Bar Chart</option>
+			<option value="bhg">Horizontal Bar Chart (Grouped)</option>
+			<option value="bvg">Vertical Bar Chart (Grouped)</option>
+			<option value="p">Pie chart</option>
+			<option value="p3">3D Pie chart</option>
+			<option value="s">Scatter plot</option>
+
+		</param>
+		<param name="fill_line_graph" type="radio" default="1" label="Fill line graph" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="graph_show_legend" type="radio" default="0" label="Show legend" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="chart_width" type="text" size="5" default="" label="Width" description="enter an integer for the width (px)" />
+		<param name="chart_height" type="text" size="5" default="" label="Height" description="enter an integer for the height (px)" />
+				
+	</params>
+
+</install>

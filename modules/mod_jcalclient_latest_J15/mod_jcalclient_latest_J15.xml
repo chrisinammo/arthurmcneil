@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>JCal Client Latest Events</name>
+  <creationDate>2-Nov-2007</creationDate>
+  <author>Anything Digital</author>
+  <copyright>Released under GNU/GPL License</copyright>
+  <authorEmail>admin@anything-digital.com</authorEmail>
+  <authorUrl>dev.anything-digital.com</authorUrl>
+  <version>1.5.3 Beta224 (J1.5)</version>
+  <description>"Latest Events" module for the JCal Client calendar component. NOTE that this module has some parameters, such as the number of events to display at once, which you can change here in Administration by going to Modules, selecting Site Modules and selecting JCal Pro Latest Events.</description>
+  <files>
+   <filename module="mod_jcalclient_latest_J15">mod_jcalclient_latest_J15.php</filename>
+  </files>
+  <params>
+    <param name="calendar" type="text" default="" label="Calendar" description="Calendar name to show. Leave blank for all." />
+    <param name="categories" type="text" default="" label="Categories" description="Ids of JCal Pro categories to show (comma seperated). Leave blank for all." />
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	  <param name="number_of_events_to_list_upcoming" type="text" default="5" label="Number of Upcoming Events to List" description="This just says how many upcoming events to list in the module." />
+	  <param name="number_of_events_to_list_recent" type="text" default="0" label="Number of Recent Events to List" description="If set to zero, it will ONLY show upcoming events. Otherwise the module will show this many past events under a separate heading." />
+	  <param name="title_max_length" type="text" default="256" label="Maximum Displayed Length of Event Title" description="Enter a number. Any event listed with a title longer than that number will be shortened and a '...' appended." />
+	  <param name="show_times" type="radio" default="1" label="Show Event Times?" description="If 'no' then the event time will not be displayed.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+				<option value="3">Start Times Only</option>
+	  </param>
+	  <param name="show_calendar" type="radio" default="1" label="Show Calendar Name?" description="If 'yes' then the calendar name appears after event name.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="show_dates" type="radio" default="1" label="Show Event Dates?" description="If 'no' then the event date will not be displayed.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="show_category" type="radio" default="1" label="Show Category Name?" description="If 'yes' then the category name appears in parentheses.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="show_description" type="radio" default="1" label="Show Event Description?" description="If 'yes' then the description will appear.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+      <param name="show_contact" type="radio" default="1" label="Show Contact Information?" description="If 'yes' then the contact info will appear.">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+      </param>
+	  <param name="description_max_length" type="text" default="256" label="Max Displayed Length of Event Description" description="Enter a number. Any event listed with a description longer than that number will be shortened and a '...' appended." />
+	  <param name="strip_bbcode_from_description" type="radio" default="3" label="Strip BBCode From Description?" description="If 'yes' then any BBCode tags, like bold and italic, will be stripped out in the module. If 'Defer' is picked, it will use the JCal Pro component settings for 'Allow HTML in event descriptions'">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+				<option value="3">Defer to JCal Pro Settings</option>
+	  </param>
+	  <param name="show_recurrent_events" type="radio" default="3" label="Show Recurring Events?" description="If 'yes' then recurring events will each be listed separately. If 'Defer' is picked, it will use the JCal Pro component settings for 'Show recurrent events.'">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+				<option value="2">Next Instance Only</option>
+				<option value="3">Defer to JCal Pro Settings</option>
+	  </param>
+	  <param name="output" type="radio" default="1" label="Output Type" description="The type of HTML output" >
+			<option value="1">List</option>
+			<option value="2">Table</option>
+      </param>
+	  <param label="HTML code to separate events" description="If you have 'Number of Recent Events to List' set to anything other than zero, this is what the heading will be for Recent Events." name="event_separator" default="" type="text" />
+	  <param name="show_month_separators" type="radio" default="0" label="Show Month Separators?" description="If 'yes' then events will be grouped by month, with a label.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="month_separator_style" type="textarea" cols="30" rows="5" label="CSS Style for Month Separator" description="List any CSS style properties, separated by semicolons, that will apply to the month separator if you selected 'yes' above." default="background-color: none; border-top-color: #777777; border-bottom-color: #777777; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; font-style: italic; font-weight: bold; margin: 4px; text-align: center" />
+	  <param name="no_upcoming_events_text" type="textarea" cols="30" rows="3" label="Text if No Upcoming Events Found" description="If you selected 'yes' above for 'Display Module if No Events Exist?', this is the text that will be displayed when no upcoming events are found. HTML is permitted." default="There are no upcoming events currently scheduled." />
+	  <param name="recent_events_text" type="text" default="Recent Events" label= "Title for 'Recent Events'" description="If you have 'Number of Recent Events to List' set to anything other than zero, this is what the heading will be for Recent Events." />
+	  <param name="recent_events_style" type="textarea" cols="30" rows="5" label="CSS Style for 'Recent Events' Separator" description="List any CSS style properties, separated by semicolons, that will apply to the heading for 'Recent Events' above." default="font-size: 130%; font-weight: bold; background-color: none; border-top-color: #333333; border-bottom-color: #333333; border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; margin: 10px; text-align: center" />
+	  <param name="show_full_calendar_link" type="radio" default="1" label="Show 'View Full Calendar' Link?" description="If 'yes' then a link appears taking you to the full calendar component.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="full_calendar_link_text" type="text" default="View Full Calendar" label="'View Full Calendar' link text" description="Whatever you want the link to say instead of 'View Full Calendar'" />
+	  <param name="show_add_event_link" type="radio" default="1" label="Show 'Add New Event' Link?" description="If 'yes' then a small link appears below the events list to add a new event.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="add_event_text" type="text" default="Add New Event" label="'Add New Event' link text" description="Whatever you want the link to say instead of 'Add New Event'" />
+	  <param name="use_extcal_locale_settings" type="radio" default="0" label="Use JCal Pro Locale Setting?" description="'No' should probably be fine. But if your months and days are in the wrong language, try 'yes'--but first make sure the locale code is correct in your Site Configuration!">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+	  </param>
+	  <param name="time_format_12_or_24" type="radio" default="1" label="12 or 24-hour Time Display" description="Tells module whether to use 12-hour or 24-hour time.">
+				<option value="1">12-hour</option>
+				<option value="0">24-hour</option>
+	  </param>
+	  <param name="days_view" type="radio" default="0" label="Days view" description="Tells module whether to use date string or x days.">				
+				<option value="0">Date String</option>
+				<option value="1">Days</option>
+	  </param>
+	  <param name="date_format" type="text" default="%B %d, %Y" label="Date Format" description="Date format string per PHP strftime function." />
+      <param name="component_itemid" type="text" default="" label="Specific Itemid for displaying the module" description="Fill this option in case you want minical to open within a specific menu option. Left blank otherwise ." />
+  </params>
+</install>

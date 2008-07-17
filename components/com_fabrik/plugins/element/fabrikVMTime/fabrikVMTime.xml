@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="fabrikplugin" group="element">
+	<name>Fabrik VM Time</name>
+	<author>Rob Clayburn</author>
+	<creationDate>Dec 2006</creationDate>
+	<copyright>(C) 2005-2006 fabrikar.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rob@pollen-8.co.uk</authorEmail>
+	<authorUrl>www.fabrikar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Renders VM Time stamps</description>
+	<files>
+		<filename fabrikplugin="fabrikVMTime">fabrikVMTime.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="password" type="radio" default="0" label="PASSWORD" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="maxlength" type="text" size="3" default="255" label="MAXLENGTH" description=""/>
+		<param name="text_format" type="radio" default="text" label="FORMAT" description="FORMATDESC">
+			<option value="text">Text</option>
+			<option value="number">Number</option>
+		</param>
+	</params>
+</install>
